@@ -832,7 +832,7 @@ gsap.from(".tech-owl2 .owl-carousel .item", {
 //
 console.clear();
 
-gsap.registerPlugin(SplitText, ScrollTrigger);
+// gsap.registerPlugin(SplitText, ScrollTrigger);
 
 let split, tl;
 
