@@ -1,0 +1,365 @@
+@media screen and (max-width: 1700px) {
+    .banner-rotate-text2 {
+        bottom: 28%;
+        right: 175px;
+    }
+    .banner-rotate-text3 {
+        top: 13%;
+    }
+    .banner-rotate-text1 {
+        bottom: 15%;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .banner_circle_content svg {
+        margin-top: 5%;
+    }
+    .icon-4 {
+        top: 425px;
+        right: 100px;
+    }
+    .icon {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .icon-6 {
+        right: 60px;
+    }
+    .hc-flip-video{
+        width: 95%;
+    }
+
+    .circuit-bottom-left {
+        top: 34%;
+        left: 32%;
+    }
+    .circuit-top-left {
+        top: -2%;
+        left: 4%;
+    }
+    .circuit-top-right {
+        right: 5%;
+    }
+    .circuit-bottom-right {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .banner_circle_content svg {
+        margin-top: 10%;
+    }
+    .banner_text {
+        width: 60%;
+    }
+    .banner-rotate-text3 {
+        top: 20%;
+    }
+    .banner-rotate-text1 {
+        bottom: 13%;
+        left: 50px;
+    }
+    .banner-rotate-text2 {
+        bottom: 23%;
+    }
+
+    .banner_text_in_cont span {
+        font-size: 60px;
+        line-height: 60px;
+        top: -140px;
+    }
+    .banner_text p {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    #nav-main a {
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+
+    .ham-menu-links .cta-button .text {
+        font-size: 25px;
+    }
+
+    .left-hm-software h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .icon-1 {
+        top: 0px;
+    }
+    .inner-icon06 .icon-circle06 {
+        top: -70px;
+    }
+    .icon-line06 {
+        margin-top: -64px;
+    }
+    .icon-6 {
+        right: 10px;
+    }
+    .icon-4 {
+        right: 20px;
+    }
+    .icon-5 {
+        top: -9px;
+        right: 135px;
+    }
+    .icon-7 {
+        left: 260px;
+    }
+
+    .wheel_content h6{
+        font-size: 25px;
+    }
+
+    .tech-left-cont {
+        padding: 70px 35px;
+    }
+    .tech-left-cont h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .tech-right-cont {
+        padding: 50px 0;
+    }
+    .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item {
+        width: 200px;
+        height: 200px;
+        padding: 35px;
+    }
+
+    .proj-video-cont-dtls h2 {
+        font-size: 75px;
+        line-height: 75px;
+    }
+
+    /* about */
+    .veuz-about-banner-cont h2 {
+        font-size: 8rem;
+    }
+    .circuit-bottom-left {
+        top: 31%;
+        left: 32%;
+    }
+
+    .veuz-about-tech-content h2 {
+        font-size: 60px;
+        line-height: 65px;
+        margin-bottom: 20px;
+    }
+    .veuz-about-tech-content p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .banner-rotate-text-out h4{
+        font-size: 20px;
+    }
+    .banner-rotate-text2 {
+        right: 140px;
+    }
+    #nav-main a {
+        font-size: 36px;
+        line-height: 75px;
+    }
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 30px !important;
+        line-height: 35px !important;
+        margin-top: 15px;
+    }
+
+    .clients h2 {
+        font-size: 30px;
+    }
+    .clients .owl-carousel .item{
+        width: 55%;
+    }
+    .abt-f1 h2 {
+        font-size: 15rem;
+    }
+    .left-hm-software h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .icon-2 {
+        top: 250px;
+        left: 300px;
+    }
+    .icon-5 {
+        right: 100px;
+    }
+    .icon-7 {
+        left: 230px;
+    }
+
+    .copy-right-sec .policy h5 a {
+        font-size: 12px;
+    }
+    .ft-mail-out {
+        display: block;
+    }
+
+    /* about */
+    .circuit-bottom-left {
+        left: 30%;
+    }
+    .veuz_about_counter .text-info2 {
+        left: 32%;
+    }
+    .vision-video {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner-rotate-text3 {
+        top: 20%;
+    }
+    .banner-rotate-text2 {
+        right: 120px;
+        bottom: 22%;
+    }
+    .banner_text_in_cont span {
+        font-size: 50px;
+        line-height: 50px;
+        top: -100px;
+    }
+    .banner_text p {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 10px;
+    }
+    .banner_circle_content svg {
+        margin-top: 10%;
+    }
+    .icon-6 {
+        right: -25px;
+    }
+    .icon-line04 {
+        left: 150px;
+    }
+    .inner-icon04 .icon-circle04 {
+        left: 515px;
+    }
+    .icon-4 {
+        right: 0;
+    }
+    .inner-icon07 .icon-circle07 {
+        left: 540px;
+    }
+    .icon-line07 {
+        left: 175px;
+    }
+    .icon-7 {
+        left: 190px;
+    }
+
+    /* about */
+    .common_space {
+        padding-top: 60px !important;
+    }
+    .about-veuz-content {
+        max-width: 100%;
+    }
+    .about-veuz-content h2 {
+        font-size: 60px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .about-veuz-content p {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .veuz-about-tech-content h2 {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+    .about_counter_item h2 {
+        font-size: 70px;
+    }
+    .about_counter_item span{
+        font-size: 65px;
+    }
+    .about_counter_item p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 23px;
+    }
+    .veuz_about_counter .text-info3 {
+        right: 30%;
+    }
+    .veuz-about-heading {
+        width: 90%;
+    }
+    .veuz-about-heading h3 {
+        font-size: 50px;
+    }
+    .visio-content {
+        padding: 0 35px;
+    }
+    .visio-content h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .visio-content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .last-about-veuz p {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .veuz-about-banner-cont h2 {
+        font-size: 6rem;
+    }
+    .circuit-bottom-left {
+        top: 29.5%;
+    }
+    .veuz-about-banner-cont p {
+        width: 85%;
+    }
+    .circuit-bottom-left {
+        left: 22%;
+    }
+
+    .veuz-about-tech-content h2 {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+
+    .veuz_about_counter .text-info3 {
+        right: 27%;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .veuz_about_counter .text-info2 {
+        left: 26%;
+    }
+    .veuz_about_counter .text-info3 {
+        right: 23%;
+    }
+
+}
+
+

@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veuz Concepts</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://gitcdn.xyz/repo/octoshrimpy/blokkfont/master/blokkfont.css" rel="stylesheet">
 
 </head>
 
 <body>
-
-
     <header class="header-home" id="header-home">
-        <div class="container">
+        <div class="header-home-inner">
             <div class="header-container">
                 <div class="logo-svg">
-                    <a href="">
+                    <a href="index.html">
                         <svg width="150" height="43" viewBox="0 0 150 43" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -77,17 +77,177 @@
                     <div id="nav-main" class="hidden">
                         <div class="container">
                             <div class="ham-menu-container">
-                                <div class="ham-menu-links">
-                                    <a href="">Home</a>
-                                    <a href="">Veuz</a>
-                                    <a href="">Services</a>
-                                    <a href="">Products</a>
-                                    <a href="">Portfolio</a>
-                                    <a href="">Insights</a>
-                                    <a href="">Contact Us</a>
+                                <div class="ham-menu-links menu-link-outr-first">
+                                    <a href="index.html">Home</a>
+                                    <a href="#" data-dropdown="veuz-dropdown">Veuz <span class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="services-dropdown">Services <span class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="products-dropdown">Products <span class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="portfolio-dropdown">Portfolio <span class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="insights-dropdown">Insights <span class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="contact-dropdown">Contact Us <span class="arrow">&#9662;</span></a>
                                 </div>
-                            </div>
 
+                                <!-- veuz -->
+                                <div class="dropdown" id="veuz-dropdown">
+                                    <div class="ham-menu-links">
+                                        <a href="about.html" class="menu_link">About Us</a>
+                                        <a href="#" class="menu_link">Careers</a>
+                                    </div>
+                                </div>
+
+                                <!-- services -->
+                                <div class="dropdown" id="services-dropdown">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="ham-menu-links">
+                                                <a href="#" class="menu_link">Mobile app</a>
+                                                <a href="#" class="menu_link">Website</a>
+                                                <a href="#" class="menu_link">Custom S/W</a>
+                                                <a href="#" class="menu_link">CCC/CCC+</a>
+                                                <a href="#" class="menu_link">Odoo ERP</a>
+                                                <a href="#" class="menu_link">Endpoint Security</a>
+                                                <a href="#" class="menu_link">E-Invoicing</a>
+                                                <a href="#" class="menu_link">Microsoft 365</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ham-menu-links">
+                                                <a href="#" class="menu_link">Google workspace</a>
+                                                <a href="#" class="menu_link">Mange engine</a>
+                                                <a href="#" class="menu_link">ZOHO mail</a>
+                                                <a href="#" class="menu_link">Salesforce</a>
+                                                <a href="#" class="menu_link">Oracle EBS</a>
+                                                <a href="#" class="menu_link">Email Hosting</a>
+                                                <a href="#" class="menu_link">Web Hosting</a>
+                                                <a href="#" class="menu_link">Cyber Security</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ham-menu-links">
+                                                <a href="#" class="menu_link">Firewall Security</a>
+                                                <a href="#" class="menu_link">Digital Marketing</a>
+                                                <a href="#" class="menu_link">Industrial Training</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- products -->
+                                <div class="dropdown" id="products-dropdown">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="ham-menu-links">
+                                                <a href="#" class="menu_link">Zatca E-Invoicing</a>
+                                                <a href="#" class="menu_link">Event Management Software</a>
+                                                <a href="#" class="menu_link">CRM Software</a>
+                                                <a href="#" class="menu_link">Touch2Scan</a>
+                                                <a href="#" class="menu_link">Study abroad Software</a>
+                                                <a href="#" class="menu_link">Rental Mangement</a>
+                                                <a href="#" class="menu_link">Tracking App</a>
+                                                <a href="#" class="menu_link">School Management System</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="ham-menu-links">
+                                                <a href="#" class="menu_link">Library Management Software</a>
+                                                <a href="#" class="menu_link">Help Desk</a>
+                                                <a href="#" class="menu_link">Delivery Management</a>
+                                                <a href="#" class="menu_link">ERP for SMEs</a>
+                                                <a href="#" class="menu_link">Document Management</a>
+                                                <div class="cta-button mt-4">
+                                                    <a class="btn" href="#">
+                                                        <span class="text">See More </span>
+                                                        <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- portfolio -->
+                                <div class="dropdown" id="insights-dropdown">
+                                    <div class="ham-menu-links">
+                                        <a href="#" class="menu_link">Blog </a>
+                                        <a href="#" class="menu_link">Learn</a>
+                                    </div>
+                                </div>
+
+                                <!-- portfolio -->
+                                <div class="dropdown" id="portfolio-dropdown">
+                                    <div class="ham-menu-links">
+                                        <div class="ham-menu-portfolio">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="menu-portfolio-item">
+                                                        <img src="images/banner/h2_2.png" class="img-fluid" alt="veuzconcepts">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="menu-portfolio-item">
+                                                        <img src="images/banner/h2_2.png" class="img-fluid" alt="veuzconcepts">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- contact -->
+                                <div class="dropdown" id="contact-dropdown">
+                                    <div class="ham-menu-links">
+
+                                        <div class="col-md-12 menu-contact-dtls">
+                                            <div class="row justify-content-between">
+                                                <div class="col-lg-7 col-md-12 footer-content-out">
+                                                    <div class="footer-content">
+                                                        <div class="left-footer-content">
+                                                            <img src="images/logo/logo-svg.svg" class="img-fluid" alt="lifeline">
+                                                        </div>
+                                                        <div class="right-footer-content">
+                                                            <p>
+                                                                Veuz Concepts is a specialized designing and developing firm based in
+                                                                Riyadh, Jeddah, Al Khobar, Bahrain, Qatar with development centers in Kerala and
+                                                                Saudi Arabia.
+                                                            </p>
+                            
+                                                            <div class="ft-mail-out">
+                                                                <div class="ft-mail">
+                                                                    <h6>Email</h6>
+                                                                    <a href="mailto:support@veuzconcepts.com"><p> support@veuzconcepts.com </p></a>
+                                                                </div>
+                                                                <div class="ft-phone">
+                                                                    <h6>Phone Number</h6>
+                                                                    <a href="tel:+15551234567"><p> +1 (555) 123-4567 </p></a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cta-button">
+                                                                <a class="btn" href="#">
+                                                                    <span class="text">Contact Us </span>
+                                                                    <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="social-links-footer">
+                                                                <ul>
+                                                                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                                                    <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                                                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                                                    <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
@@ -119,367 +279,398 @@
         </div>
     </header>
 
-    <section class="banner_main">
-        <div class="bg_shade_banner">
-            <svg width="1246" height="1245" viewBox="0 0 1246 1245" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="623.403" cy="622.502" r="622.502" fill="url(#paint0_radial_105_723)" />
+
+    <!---------------------------------------------
+                    start banner
+    ---------------------------------------------->
+    <!-- main banner collum -->
+    <div class="banner_collumn">
+        <main>
+            <ul>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card common_card_bg"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card common_card_bg"></li>
+                <li class="card common_card_bg"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card common_card_bg"></li>
+                <li class="card common_card_bg"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card common_card_bg"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+
+            </ul>
+        </main>
+    </div>
+    <!-- END main banner collum -->
+
+    <!-- banner moving round circle with icons -->
+    <section class="banner_circle">
+        <div class="banner_circle_content">
+            <svg viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <radialGradient id="paint0_radial_105_723" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(623.403 622.502) rotate(90) scale(622.502)">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </radialGradient>
-                </defs>
-            </svg>
-        </div>
-        <div class="bg_shade_element">
-            <svg width="739" height="441" viewBox="0 0 739 441" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M1034.9 163.142C1034.9 10.1552 903.627 -113.913 741.633 -113.913C579.639 -113.913 448.366 10.1552 448.366 163.142C448.366 316.129 579.639 440.197 741.633 440.197C903.627 440.197 1034.9 316.129 1034.9 163.142Z"
-                    fill="url(#paint0_linear_105_737)" stroke="url(#paint1_linear_105_737)" id="circle1" />
-                <path
-                    d="M885.855 163.142C885.855 10.1552 754.582 -113.913 592.588 -113.913C430.594 -113.913 299.321 10.1552 299.321 163.142C299.321 316.129 430.594 440.197 592.588 440.197C754.582 440.197 885.855 316.129 885.855 163.142Z"
-                    fill="url(#paint2_linear_105_737)" stroke="url(#paint3_linear_105_737)" id="circle2" />
-                <path
-                    d="M736.809 163.142C736.809 10.1552 605.536 -113.913 443.542 -113.913C281.548 -113.913 150.275 10.1552 150.275 163.142C150.275 316.129 281.548 440.197 443.542 440.197C605.536 440.197 736.809 316.129 736.809 163.142Z"
-                    fill="url(#paint4_linear_105_737)" stroke="url(#paint5_linear_105_737)" id="circle3" />
-                <path
-                    d="M587.763 163.142C587.763 10.1552 456.49 -113.913 294.496 -113.913C132.503 -113.913 1.22961 10.1552 1.22961 163.142C1.22961 316.129 132.503 440.197 294.496 440.197C456.49 440.197 587.763 316.129 587.763 163.142Z"
-                    fill="url(#paint6_linear_105_737)" stroke="url(#paint7_linear_105_737)" id="circle4" />
-                <defs>
-                    <linearGradient id="paint0_linear_105_737" x1="60.5941" y1="58.6624" x2="634.497" y2="185.311"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                    <path id="circle" d="M63,150.5a261,105.5 0 1,0 522,0a261,105.5 0 1,0 -522,0" />
+                    <path id="g"
+                        d="M66 24c-29.017 0-47.987 10.79-36.694 37.014C42.303 91.201 57.535 107 66 107c8.465 0 23.697-15.799 36.695-45.986C113.986 34.79 95.017 24 66 24" />
+                    <filter id="p" x="-3.1%" y="-3%" width="106.2%" height="106%">
+                        <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="2" />
+                        <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1" />
+                        <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic"
+                            result="shadowInnerInner1" />
+                        <feColorMatrix in="shadowInnerInner1"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0984205163 0" />
+                    </filter>
+                    <path id="f"
+                        d="M48.142 49.896c1.713.977 3.733.456 5.016-.211 1.847-.96 3.757-1.952 5.396-1.015.972.556 1.585 1.44 1.773 2.556.482 2.86-1.904 6.783-4.093 9.275-1.667 1.897-3.093 2.757-4.239 3.448-1.11.669-1.78 1.073-2.25 2.132-.673 1.515-.504 2.952-.308 4.616.104.892.213 1.814.212 2.842-.001 3.345-1.039 7.253-2.643 9.956-2.44 4.113-6.246 6.393-11.006 6.595-4.178.177-7.962-.662-12.961-3.522-5.097-2.915-7.99-5.897-9.894-9.553-.48-.92-.846-1.85-1.1-2.786-.894-3.3-.388-6.663 1.513-9.867 1.606-2.707 4.558-5.523 7.52-7.174.912-.508 1.783-.87 2.625-1.22 1.57-.653 2.925-1.217 3.935-2.538.872-1.142.98-3.09 1.104-5.344.086-1.567.184-3.344.566-5.135.423-1.981 1.471-4.129 2.952-6.049 1.457-1.889 3.138-3.316 4.733-4.02 1.803-.795 3.055-.467 3.788-.051 1.368.776 1.972 2.298 1.844 4.654-.097 1.796-.608 3.891-1.058 5.74l-.067.277c-.187.767.56 2.88 1.197 3.288.231.148 4.118 2.349 5.445 3.106z" />
+                    <circle id="a" cx="68.934" cy="68.934" r="68.934" />
+                    <filter id="n" x="-1.5%" y="-1.5%" width="102.9%" height="102.9%">
+                        <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1.5" />
+                        <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1" />
+                        <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic"
+                            result="shadowInnerInner1" />
+                        <feColorMatrix in="shadowInnerInner1"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204342165 0" />
+                    </filter>
+                    <filter id="m" x="-4.4%" y="-2.9%" width="108.8%" height="111.6%">
+                        <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1" />
+                        <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                            values="0 0 0 0 0.128607602 0 0 0 0 0.22839669 0 0 0 0 0.391687925 0 0 0 1 0" />
+                        <feMerge>
+                            <feMergeNode in="shadowMatrixOuter1" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                    <path id="l"
+                        d="M23.12 23.12c12.769 0 23.12-5.176 23.12-11.56S35.889 0 23.12 0 0 5.176 0 11.56s10.351 11.56 23.12 11.56z" />
+                    <linearGradient id="k" x1="50%" x2="50%" y2="100%">
+                        <stop stop-color="#67748C" stop-opacity="0" offset="0" />
+                        <stop stop-color="#67748C" offset="1" />
                     </linearGradient>
-                    <linearGradient id="paint1_linear_105_737" x1="512.099" y1="-83.5276" x2="953.447" y2="544.676"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint2_linear_105_737" x1="-88.4515" y1="58.6624" x2="485.452" y2="185.311"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint3_linear_105_737" x1="363.054" y1="-83.5276" x2="804.401" y2="544.676"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint4_linear_105_737" x1="-237.497" y1="58.6624" x2="336.406" y2="185.311"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint5_linear_105_737" x1="214.008" y1="-83.5276" x2="655.355" y2="544.676"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint6_linear_105_737" x1="-386.543" y1="58.6624" x2="187.36" y2="185.311"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint7_linear_105_737" x1="64.9625" y1="-83.5276" x2="506.31" y2="544.676"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                    <linearGradient id="h" x1="50%" x2="50%" y2="98.986%">
+                        <stop stop-color="#67748C" stop-opacity="0" offset="0" />
+                        <stop stop-color="#67748C" offset="1" />
                     </linearGradient>
                 </defs>
-            </svg>
-        </div>
-        <div class="bg_shade_element2">
-            <svg width="746" height="556" viewBox="0 0 746 556" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M-288.596 277.555C-288.596 124.568 -157.324 0.500183 4.67044 0.500183C166.664 0.500183 297.937 124.568 297.937 277.555C297.937 430.542 166.664 554.61 4.67044 554.61C-157.324 554.61 -288.596 430.542 -288.596 277.555Z"
-                    fill="url(#paint0_linear_105_732)" stroke="url(#paint1_linear_105_732)" id="d-circle1" />
-                <path
-                    d="M-139.551 277.555C-139.551 124.568 -8.27805 0.500183 153.716 0.500183C315.71 0.500183 446.983 124.568 446.983 277.555C446.983 430.542 315.71 554.61 153.716 554.61C-8.27805 554.61 -139.551 430.542 -139.551 277.555Z"
-                    fill="url(#paint2_linear_105_732)" stroke="url(#paint3_linear_105_732)" id="d-circle2" />
-                <path
-                    d="M9.49463 277.555C9.49463 124.568 140.768 0.500183 302.762 0.500183C464.755 0.500183 596.028 124.568 596.028 277.555C596.028 430.542 464.755 554.61 302.762 554.61C140.768 554.61 9.49463 430.542 9.49463 277.555Z"
-                    fill="url(#paint4_linear_105_732)" stroke="url(#paint5_linear_105_732)" id="d-circle3" />
-                <path
-                    d="M158.54 277.555C158.54 124.568 289.813 0.500183 451.807 0.500183C613.801 0.500183 745.074 124.568 745.074 277.555C745.074 430.542 613.801 554.61 451.807 554.61C289.813 554.61 158.54 430.542 158.54 277.555Z"
-                    fill="url(#paint6_linear_105_732)" stroke="url(#paint7_linear_105_732)" id="d-circle4" />
-                <defs>
-                    <linearGradient id="paint0_linear_105_732" x1="685.71" y1="173.075" x2="111.807" y2="299.724"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_105_732" x1="234.204" y1="30.8854" x2="-207.143" y2="659.089"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint2_linear_105_732" x1="834.755" y1="173.075" x2="260.852" y2="299.724"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint3_linear_105_732" x1="383.25" y1="30.8854" x2="-58.0973" y2="659.089"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint4_linear_105_732" x1="983.801" y1="173.075" x2="409.898" y2="299.724"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint5_linear_105_732" x1="532.295" y1="30.8854" x2="90.9483" y2="659.089"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint6_linear_105_732" x1="1132.85" y1="173.075" x2="558.943" y2="299.724"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.06" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="paint7_linear_105_732" x1="681.341" y1="30.8854" x2="239.994" y2="659.089"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="0.09" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-        <div class="line_center_banner">
-            <svg width="1920" height="999" viewBox="0 0 1920 999" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M2207.35 996.284C2289.34 605.265 1827.14 179.031 1174.98 44.2624C522.82 -90.5057 -72.3335 117.226 -154.333 508.245"
-                    stroke="url(#paint0_linear_105_751)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                    id="banner-centerline" />
-                <defs>
-                    <linearGradient id="paint0_linear_105_751" x1="264.037" y1="225.359" x2="1938.64" y2="576.535"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#0B0D11" />
-                        <stop offset="0.167353" stop-color="#00EEFF" />
-                        <stop offset="0.39751" stop-color="#0022FF" />
-                        <stop offset="0.606743" stop-color="#AE00FF" />
-                        <stop offset="0.845" stop-color="#FF0066" />
-                        <stop offset="1" stop-color="#0B0D11" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-        <div class="round_shape_element">
-            <div class="flip-logo">
-                <video class="flip-video" autoplay muted loop>
-                    <source src="images/about/3d qube.webm" type="video/mp4">
-                </video>
-                <!-- <svg width="100%" height="300" viewBox="0 0 120 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g mask="url(#mask0_105_902)" id="maintag_path">
-                        <path d="M77.3601 0.375977H36.2124V24.5025H77.3601V0.375977Z"
-                            fill="url(#paint0_linear_105_902)" />
+                <g transform="translate(0 30)" fill="none" fill-rule="evenodd">
+
+                    <ellipse cx="324" cy="150.5" rx="261" ry="105.5" stroke="#313D52" stroke-linecap="round"
+                        stroke-width="1" />
+
+                    <g id="figure1">
+                        <!-- x="15" y="5" -->
+                        <rect width="6" height="6" rx="25" fill="#fff" />
+                        <!-- <text x="25" y="5" fill="white" font-size="12px" font-family="Arial" text-anchor="start">
+                            Veuz
+                        </text> -->
                     </g>
-                    <g mask="url(#mask1_105_902)" id="maintag_path2">
-                        <path d="M71.9644 30.1343H41.8017V41.775H71.9644V30.1343Z" fill="url(#paint1_linear_105_902)" />
+                    <g id="figure2">
+                        <rect width="7" height="7" rx="25" fill="rgb(83, 83, 83)" />
                     </g>
-                </svg> -->
-            </div>
-        </div>
-        <div class="line_right_banner">
-            <svg width="192" height="281" viewBox="0 0 192 281" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.517198 1.25329C144.574 69.5136 263.324 166.91 350.676 279.882"
-                    stroke="url(#paint0_linear_105_753)" stroke-linecap="round" stroke-linejoin="round"
-                    id="lineright_draw" />
-                <defs>
-                    <linearGradient id="paint0_linear_105_753" x1="306.523" y1="267.072" x2="-9.11654" y2="65.3182"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#0B0D11" />
-                        <stop offset="0.276769" stop-color="#FF0066" />
-                        <stop offset="0.6964" stop-color="#0022FF" />
-                        <stop offset="1" stop-color="#0B0D11" />
-                    </linearGradient>
-                </defs>
+                    <g id="figure3">
+                        <rect width="7" height="7" rx="25" fill="rgb(83, 83, 83)" />
+                    </g>
+                    <g id="figure4">
+                        <rect width="7" height="7" rx="25" fill="rgb(83, 83, 83)" />
+                    </g>
+                    <!-- <g id="figure1">
+                        <rect width="8" height="8" rx="25" fill="#fff" />
+                    </g> -->
+                    
             </svg>
-        </div>
-        <div class="line_left_banner">
-            <svg width="445" height="72" viewBox="0 0 445 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M444.2 3.81139C285.091 -8.7705 133.194 16.4544 0.615363 70.7803"
-                    stroke="url(#paint0_linear_105_752)" stroke-linecap="round" stroke-linejoin="round"
-                    id="lineleft_draw" />
-                <defs>
-                    <linearGradient id="paint0_linear_105_752" x1="45.2916" y1="81.657" x2="420.317" y2="66.1529"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#0B0D11" />
-                        <stop offset="0.276769" stop-color="#0022FF" />
-                        <stop offset="0.6964" stop-color="#AE00FF" />
-                        <stop offset="1" stop-color="#0B0D11" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-        <div class="text_banner">
-            <div class="container">
-                <div class="banner_text1">
-                    <div class="bannertext_01">
-                        <div class="circle01">
-                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                    stroke="#DDDDDD" stroke-width="0.5" id="dot01" />
-                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="dotoutline01" />
-                            </svg>
-                        </div>
-                        <div class="line01" id="lineid1">
-                            <svg width="203" height="65" viewBox="0 0 203 65" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.19922 63.9625L91.7227 1L202.77 1.00003" stroke="url(#paint0_linear_105_765)"
-                                    stroke-width="1.5" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_105_765" x1="1.19922" y1="26.9674" x2="244.711"
-                                        y2="26.9674" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="white" stop-opacity="0.36" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0.08" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="text01" id="text01">
-                            <a href="">
-                                <h2 id="headline"></h2>
-                                <p id="description"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bannertext_02">
-                        <div class="circle01">
-                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                    stroke="#DDDDDD" stroke-width="0.5" id="dot02" />
-                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="dotoutline02" />
-                            </svg>
-                        </div>
-                        <div class="line01">
-                            <svg width="200" height="108" viewBox="0 0 200 108" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.19922 1.19914L78.0567 106.557L199.765 106.557"
-                                    stroke="url(#paint0_linear_105_758)" stroke-width="1.5" id="lineid2" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_105_758" x1="1.19922" y1="38.1943" x2="244.711"
-                                        y2="38.1943" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="white" stop-opacity="0.36" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0.08" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="text01" id="text02">
-                            <a href="">
-                                <h2 id="headline2"></h2>
-                                <p id="description2"></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bannertext_03">
-                        <div class="circle03">
-                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                    stroke="#DDDDDD" stroke-width="0.5" id="dot03" />
-                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="dotoutline03" />
-                            </svg>
-                        </div>
-                        <div class="line03">
-                            <svg width="379" height="149" viewBox="0 0 379 149" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
-                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="lineid3" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                        y2="38.1945" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="white" stop-opacity="0.36" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0.08" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="text03" id="text03">
-                            <a href="">
-                                <h2 id="headline3"></h2>
-                                <p id="description3"></p>
-                            </a>
-                        </div>
-                    </div>
+
+            <div class="banner-rotate-text-out">
+                <div class="banner-rotate-text1">
+                    <h4>One-stop shop <br>
+                        for all things tech</h4>
+                </div>
+                <div class="banner-rotate-text2">
+                    <h4>Cyber <br>
+                        Security Services</h4>
+                </div>
+                <div class="banner-rotate-text3">
+                    <h4>Ultimate <br>
+                        Digital Experience</h4>
                 </div>
             </div>
         </div>
+        <!-- END banner moving round circle with icons -->
 
-        <div class="cta-button home-cta">
-            <div class="cta-button-abs">
-                <button>Start Explore</button>
-                <a href="#" class="move-btn">
-                    <svg width="10" height="10" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </a>
+        <!-- banner cnter image -->
+        <div class="banner_center_img">
+            <div class="banner_center_img_in">
+                <img src="images/banner/banner1.png" class="img-fluid jump" alt="veuzconcepts">
             </div>
         </div>
+        <!-- END banner cnter image -->
+
+        <!-- banner cnter content -->
+        <div class="banner_content">
+            <div class="banner_text">
+                <div class="banner_text_in">
+                    <div class="banner_text_in_cont">
+                        <span>Ultimate Digital <br> Experience</span>
+                        <span>Ultimate Digital <br> Experience</span>
+                        <span>Ultimate Digital <br> Experience</span>
+                        <span>Ultimate Digital <br> Experience</span>
+                        <span>Ultimate Digital <br> Experience</span>
+                        <span>Ultimate Digital <br> Experience</span>
+                    </div>
+                    <!-- <h3>Ultimate Digital <br> Experience</h3> -->
+                    <p>
+                        Comprehensive range of tech services and solutions that helps you get ahead in the digital age.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- END banner cnter content -->
     </section>
+    <!---------------------------------------------
+                    END banner
+    ---------------------------------------------->
 
 
-    <!-- <section class="clients">
-        <div class="container">
-            <div class="clients-inner">
 
-                <div class="owl-carousel owl-theme client-carousel">
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client1.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client2.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client3.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client4.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client1.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </section> -->
-    
-    <!--about-->
+    <!---------------------------------------------
+                    start about
+    ---------------------------------------------->
 
     <section class="all-outer">
-        <div class="text-about">
+        <!-- <div class="text-about">
             <p class="reveal-type" data-bg-color="#595959" data-fg-color="white">
                 Modern UI designers will expand their skillsets to include frontend.
                 Modern UI designers will expand their skillsets to include frontend.
             </p>
+        </div> -->
+
+
+        <!-- pfolio-start -->
+        <div class="clients reveal-type">
+            <div class="width-container">
+                <div class="top-clients-cont">
+                    <div class="col-md-3">
+                        <h2>Happy Clients</h2>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="carousel-wrap">
+                            <div class="owl-carousel">
+                                <div class="item">
+                                    <img src="images/clients/client1.png">
+                                </div>
+                                <div class="item">
+                                    <img src="images/clients/client2.png">
+                                </div>
+                                <div class="item">
+                                    <img src="images/clients/client3.png">
+                                </div>
+                                <div class="item">
+                                    <img src="images/clients/client4.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>   
         </div>
+
 
         <!-- id="header-zoom" -->
         <div id="header-zoom" class="about-zoom-sec">
@@ -499,12 +690,12 @@
                                     <video class="video-element" autoplay muted loop>
                                         <source src="images/about/Desktop 3.webm" type="video/mp4">
                                     </video>
-                                </div> 
+                                </div>
                             </div>
                             <div class="col-md-5 right-abt-f1">
                                 <div class="content">
                                     <p class="reveal">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     </p>
                                 </div>
                             </div>
@@ -524,14 +715,14 @@
                                 </div> -->
                                 <div class="video-wrapper">
                                     <video class="video-element" autoplay muted loop>
-                                        <source src="images/about/Desktop 3.webm" type="video/mp4">
+                                        <source src="images/about/laptop-old.webm" type="video/mp4">
                                     </video>
                                 </div>
                             </div>
                             <div class="col-md-5 right-abt-f1">
                                 <div class="content">
                                     <p class="reveal">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     </p>
                                 </div>
                             </div>
@@ -551,14 +742,14 @@
                                 </div> -->
                                 <div class="video-wrapper">
                                     <video class="video-element" autoplay muted loop>
-                                        <source src="images/about/Desktop 3.webm" type="video/mp4">
+                                        <source src="images/about/mobile-old.webm" type="video/mp4">
                                     </video>
                                 </div>
                             </div>
                             <div class="col-md-5 right-abt-f1">
                                 <div class="content">
                                     <p class="reveal">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     </p>
                                 </div>
                             </div>
@@ -568,17 +759,28 @@
 
             </div>
         </div>
-
     </section>
+    <!---------------------------------------------
+                    END about
+    ---------------------------------------------->
 
-    
 
-    <!-- line -->
+    <!---------------------------------------------
+                    Animated line shadow
+    ---------------------------------------------->
+
     <section class="anim-shadow">
         <div class="main"></div>
     </section>
 
-    <!-----software development ----->
+    <!---------------------------------------------
+                END Animated line shadow
+    ---------------------------------------------->
+
+
+    <!---------------------------------------------
+                home software section
+    ---------------------------------------------->
     <section class="hm-software">
         <div class="width-container hm-software-in">
             <div class="row justify-content-center align-items-center">
@@ -586,126 +788,157 @@
                     <div id="section-1" class="left-hm-software content active">
                         <h2>Software Development Company that help you innovate</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
+                            <!-- <button>Start Explore</button>
+                            <a href="#" class="move-btn">
+                                <svg width="11" height="13" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </a> -->
                         </div>
                     </div>
                     <div id="section-2" class="left-hm-software content">
-                        <h2>Software company</h2>
+                        <h2>Software Company</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
                         </div>
                     </div>
                     <div id="section-3" class="left-hm-software content">
                         <h2>Software Company in Saudi Arabia</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
                         </div>
                     </div>
                     <div id="section-4" class="left-hm-software content">
                         <h2>Software Company Saudi Arabia, UAE , India and Qatar</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
                         </div>
                     </div>
                     <div id="section-5" class="left-hm-software content">
                         <h2>Services designed to elevate your business</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
                         </div>
                     </div>
                     <div id="section-6" class="left-hm-software content">
                         <h2>Digital marketing strategy</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
                         </div>
                     </div>
                     <div id="section-7" class="left-hm-software content">
                         <h2>Best software development company</h2>
                         <p>
-                        As one of the best software development company in Saudi Arabia, UAE , India and Qatar we also provide a plethora of other 
-                        services designed to elevate your business. From securing the endpoints of your organization to creating the perfect 
-                        digital marketing strategy to improve your brand, we are the perfect IT solution your business has been waiting for. 
-                        Our software development company in Jeddah is not only focused on the area but also accepts clients from all over the world. 
-                        Our experts are among the best in the industry and can professionally take care of all the projects you trust us with.
+                            As one of the best software development company in Saudi Arabia, UAE , India and Qatar we
+                            also provide a plethora of other
+                            services designed to elevate your business. From securing the endpoints of your organization
+                            to creating the perfect
+                            digital marketing strategy to improve your brand, we are the perfect IT solution your
+                            business has been waiting for.
+                            Our software development company in Jeddah is not only focused on the area but also accepts
+                            clients from all over the world.
+                            Our experts are among the best in the industry and can professionally take care of all the
+                            projects you trust us with.
                         </p>
                         <div class="cta-button">
-                        <button>Start Explore</button>
-                            <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                            <a class="btn" href="#">
+                                <span class="text">Contact Us </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </a>
                         </div>
                     </div>
@@ -716,33 +949,59 @@
                             <div class="right-hm-software-bg">
                                 <img src="images/software/bg-img-02.png" class="img-fluid" alt="veuz-concepts">
                             </div>
-                            <img src="images/software/01.png" alt="veuz-concepts" class="icon icon-1" onclick="showContent('section-1')" >
-                            <img src="images/software/02.png" alt="veuz-concepts" class="icon icon-2" onclick="showContent('section-2')" >
-                            <img src="images/software/03.png" alt="veuz-concepts" class="icon icon-3" onclick="showContent('section-3')" >
-                            <img src="images/software/04.png" alt="veuz-concepts" class="icon icon-4" onclick="showContent('section-4')" >
-                            <img src="images/software/05.png" alt="veuz-concepts" class="icon icon-5" onclick="showContent('section-5')" >
-                            <img src="images/software/06.png" alt="veuz-concepts" class="icon icon-6" onclick="showContent('section-6')" >
-                            <img src="images/software/07.png" alt="veuz-concepts" class="icon icon-7" onclick="showContent('section-7')" >
+                            <img src="images/software/01.png" alt="veuz-concepts" class="icon icon-1"
+                                onclick="showContent('section-1')">
+                            <img src="images/software/02.png" alt="veuz-concepts" class="icon icon-2"
+                                onclick="showContent('section-2')">
+                            <img src="images/software/03.png" alt="veuz-concepts" class="icon icon-3"
+                                onclick="showContent('section-3')">
+                            <img src="images/software/04.png" alt="veuz-concepts" class="icon icon-4"
+                                onclick="showContent('section-4')">
+                            <img src="images/software/05.png" alt="veuz-concepts" class="icon icon-5"
+                                onclick="showContent('section-5')">
+                            <img src="images/software/06.png" alt="veuz-concepts" class="icon icon-6"
+                                onclick="showContent('section-6')">
+                            <img src="images/software/07.png" alt="veuz-concepts" class="icon icon-7"
+                                onclick="showContent('section-7')">
 
-                            <div class="left-hm-software-out content">
+                            <div class="left-home-software-out content">
+
+                                <div class="line03">
+                                    <svg width="379" height="0" viewBox="0 0 379 149" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
+                                            stroke="url(#paint0_linear_105_773)" stroke-width="1.5" id="lineid33333333" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
+                                                y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white" stop-opacity="0.36" />
+                                                <stop offset="1" stop-color="white" stop-opacity="0.08" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+
                                 <div id="extra-1" class="inner-icon-out-01 left-hm-software content active">
                                     <div class="inner-icon01 svg-container">
                                         <div class="icon-circle01">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot01" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline01" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot01" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline01" />
                                             </svg>
                                         </div>
                                         <div class="icon-line01">
                                             <svg width="379" height="150" viewBox="0 50 379 149" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid01" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid01" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -757,19 +1016,22 @@
                                         <div class="icon-circle02">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot02" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline02" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot02" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline02" />
                                             </svg>
                                         </div>
                                         <div class="icon-line02">
                                             <svg width="379" height="150" viewBox="0 0 179 149" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid02" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid02" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -778,25 +1040,28 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div id="extra-3" class="inner-icon-out-03 left-hm-software content">
                                     <div class="inner-icon03 svg-container">
                                         <div class="icon-circle03">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot03" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline03" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot03" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline03" />
                                             </svg>
                                         </div>
                                         <div class="icon-line03">
                                             <svg width="379" height="150" viewBox="0 0 179 149" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid03" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid021" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -805,25 +1070,28 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div id="extra-4" class="inner-icon-out-04 left-hm-software content">
                                     <div class="inner-icon04">
                                         <div class="icon-circle04">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot04" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline04" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot04" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline04" />
                                             </svg>
                                         </div>
                                         <div class="icon-line04">
-                                            <svg width="379" height="250" viewBox="0 0 0 -10" fill="none" 
+                                            <svg width="379" height="250" viewBox="0 0 0 -10" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 247.456H0"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid04" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid04" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -838,19 +1106,22 @@
                                         <div class="icon-circle05">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot05" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline05" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot05" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline05" />
                                             </svg>
                                         </div>
                                         <div class="icon-line05">
                                             <svg width="379" height="150" viewBox="0 50 379 149" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid05" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid05" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -865,19 +1136,22 @@
                                         <div class="icon-circle06">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot06" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline06" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot06" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline06" />
                                             </svg>
                                         </div>
                                         <div class="icon-line06">
                                             <svg width="379" height="150" viewBox="0 0 179 149" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 147.456H3.05176e-05"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid06" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid06" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -892,20 +1166,23 @@
                                         <div class="icon-circle07">
                                             <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white" fill-opacity="0.2"
-                                                    stroke="#DDDDDD" stroke-width="0.5" id="linedot07" />
-                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white" id="linedotoutline07" />
+                                                <circle cx="9.19923" cy="9.96241" r="8.94923" fill="white"
+                                                    fill-opacity="0.2" stroke="#DDDDDD" stroke-width="0.5"
+                                                    id="linedot07" />
+                                                <circle cx="9.19924" cy="9.96261" r="4.85324" fill="white"
+                                                    id="linedotoutline07" />
                                             </svg>
                                         </div>
                                         <div class="icon-line07">
                                             <!-- 0 0 179 149 -->
-                                            <svg width="379" height="250" viewBox="0 0 0 -10" fill="none" 
+                                            <svg width="379" height="250" viewBox="0 0 0 -10" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M378.036 1.1994L231.543 247.456H0"
-                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5" id="linedotid07" />
+                                                    stroke="url(#paint0_linear_105_772)" stroke-width="1.5"
+                                                    id="linedotid07" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945" x2="134.524"
-                                                        y2="38.1945" gradientUnits="userSpaceOnUse">
+                                                    <linearGradient id="paint0_linear_105_772" x1="378.036" y1="38.1945"
+                                                        x2="134.524" y2="38.1945" gradientUnits="userSpaceOnUse">
                                                         <stop stop-color="white" stop-opacity="0.36" />
                                                         <stop offset="1" stop-color="white" stop-opacity="0.08" />
                                                     </linearGradient>
@@ -916,77 +1193,90 @@
                                 </div>
 
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!---------------------------------------------
+                END home software section
+    ---------------------------------------------->
 
 
-
-    <!-----why choose section ----->
+    <!---------------------------------------------
+                why choose section
+    ---------------------------------------------->
     <section class="hc-section">
+        <div class="bg_shade_element2 hc_element1">
+            <!-- <svg width="1000" height="900" viewBox="0 0 746 556" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9.49463 277.555C9.49463 124.568 140.768 0.500183 302.762 0.500183C464.755 0.500183 596.028 124.568 596.028 277.555C596.028 430.542 464.755 554.61 302.762 554.61C140.768 554.61 9.49463 430.542 9.49463 277.555Z"
+                    fill="url(#paint41_linear_105_732)" stroke="url(#paint51_linear_105_732)" stroke-width="2"
+                    id="d-circle3" />
+                <path
+                    d="M208.54 277.555C208.54 164.568 300 90 400 90C500 90 591.074 164.568 591.074 277.555C591.074 390.542 500 465 400 465C300 465 208.54 390.542 208.54 277.555Z"
+                    fill="url(#paint61_linear_105_732)" stroke="url(#paint71_linear_105_732)" stroke-width="2"
+                    id="d-circle4" />
 
-        <!-- <div class="hc_element1-out"> -->
-            <div class="bg_shade_element2 hc_element1">
-                <svg width="1000" height="900" viewBox="0 0 746 556" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    
-                    <!-- <path
-                        d="M9.49463 277.555C9.49463 124.568 140.768 0.500183 302.762 0.500183C464.755 0.500183 596.028 124.568 596.028 277.555C596.028 430.542 464.755 554.61 302.762 554.61C140.768 554.61 9.49463 430.542 9.49463 277.555Z"
-                        fill="url(#paint41_linear_105_732)" stroke="url(#paint51_linear_105_732)" id="d-circle3" />
-                    <path
-                        d="M158.54 277.555C158.54 124.568 289.813 0.500183 451.807 0.500183C613.801 0.500183 745.074 124.568 745.074 277.555C745.074 430.542 613.801 554.61 451.807 554.61C289.813 554.61 158.54 430.542 158.54 277.555Z"
-                        fill="url(#paint61_linear_105_732)" stroke="url(#paint71_linear_105_732)" id="d-circle4" /> -->
-                    
-                    
-                      <!-- <path
-                        d="M158.54 277.555C158.54 124.568 289.813 0.500183 451.807 0.500183C613.801 0.500183 745.074 124.568 745.074 277.555C745.074 430.542 613.801 554.61 451.807 554.61C289.813 554.61 158.54 430.542 158.54 277.555Z"
-                        fill="url(#paint61_linear_105_732)" stroke="url(#paint71_linear_105_732)" id="d-circle4" /> -->
-                    
-                    <path
-                        d="M9.49463 277.555C9.49463 124.568 140.768 0.500183 302.762 0.500183C464.755 0.500183 596.028 124.568 596.028 277.555C596.028 430.542 464.755 554.61 302.762 554.61C140.768 554.61 9.49463 430.542 9.49463 277.555Z"
-                        fill="url(#paint41_linear_105_732)"
-                        stroke="url(#paint51_linear_105_732)"
-                        stroke-width="2"
-                        id="d-circle3"/>
-                    <path
-                        d="M208.54 277.555C208.54 164.568 300 90 400 90C500 90 591.074 164.568 591.074 277.555C591.074 390.542 500 465 400 465C300 465 208.54 390.542 208.54 277.555Z"
-                        fill="url(#paint61_linear_105_732)"
-                        stroke="url(#paint71_linear_105_732)"
-                        stroke-width="2"
-                        id="d-circle4"/>
+                <defs>
+                    <linearGradient id="paint41_linear_105_732" x1="983.801" y1="173.075" x2="409.898" y2="299.724"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03" />
+                        <stop offset="1" stop-color="white" stop-opacity="0.03" />
+                    </linearGradient>
+                    <linearGradient id="paint51_linear_105_732" x1="532.295" y1="30.8854" x2="90.9483" y2="659.089"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03" />
+                        <stop offset="1" stop-color="white" stop-opacity="0.03" />
+                    </linearGradient>
 
-                     
-                      
-                    <defs>
-                        <linearGradient id="paint41_linear_105_732" x1="983.801" y1="173.075" x2="409.898" y2="299.724"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white" stop-opacity="0.03" />
-                            <stop offset="1" stop-color="white" stop-opacity="0.03" />
-                        </linearGradient>
-                        <linearGradient id="paint51_linear_105_732" x1="532.295" y1="30.8854" x2="90.9483" y2="659.089"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white" stop-opacity="0.03" />
-                            <stop offset="1" stop-color="white" stop-opacity="0.03" />
-                        </linearGradient>
-                        
-                        <linearGradient id="paint61_linear_105_732" x1="1132.85" y1="173.075" x2="558.943" y2="299.724"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white" stop-opacity="0.03" />
-                            <stop offset="1" stop-color="white" stop-opacity="0.03" />
-                        </linearGradient>
-                        <linearGradient id="paint71_linear_105_732" x1="681.341" y1="30.8854" x2="239.994" y2="659.089"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white" stop-opacity="0.03" />
-                            <stop offset="1" stop-color="white" stop-opacity="0.03" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-        <!-- </div> -->
+                    <linearGradient id="paint61_linear_105_732" x1="1132.85" y1="173.075" x2="558.943" y2="299.724"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03" />
+                        <stop offset="1" stop-color="white" stop-opacity="0.03" />
+                    </linearGradient>
+                    <linearGradient id="paint71_linear_105_732" x1="681.341" y1="30.8854" x2="239.994" y2="659.089"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03" />
+                        <stop offset="1" stop-color="white" stop-opacity="0.03" />
+                    </linearGradient>
+                </defs>
+            </svg> -->
+            
+            <svg width="1000" height="900" viewBox="0 0 746 556" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Black Background -->
+                <rect width="100%" height="100%" fill="none"/>
+                
+                <g transform="translate(373, 278)"> <!-- Centering Group -->
+                    <!-- Outer Circle -->
+                    <circle cx="0" cy="0" r="250" fill="url(#paint41_linear_105_732)" stroke="url(#paint51_linear_105_732)" stroke-width="2"/>
+                    
+                    <!-- Inner Circle -->
+                    <circle cx="0" cy="0" r="150" fill="url(#paint61_linear_105_732)" stroke="url(#paint71_linear_105_732)" stroke-width="2"/>
+                </g>
+            
+                <defs>
+                    <linearGradient id="paint41_linear_105_732" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0.03"/>
+                    </linearGradient>
+                    <linearGradient id="paint51_linear_105_732" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0.03"/>
+                    </linearGradient>
+                    <linearGradient id="paint61_linear_105_732" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0.03"/>
+                    </linearGradient>
+                    <linearGradient id="paint71_linear_105_732" x1="0" y1="0" x2="1" y2="1" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0.03"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0.03"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            
+        </div>
 
         <div class="width-container">
             <div class="row justify-content-center align-items-center">
@@ -996,7 +1286,7 @@
                         <img src="images/software/glob1.png">
                     </div> -->
                     <video class="hc-flip-video" autoplay muted loop>
-                        <source src="images/glob/Globe2.webm" type="video/mp4">
+                        <source src="images/glob/Globe 3.webm" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-5 right-hc-section">
@@ -1028,55 +1318,73 @@
 
                     <h2>Why Choose us?</h2>
                     <p>
-                        A thousand-plus happy customers with our innovative IT solution services in Saudi Arabia, UAE , 
-                        India and Qatar all with over a decade of experience. We have agile and dedicated teams that can 
+                        A thousand-plus happy customers with our innovative IT solution services in Saudi Arabia, UAE ,
+                        India and Qatar all with over a decade of experience. We have agile and dedicated teams that can
                         leverage their talent across various spans of verticals.
                     </p>
                     <div class="cta-button">
-                        <button>Read More</button>
-                        <a href="#" class="move-btn">
-                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                        <a class="btn" href="#">
+                            <span class="text">Contact Us </span>
+                            <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </a>
+                        <!-- <button>Read More</button>
+                        <a href="#" class="move-btn">
+                            <svg width="11" height="13" viewBox="0 0 11 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </a> -->
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    <!-- END why choose section -->
+    <!---------------------------------------------
+                END why choose section
+    ---------------------------------------------->
 
-
-    <!-- counter section -->
+    <!---------------------------------------------
+                counter section
+    ---------------------------------------------->
     <section class="counter-outr">
         <div class="container">
-          <div class="counter_wrapper">
-            <div class="counter_item zoom-count">
-              <div class="counter_item-in">
-                <h1 class="counter" data-number="1000" data-speed="1000"></h1><span>+</span>
-              </div>
-              <div class="counter-cont"><p>Happy Customers</p></div>
+            <div class="counter_wrapper">
+                <div class="counter_item zoom-count">
+                    <div class="counter_item-in">
+                        <h1 class="counter" data-number="1000" data-speed="1000"></h1><span>+</span>
+                    </div>
+                    <div class="counter-cont">
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+                <div class="counter_item zoom-count">
+                    <div class="counter_item-in">
+                        <h1 class="counter" data-number="16" data-speed="200"></h1><span>+</span>
+                    </div>
+                    <div class="counter-cont">
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="counter_item zoom-count">
+                    <div class="counter_item-in">
+                        <h1 class="counter" data-number="350" data-speed="200"></h1><span>+</span>
+                    </div>
+                    <div class="counter-cont">
+                        <p>Employees </p>
+                    </div>
+                </div>
+                <div class="counter_item zoom-count">
+                    <div class="counter_item-in">
+                        <h1 class="counter" data-number="8" data-speed="200"></h1><span>+</span>
+                    </div>
+                    <div class="counter-cont">
+                        <p>Branches </p>
+                    </div>
+                </div>
             </div>
-            <div class="counter_item zoom-count">
-              <div class="counter_item-in">
-                <h1 class="counter" data-number="16" data-speed="200"></h1><span>+</span>
-              </div>
-              <div class="counter-cont"><p>Years of Experience</p></div>
-            </div>
-            <div class="counter_item zoom-count">
-              <div class="counter_item-in">
-                <h1 class="counter" data-number="350" data-speed="200"></h1><span>+</span>
-              </div>
-              <div class="counter-cont"><p>Employees </p></div>
-            </div>
-            <div class="counter_item zoom-count">
-              <div class="counter_item-in">
-                <h1 class="counter" data-number="8" data-speed="200"></h1><span>+</span>
-              </div>
-              <div class="counter-cont"><p>Branches </p></div>
-            </div>
-          </div>
         </div>
 
         <div class="bg_shade_element2 hc_element2">
@@ -1138,19 +1446,24 @@
             </svg>
         </div>
     </section>
-    <!-- END counter section -->
-    
+    <!---------------------------------------------
+                END counter section
+    ---------------------------------------------->
 
-    <!-- bservice start-->
+
+    <!---------------------------------------------
+                service strat here
+    ---------------------------------------------->
+    
     <div class="service-banner">
         <div class="container">
             <div class="serv-heading">
                 <h6>What we do</h6>
                 <h3>Our Services</h3>
                 <p>
-                    Veuz Concepts is a specialized designing and developing firm based in 
-                    India, with IT solution service centers Saudi Arabia, UAE. Our team is 
-                    made of young, passionate designers and developers who are always in the 
+                    Veuz Concepts is a specialized designing and developing firm based in
+                    India, with IT solution service centers Saudi Arabia, UAE. Our team is
+                    made of young, passionate designers and developers who are always in the
                     lookout for greater challenges.
                 </p>
             </div>
@@ -1175,201 +1488,131 @@
                 </defs>
             </svg>
         </div>
-        
 
-
-        <section class="slider-section">
-            <div class="wheel owl-carousel1">
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
-                    </div>
-                </div>
-
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-camera"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+        <section class="serv-carousel">
+            <div class="wheel owl-carousel">
+                <div class="item">
+                    <div class="wheel__card">
+                        <!-- <div class="icons">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div> -->
+                        <div class="icons-out">
+                            <img src="images/services/icon-01.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>Website</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
                     </div>
                 </div>
-
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-bullhorn"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>E Commerce</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
-                    </div>
-                </div>
-
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                <div class="item black">
+                    <div class="wheel__card">
+                        <div class="icons-out">
+                            <img src="images/services/icon-02.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>Laravel</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
                     </div>
                 </div>
-
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-brands fa-laravel"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Laravel</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
-                    </div>
-                </div>
-
-
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-o"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Odoo</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                <div class="item">
+                    <div class="wheel__card">
+                        <div class="icons-out">
+                            <img src="images/services/icon-03.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>Odoo</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
                     </div>
                 </div>
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Cyber security</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
-                    </div>
-                </div>
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                <div class="item black">
+                    <div class="wheel__card">
+                        <div class="icons-out">
+                            <img src="images/services/icon-04.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>Cyber security</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
                     </div>
                 </div>
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
-                    </div>
-                </div>
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                <div class="item">
+                    <div class="wheel__card">
+                        <div class="icons-out">
+                            <img src="images/services/icon-05.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>E Commerce</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
                     </div>
                 </div>
-
-                
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
-                    </div>
-                </div>
-                <div class="wheel__card">
-                    <div class="icons">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                    <div class="wheel_content">
-                        <h6>Website</h6>
-                        <p>
-                            A website is often the first touch point between you and potential customers. 
-                            We understand how vital it is to your brand.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                <div class="item black">
+                    <div class="wheel__card">
+                        <div class="icons-out">
+                            <img src="images/services/icon-06.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>Digital marketing</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
                     </div>
                 </div>
-                
-                
+                <div class="item black">
+                    <div class="wheel__card">
+                        <div class="icons-out">
+                            <img src="images/services/icon-07.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="wheel_content">
+                            <h6>Mobile Application</h6>
+                            <p>
+                                A website is often the first touch point between you and potential customers.
+                                We understand how vital it is to your brand.
+                            </p>
+                        </div>
+                        <div class="link">
+                            <h6>Learn More <i class="fa-solid fa-arrow-right-long"></i></h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1380,46 +1623,34 @@
             <input type="range" id="customSlider" min="0" max="100" value="0">
             <p>Value: <span id="sliderValue">0</span></p>
         </div>
-
+        <div class="service-roundicon">
+            <svg width="550" height="600" viewBox="0 0 605 555" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                <linearGradient id="paint41_linear_105_732" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4FACFE"/>
+                <stop offset="100%" stop-color="#00F2FE"/>
+                </linearGradient>
+                <linearGradient id="paint51_linear_105_732" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4FACFE"/>
+                <stop offset="100%" stop-color="#00F2FE"/>
+                </linearGradient>
+                </defs>
+                <!-- Outer Circle -->
+                <path d="M9.49463 277.555C9.49463 124.568 140.768 0.500183 302.762 0.500183C464.755 0.500183 596.028 124.568 596.028 277.555C596.028 430.542 464.755 554.61 302.762 554.61C140.768 554.61 9.49463 430.542 9.49463 277.555Z" fill="url(#paint41_linear_105_732)" stroke="url(#paint51_linear_105_732)" stroke-width="2" id="d-circle3"></path>
+                <!-- Inner Circle -->
+                <path d="M100 277.555C100 180 180 100 302.762 100C425.524 100 505 180 505 277.555C505 375 425.524 455 302.762 455C180 455 100 375 100 277.555Z" fill="url(#paint41_linear_105_732)" stroke="url(#paint51_linear_105_732)" stroke-width="2" id="d-circle3-inner"></path>
+            </svg>
+        </div>
     </div>
-    <!-- service end -->
+
+    <!---------------------------------------------
+                END service here
+    ---------------------------------------------->
 
 
-    <!-- <section class="slider-section">
-        <div class="slider-container">
-            <div class="owl-carousel owl-theme">
-                <div class="item card">
-                    <h2>E Commerce</h2>
-                    <p class="description">A website is often the first touch point between you and potential customers. We understand how vital it is to your brand.</p>
-                    <button class="learn-more">Learn more ➔</button>
-                </div>
-                <div class="item card">
-                    <h2>Website</h2>
-                    <p class="description">A website is often the first touch point between you and potential customers. We understand how vital it is to your brand.</p>
-                    <button class="learn-more">Learn more ➔</button>
-                </div>
-                <div class="item card">
-                    <h2>Laravel</h2>
-                    <p class="description">A website is often the first touch point between you and potential customers. We understand how vital it is to your brand.</p>
-                    <button class="learn-more">Learn more ➔</button>
-                </div>
-                <div class="item card">
-                    <h2>UI designer</h2>
-                    <p class="description">A website is often the first touch point between you and potential customers. We understand how vital it is to your brand.</p>
-                    <button class="learn-more">Learn more ➔</button>
-                </div>
-                <div class="item card">
-                    <h2>UI developer</h2>
-                    <p class="description">A website is often the first touch point between you and potential customers. We understand how vital it is to your brand.</p>
-                    <button class="learn-more">Learn more ➔</button>
-                </div>
-            </div> 
-        </div>   
-    </section> -->
-    
-
-
-    <!-- bservice start-->
+    <!---------------------------------------------
+                technology start here
+    ---------------------------------------------->
     <section class="technology">
         <div class="container-fluid">
             <div class="co-md-12 technology-inner">
@@ -1429,7 +1660,7 @@
                             <div class="main"></div>
                         </section> -->
                         <div class="tech-left-cont">
-                            <h2>Integrating cutting-edge Technologies</h2>
+                            <h2>Integrating Cutting-edge Technologies</h2>
                             <p>
                                 Comprehensive range of IT services and solutions in Ksa that 
                                 helps you get ahead in the digital age. Let's combine our 
@@ -1518,61 +1749,54 @@
                             </section>
                             <!-- pfolio2-close -->
 
+                            <!-- <div class="wrapper"> -->
+                                <!-- <div class="loop-container">
+                                  <img src="images/technology/01.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/02.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/03.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/04.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/05.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/06.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/01.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/02.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/03.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/04.png" alt="veuzconcepts" class="element">
+                                </div>
+
+                                <div class="loop-container">
+                                  <img src="images/technology/01.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/02.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/03.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/04.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/05.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/06.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/01.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/02.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/03.png" alt="veuzconcepts" class="element">
+                                  <img src="images/technology/04.png" alt="veuzconcepts" class="element">
+                                </div> -->
+                            <!-- </div> -->
+
+
+                            
+
+                            
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!---------------------------------------------
+                    END technology
+    ---------------------------------------------->
 
-    <!-- clients -->
-    <section class="clients">
-        <!-- <div class="container"> -->
-            <div class="clients-inner">
-
-                <div class="owl-carousel owl-theme client-carousel">
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client1.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client2.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client3.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client4.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="client-card">
-                                <img src="images/clients/client1.png" class="img-fluid" alt="veuz-concepts">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        <!-- </div> -->
-    </section>
-    <!-- END clients -->
-
+    <!---------------------------------------------
+                    project video
+    ---------------------------------------------->
     <section class="proj-video">
         <div class="video-container">
             <video id="projectVideo" controls loop autoplay muted>
@@ -1582,18 +1806,28 @@
                 <div class="proj-video-cont-dtls">
                     <h2>Ready to order your project?</h2>
                     <div class="cta-button">
-                        <button>Contact Us </button>
+                        <a class="btn" href="#">
+                            <span class="text">Contact Us </span>
+                            <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <!-- <button class="button"><span>Contact Us</span></button>
                         <a href="#" class="move-btn">
                             <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!---------------------------------------------
+                    END project video
+    ---------------------------------------------->
 
+    <!---------------------------------------------
+                    contact Map
+    ---------------------------------------------->
     <section class="location-map">
         <div class="container-fluid">
             <div class="home-map">
@@ -1679,10 +1913,20 @@
             </div>
         </div>
     </section>
+    <!---------------------------------------------
+                    END contact Map
+    ---------------------------------------------->
+
+
+
+
+
+
+
 
     <!-- footer -->
     <a id="top-btn"></a>
-    <section >
+    <section>
         <div class="footer">
             <div class="width-container">
                 <div class="row justify-content-between">
@@ -1693,8 +1937,9 @@
                             </div>
                             <div class="right-footer-content">
                                 <p>
-                                    Veuz Concepts is a specialized designing and developing firm based in 
-                                    Riyadh, Jeddah, Al Khobar, Bahrain, Qatar with development centers in Kerala and Saudi Arabia.
+                                    Veuz Concepts is a specialized designing and developing firm based in
+                                    Riyadh, Jeddah, Al Khobar, Bahrain, Qatar with development centers in Kerala and
+                                    Saudi Arabia.
                                 </p>
 
                                 <div class="ft-mail-out">
@@ -1751,75 +1996,95 @@
                             <h5>Subscribe <br>
                                 & Contact us now</h5>
                             <div class="subscribe-form">
-                                <input type="email" class="form-control custom-form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type email here">
-                                <div class="cta-button"> 
+                                <input type="email" class="form-control custom-form" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Type email here">
+                                <div class="cta-button">
                                     <a href="#" class="move-btn">
-                                        <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <svg width="11" height="13" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
                                         </svg>
                                     </a>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                         <div class="social-links-footer">
                             <ul>
                                 <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                                 <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
 
 
-      
 
-
-
-</body>
+<!-- Core Libraries -->
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Font Awesome (Make sure this is correct) -->
+<script src="js/font-awsome.js"></script>
+
+<!-- GSAP and Animations -->
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
 <script src="js/lenis.min.js"></script>
-<script src="https://unpkg.com/split-type"></script>
+
+<!-- Plugins -->
 <script src="js/owl.carousel.min.js"></script>
 
+<!-- Custom Scripts (must be last) -->
+<script src="https://unpkg.com/split-type"></script>
 <script src="js/custom.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/font-awsome.js"></script>
+<script src="js/custom2.js"></script>
 
+<script>
+    // scroller-smooth
+    const lenis = new Lenis()
+    lenis.on('scroll', (e) => {
+    console.log(e)
+    })
+
+    lenis.on('scroll', ScrollTrigger.update)
+
+    gsap.ticker.add((time)=>{
+    lenis.raf(time * 300)
+    })
+    gsap.ticker.lagSmoothing(0)
+    // close
+</script>
 
 <!-- <script>
-    $(document).ready(function () {
-    var imageUrls = ['images/glob/glob1.png',
-                    'images/glob/glob2.png',
-                    'images/glob/glob3.png',
-                    'images/glob/glob4.png',
-                    'images/glob/glob5.png',
-                    'images/glob/glob6.png',
-                    'images/glob/glob7.png',
-                    'images/glob/glob8.png',
-                    'images/glob/glob9.png',
-                    'images/glob/glob10.png'];
+    function startCounting() {
+        let counter = document.querySelectorAll(".counter");
+        let arr = Array.from(counter);
     
-    (function recurse(counter) {
-        var url = imageUrls[counter];
-        $('#container img').attr('src', url);
-        delete imageUrls[counter];
-        imageUrls.push(url);
-        setTimeout(function() {
-            recurse(counter + 1);
-        }, 200);
-    })(0);  
-    
-
-    });    
+        arr.map((item) => {
+        let count = 0;
+        function CounterUp() {
+            count++;
+            item.innerHTML = count;
+            if (count == item.dataset.number) {
+            clearInterval(stop);
+            }
+        }
+        let stop = setInterval(function () {
+            CounterUp();
+        }, 1000 / item.dataset.speed);
+        });
+    }
 </script> -->
 
-
+</body>
 </html>
