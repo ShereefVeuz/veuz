@@ -893,7 +893,7 @@ gsap.from(".veuz-about-tech", {
 //
 console.clear();
 
-gsap.registerPlugin(SplitText, ScrollTrigger);
+// gsap.registerPlugin(SplitText, ScrollTrigger);
 
 let split2, tl2;
 
