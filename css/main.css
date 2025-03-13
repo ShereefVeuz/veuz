@@ -1144,6 +1144,7 @@ body.no-scroll {
     padding: 20px 0;
     background-color: #040404;
     box-sizing: border-box;
+    z-index: 3;
 }
 
 .hc_element1{
@@ -1253,6 +1254,7 @@ body.no-scroll {
 	padding: 100px 0 0;
 	position: relative;
     overflow: hidden;
+    z-index: 2;
 }
 
 .counter-outr .bg_shade_element2.hc_element2{
