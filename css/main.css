@@ -573,76 +573,146 @@ body.no-scroll {
     mask-image: linear-gradient(90deg, #0040FF, #00FFD0, #00FF2F);
 } */
 
-.abt-f1 h2 .char:first-child{
+/* zoom1 word color */
+#zoom-1 h2 .char:first-child{
     background: linear-gradient(90deg, #013ae3, #015df8, #0160c3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #013ae3, #015df8, #0160c3);
-    mask-image: linear-gradient(90deg, #013ae3, #015df8, #0160c3);
 }
-.abt-f1 h2 .char:nth-child(2){
+#zoom-1 h2 .char:nth-child(2){
     background: linear-gradient(90deg, #0067b9, #0183c5, #01769a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #0067b9, #0183c5, #01769a);
-    mask-image: linear-gradient(90deg, #0067b9, #0183c5, #01769a);
 }
-.abt-f1 h2 .char:nth-child(3){
+#zoom-1 h2 .char:nth-child(3){
     background: linear-gradient(90deg, #0193b1, #01b3bd, #00aaa4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #0193b1, #01b3bd, #00aaa4);
-    mask-image: linear-gradient(90deg, #0193b1, #01b3bd, #00aaa4);
 }
-.abt-f1 h2 .char:nth-child(4){
+#zoom-1 h2 .char:nth-child(4){
     background: linear-gradient(90deg, #00ecd5, #01f1d3, #00f7d2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #00ecd5, #01f1d3, #00f7d2);
-    mask-image: linear-gradient(90deg, #00ecd5, #01f1d3, #00f7d2);
 }
-.abt-f1 h2 .char:nth-child(5){
+#zoom-1 h2 .char:nth-child(5){
     background: linear-gradient(90deg, #01cfa3, #01d49a, #01d68e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #01cfa3, #01d49a, #01d68e);
-    mask-image: linear-gradient(90deg, #01cfa3, #01d49a, #01d68e);
 }
-.abt-f1 h2 .char:nth-child(6){
+#zoom-1 h2 .char:nth-child(6){
     background: linear-gradient(90deg, #01dd88, #00db76, #00c360);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #01dd88, #00db76, #00c360);
-    mask-image: linear-gradient(90deg, #01dd88, #00db76, #00c360);
 }
-.abt-f1 h2 .char:nth-child(7){
+#zoom-1 h2 .char:nth-child(7){
     background: linear-gradient(90deg, #00c958, #00e055, #01cc45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
-    mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
 }
-.abt-f1 h2 .char:nth-child(8){
+#zoom-1 h2 .char:nth-child(8){
     background: linear-gradient(90deg, #00c958, #00e055, #01cc45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
-    mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
 }
-.abt-f1 h2 .char:nth-child(9){
+#zoom-1 h2 .char:nth-child(9){
     background: linear-gradient(90deg, #00c958, #00e055, #01cc45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
-    mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
 }
-.abt-f1 h2 .char:nth-child(10){
+#zoom-1 h2 .char:nth-child(10){
     background: linear-gradient(90deg, #00c958, #00e055, #01cc45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
-    mask-image: linear-gradient(90deg, #00c958, #00e055, #01cc45);
 }
+/* END zoom1 word color */
+
+/* zoom2 word color */
+#zoom-2 h2 .char:first-child{
+    background: linear-gradient(180deg, #82047a, #6c0599, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(2){
+    background: linear-gradient(180deg, #8d1d90, #5a206a, #3a1864);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(3){
+    background: linear-gradient(180deg, #972175, #61194b, #35112c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(4){
+    background: linear-gradient(180deg, #d70097, #6c0438, #2f0303);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(5){
+    background: linear-gradient(180deg, #ff009b, #4d001d, #480101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#zoom-2 h2 .char:nth-child(6){
+    background: linear-gradient(180deg, #ff009b, #4d001d, #480101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(7){
+    background: linear-gradient(180deg, #ff009b, #4d001d, #480101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(8){
+    background: linear-gradient(180deg, #ff009b, #4d001d, #480101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* END zoom2 word color */
+
+/* zoom3 word color */
+#zoom-3 h2 .char:first-child{
+    background: linear-gradient(180deg, #01fca7, #015339);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-3 h2 .char:nth-child(2){
+    background: linear-gradient(180deg, #01cc9c, #01352b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-3 h2 .char:nth-child(3){
+    background: linear-gradient(180deg, #00d3b7, #003430);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-3 h2 .char:nth-child(4){
+    background: linear-gradient(180deg, #01bcb3, #002c2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-3 h2 .char:nth-child(5){
+    background: linear-gradient(180deg, #01a8b0, #002427);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#zoom-3 h2 .char:nth-child(6){
+    background: linear-gradient(180deg, #01a8b0, #002427);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-2 h2 .char:nth-child(7){
+    background: linear-gradient(180deg, #01a8b0, #002427);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#zoom-3 h2 .char:nth-child(8){
+    background: linear-gradient(180deg, #01a8b0, #002427);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* END zoom3 word color */
 
 
 .right-abt-f1 .content p{
