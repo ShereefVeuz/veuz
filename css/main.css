@@ -2965,7 +2965,7 @@ video::-webkit-media-controls-enclosure {
     position: relative;
     z-index: 2; 
     max-width: 80%;
-    /* color: white; */
+    color: white;
 }
 
 .about-veuz-content h2 {
@@ -2987,7 +2987,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 60px;
     font-weight: 400;
     line-height: 70px;
-    /* color: white; */
+    color: white;
 }
 
 .about-veuz-content p div{
@@ -3007,9 +3007,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 .about-banner-video video {
-    width: 100%;
+    width: 75%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: contain; 
     /* filter: brightness(1.2) contrast(1.2); */
 }
 
@@ -3129,6 +3129,7 @@ video::-webkit-media-controls-enclosure {
     line-height: 80px;
     padding: 80px 100px;
     text-align: initial;
+    color: white;
 }
 
 .last-about-veuz p div {

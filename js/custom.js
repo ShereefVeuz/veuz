@@ -827,46 +827,73 @@ gsap.from(".tech-owl2 .owl-carousel .item", {
 // END tech animation
 
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Split text into spans (sentence-wise)
+    const paragraph = document.getElementById("splitText");
+    const words = paragraph.innerHTML.split(" "); // Split by words
+    paragraph.innerHTML = words.map(word => `<span class="word">${word}</span>`).join(" ");
+
+    // GSAP Animation
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".word", {
+        opacity: 0.3,
+        y: 20,
+        stagger: 0.1, // Adds delay between each word
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#textSection",
+            start: "center center",
+            end: "+=150%",
+            scrub: true,
+            pin: true
+        }
+    });
+});
+
 ///////// about page start ////////// 
 // aboutus page reveal text
 //
-console.clear();
+
+// console.clear();
 
 // gsap.registerPlugin(SplitText, ScrollTrigger);
 
-let split, tl;
+// let split, tl;
 
-const createSplit = () => {
-  split && split.revert();
-  tl && tl.revert();
-  split = new SplitText(".about-veuz-content p", {
-    type: "chars"
-  });
+// const createSplit = () => {
+//   split && split.revert();
+//   tl && tl.revert();
+//   split = new SplitText(".about-veuz-content p", {
+//     type: "chars"
+//   });
 
-  tl = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: "#textSection",
-        start: "center center",
-        end: "+=150%",
-        pin: true,
-        scrub: 0.75,
-        markers: false,
-      }
-    })
-    .set(
-      split.chars,
-      {
-        color: "rgb(255, 255, 255)",
-        stagger: 0.1
-      },
-      0.1
-    );
-};
-createSplit();
-const debouncer = gsap.delayedCall(0.2, createSplit).pause();
+//   tl = gsap
+//     .timeline({
+//       scrollTrigger: {
+//         trigger: "#textSection",
+//         start: "center center",
+//         end: "+=150%",
+//         pin: true,
+//         scrub: 0.75,
+//         markers: false,
+//       }
+//     })
+//     .set(
+//       split.chars,
+//       {
+//         color: "rgb(255, 255, 255)",
+//         stagger: 0.1
+//       },
+//       0.1
+//     );
+// };
+// createSplit();
+// const debouncer = gsap.delayedCall(0.2, createSplit).pause();
 
-window.addEventListener("resize", () => debouncer.restart(true));
+// window.addEventListener("resize", () => debouncer.restart(true));
 //
 // END aboutus page reveal text
 
@@ -891,43 +918,66 @@ gsap.from(".veuz-about-tech", {
 
 // last aboutus page reveal text
 //
-console.clear();
+document.addEventListener("DOMContentLoaded", function() {
+    // Split text into spans (sentence-wise)
+    const paragraph2 = document.getElementById("splitText2");
+    const words2 = paragraph2.innerHTML.split(" "); // Split by words
+    paragraph2.innerHTML = words2.map(word => `<span class="word2">${word}</span>`).join(" ");
 
-// gsap.registerPlugin(SplitText, ScrollTrigger);
+    // GSAP Animation
+    gsap.registerPlugin(ScrollTrigger);
 
-let split2, tl2;
+    gsap.from(".word2", {
+        opacity: 0.3,
+        y: 20,
+        stagger: 0.1, // Adds delay between each word
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#textSection2",
+            start: "center center",
+            end: "+=150%",
+            scrub: true,
+            pin: true
+        }
+    });
+});
 
-const createSplit2 = () => {
-  split2 && split2.revert();
-  tl2 && tl2.revert();
-  split2 = new SplitText(".last-about-veuz p", {
-    type: "chars"
-  });
 
-  tl2 = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: "#textSection2",
-        start: "center center",
-        end: "+=150%",
-        pin: true,
-        scrub: 0.75,
-        markers: false,
-      }
-    })
-    .set(
-      split2.chars,
-      {
-        color: "rgb(255, 255, 255)",
-        stagger: 0.1
-      },
-      0.1
-    );
-};
-createSplit2();
-const debouncer2 = gsap.delayedCall(0.2, createSplit2).pause();
 
-window.addEventListener("resize", () => debouncer2.restart(true));
+
+// console.clear();
+// let split2, tl2;
+// const createSplit2 = () => {
+//   split2 && split2.revert();
+//   tl2 && tl2.revert();
+//   split2 = new SplitText(".last-about-veuz p", {
+//     type: "chars"
+//   });
+
+//   tl2 = gsap
+//     .timeline({
+//       scrollTrigger: {
+//         trigger: "#textSection2",
+//         start: "center center",
+//         end: "+=150%",
+//         pin: true,
+//         scrub: 0.75,
+//         markers: false,
+//       }
+//     })
+//     .set(
+//       split2.chars,
+//       {
+//         color: "rgb(255, 255, 255)",
+//         stagger: 0.1
+//       },
+//       0.1
+//     );
+// };
+// createSplit2();
+// const debouncer2 = gsap.delayedCall(0.2, createSplit2).pause();
+
+// window.addEventListener("resize", () => debouncer2.restart(true));
 //
 // END aboutus page reveal text
 
@@ -935,107 +985,217 @@ window.addEventListener("resize", () => debouncer2.restart(true));
 /// start about counter
 //
 
-// about counter line anim
-const path2 = document.querySelector("#spiral-path");
-const length2 = path2.getTotalLength();
-path2.style.strokeDasharray = length2;
-path2.style.strokeDashoffset = length2;
+// // about counter line anim
+// const path2 = document.querySelector("#spiral-path");
+// const length2 = path2.getTotalLength();
+// path2.style.strokeDasharray = length2;
+// path2.style.strokeDashoffset = length2;
 
-function startPathAnimation() {
-    gsap.fromTo(path2, 
-        { strokeDashoffset: length2 }, 
-        { strokeDashoffset: 0, duration: 5, ease: "linear" } 
-    );
-}
-gsap.to(path2, {
-    scrollTrigger: {
-        trigger: ".veuz_about_counter",
-        start: "top 50%", 
-        end: "bottom 20%",
-        toggleActions: "play none none reset", 
-        onEnter: () => startPathAnimation(),
-        onLeaveBack: () => startPathAnimation(), 
-    }
-});
+// function startPathAnimation() {
+//     gsap.fromTo(path2, 
+//         { strokeDashoffset: length2 }, 
+//         { strokeDashoffset: 0, duration: 5, ease: "linear" } 
+//     );
+// }
+// gsap.to(path2, {
+//     scrollTrigger: {
+//         trigger: ".veuz_about_counter",
+//         start: "top 50%", 
+//         end: "bottom 20%",
+//         toggleActions: "play none none reset", 
+//         onEnter: () => startPathAnimation(),
+//         onLeaveBack: () => startPathAnimation(), 
+//     }
+// });
 
-// about full counter fade
-gsap.from(".veuz_about_counter", {
-    duration: 1,
-    y: -300,
-    opacity: 0,
-    stagger: 3,
-    scrollTrigger: {
-        trigger: ".veuz_about_counter",
-        start: "top 50%",
-        end: "bottom 20%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play reverse play reverse",
-        onEnter: () => startCounting(), // Start counter animation
-    }
-});
+// // about full counter fade
+// gsap.from(".veuz_about_counter", {
+//     duration: 1,
+//     y: -300,
+//     opacity: 0,
+//     stagger: 3,
+//     scrollTrigger: {
+//         trigger: ".veuz_about_counter",
+//         start: "top 50%",
+//         end: "bottom 20%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play reverse play reverse",
+//         onEnter: () => startCounting(), // Start counter animation
+//     }
+// });
 
-// about start counter animation
-function startCounting() {
-    let counters = document.querySelectorAll(".counter");
-    counters.forEach((counter) => {
-        let count = 0;
-        let target = parseInt(counter.dataset.number);
-        let speed = parseInt(counter.dataset.speed);
+// // about start counter animation
+// function startCounting() {
+//     let counters = document.querySelectorAll(".counter");
+//     counters.forEach((counter) => {
+//         let count = 0;
+//         let target = parseInt(counter.dataset.number);
+//         let speed = parseInt(counter.dataset.speed);
 
-        function updateCounter() {
-            count++;
-            counter.innerHTML = count;
-            if (count === target) {
-                clearInterval(stop);
-            }
+//         function updateCounter() {
+//             count++;
+//             counter.innerHTML = count;
+//             if (count === target) {
+//                 clearInterval(stop);
+//             }
+//         }
+
+//         let stop = setInterval(updateCounter, 1000 / speed);
+//     });
+// }
+
+// gsap.from(".about_counter_item", {
+//     y: 100,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power2.out",
+//     stagger: 0.3,  // Each item animates one after the other
+//     scrollTrigger: {
+//         trigger: ".about_counter_item",
+//         start: "top 80%",
+//         toggleActions: "play none none reset",
+//         scrub: true,
+//     }
+// });
+// // about counter circle fade
+// gsap.from(".circle_about", {
+//     y: 150,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power2.out",
+//     stagger: 0.3,  
+//     scrollTrigger: {
+//         trigger: ".circle_about",
+//         start: "top 80%",
+//         toggleActions: "play none none reset",
+//         scrub: true,
+//     }
+// });
+// // about counter line fade
+// gsap.from(".line_before_circle", {
+//     y: 150,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power2.out",
+//     stagger: 0.3,  
+//     scrollTrigger: {
+//         trigger: ".line_before_circle",
+//         start: "top 80%",
+//         toggleActions: "play none none reset",
+//         scrub: true,
+//     }
+// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Path Animation for Spiral
+    const path2 = document.querySelector("#spiral-path");
+    const length2 = path2.getTotalLength();
+    path2.style.strokeDasharray = length2;
+    path2.style.strokeDashoffset = length2;
+
+    gsap.fromTo(
+        path2,
+        { strokeDashoffset: length2 },
+        {
+            strokeDashoffset: 0,
+            duration: 5,
+            ease: "linear",
+            scrollTrigger: {
+                trigger: ".veuz_about_counter",
+                start: "top 50%",
+                end: "bottom 20%",
+                scrub: false,
+                toggleActions: "play none none reset",
+            },
         }
+    );
 
-        let stop = setInterval(updateCounter, 1000 / speed);
+    // Fade-in Animation for Section
+    gsap.from(".veuz_about_counter", {
+        duration: 1,
+        y: -300,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".veuz_about_counter",
+            start: "top 50%",
+            end: "bottom 20%",
+            toggleActions: "play none none reset",
+        },
     });
-}
 
-gsap.from(".about_counter_item", {
-    y: 100,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.3,  // Each item animates one after the other
-    scrollTrigger: {
-        trigger: ".about_counter_item",
-        start: "top 80%",
-        toggleActions: "play none none reset",
-        scrub: true,
+    // Counter Animation (Fixed)
+    function startCounting() {
+        let counters = document.querySelectorAll(".counter");
+
+        counters.forEach((counter) => {
+            let count = 0;
+            let target = parseInt(counter.dataset.number);
+            let speed = parseInt(counter.dataset.speed);
+
+            if (!counter.dataset.animated) {
+                counter.dataset.animated = "true"; // Prevent multiple triggers
+                let interval = setInterval(() => {
+                    count++;
+                    counter.innerHTML = count;
+                    if (count >= target) clearInterval(interval);
+                }, 1000 / speed);
+            }
+        });
     }
+
+    ScrollTrigger.create({
+        trigger: ".veuz_about_counter",
+        start: "top 60%",
+        onEnter: startCounting,
+    });
+
+    // Staggered Fade-in for Counter Items
+    gsap.from(".about_counter_item", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".about_counter_wrapper",
+            start: "top 80%",
+            toggleActions: "play none none reset",
+        },
+    });
+
+    // Fade-in for Circles
+    gsap.from(".circle_about", {
+        y: 150,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".veuz_about_counter",
+            start: "top 30%",
+            toggleActions: "play reverse play reverse",
+        },
+    });
+
+    // Fade-in for Lines
+    gsap.from(".line_before_circle", {
+        y: 150,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".veuz_about_counter",
+            start: "top 40%",
+            toggleActions: "play reverse play reverse",
+        },
+    });
 });
-// about counter circle fade
-gsap.from(".circle_about", {
-    y: 150,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.3,  
-    scrollTrigger: {
-        trigger: ".circle_about",
-        start: "top 80%",
-        toggleActions: "play none none reset",
-        scrub: true,
-    }
-});
-// about counter line fade
-gsap.from(".line_before_circle", {
-    y: 150,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.3,  
-    scrollTrigger: {
-        trigger: ".line_before_circle",
-        start: "top 80%",
-        toggleActions: "play none none reset",
-        scrub: true,
-    }
-});
+
 
 
 
