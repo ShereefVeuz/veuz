@@ -192,6 +192,7 @@ a {
     clip-path: path("M 0 0 L 0 60% Q 50% 120% 100% 60% L 100% 0 Z");
     transition: transform 0.8s ease, height 0.8s ease, clip-path 0.8s ease;
     z-index: 99;
+    overflow-y: scroll;
 }
 
 .ham-menu-links {
@@ -327,6 +328,11 @@ a {
 body.no-scroll {
     overflow: hidden;
     /* This disables scrolling */
+}
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 
 
