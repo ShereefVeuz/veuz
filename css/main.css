@@ -188,7 +188,7 @@ a {
     height: 0;
     background-color: #0d0d0d;
     background-blend-mode: exclusion;
-    overflow: hidden;
+    /* overflow: hidden; */
     clip-path: path("M 0 0 L 0 60% Q 50% 120% 100% 60% L 100% 0 Z");
     transition: transform 0.8s ease, height 0.8s ease, clip-path 0.8s ease;
     z-index: 99;
@@ -330,7 +330,7 @@ body.no-scroll {
     /* This disables scrolling */
 }
 .no-scroll {
-    overflow: hidden;
+    overflow-y: scroll;
     height: 100vh;
     width: 100vw;
 }
