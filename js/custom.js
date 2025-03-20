@@ -407,8 +407,8 @@ function playAnimations() {
       ease: "power2.out",
       onComplete: function () {
           gsap.to(lineoutline01, {
-              duration: 0.5,
-              delay: 0.5,
+              duration: 0.02,
+              delay: 0.02,
               opacity: 1,
               ease: "power2.in"
           });
@@ -729,8 +729,8 @@ function playAnimations() {
       ease: "power2.out",
       onComplete: function () {
           gsap.to(lineoutline011, {
-              duration: 0.5,
-              delay: 0.5,
+              duration: 0.02,
+              delay: 0.02,
               opacity: 1,
               ease: "power2.in"
           });
@@ -899,18 +899,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // veuz about tech
 //
-gsap.from(".veuz-about-tech", {
+gsap.from(".veuz-about-tech-inner", {
     duration: 1,
-    x: -300,
+    x: 300,
     opacity: 0,
     stagger: 0.3,
     scrollTrigger: {
-      trigger: ".veuz-about-tech",
+      trigger: ".veuz-about-tech-inner",
       start: "top 80%",
       end: "top 50%",
       scrub: true, 
       markers: false,
-      toggleActions: "play none none reverse",
+      toggleActions: "play pause resume reverse",
     },
 });
 //
@@ -1196,11 +1196,80 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// veuz contact us page
+//
+gsap.from(".contact-page", {
+    y: 300,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+    scrollTrigger: {
+        trigger: ".contact-page",
+        start: "top 80%",
+        toggleActions: "play none none reset",
+    },
+});
+//
+// END veuz contact us page
+
+// veuz contact us page address
+//
+// gsap.from(".contact-address-left-items", {
+//     duration: 300,
+//     x: 100,
+//     opacity:0,
+//     stagger: 50,
+//     scrollTrigger: {
+//       trigger: ".contact-address-left-items",
+//       start: "top 130%",
+//       end:"center 50%",
+//       scrub: true, 
+//       markers: false,
+//       toggleActions: "play reverse play reverse",
+//     },
+// });
+//
+// END veuz contact us page address
 
 
+// veuz career openings
+//
+gsap.from(".career_openings_items", {
+    duration: 300,
+    x: 100,
+    opacity:0,
+    stagger: 50,
+    scrollTrigger: {
+      trigger: ".career_openings_items",
+      start: "top 80%",
+      end:"center 30%",
+      scrub: true, 
+      markers: false,
+      toggleActions: "play reverse play reverse",
+    },
+});
+//
+// END veuz career openings
 
-
-
+// veuz career openings
+//
+// gsap.from(".left-timeline", {
+//     duration: 1,
+//     x: 300,
+//     opacity: 0,
+//     stagger: 0.3,
+//     scrollTrigger: {
+//       trigger: ".left-timeline",
+//       start: "top 80%",
+//       end: "top 20%",
+//       scrub: true, 
+//       markers: false,
+//       toggleActions: "play none none reverse",
+//     },
+//   });
+//
+// END veuz career openings
 
   
   

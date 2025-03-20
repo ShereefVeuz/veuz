@@ -10,6 +10,19 @@
         bottom: 15%;
         left: 100px;
     }
+
+    .hexagon1,
+    .hexagon2,
+    .hexagon3,
+    .hexagon4,
+    .hexagon5 {
+        width: 22px;
+        height: 25px;
+    }
+
+    .loc-uae-cont {
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -46,6 +59,10 @@
     }
     .circuit-bottom-right {
         right: 2%;
+    }
+
+    .veuz-common-banner-cont h2 {
+        line-height: 90px;
     }
 }
 
@@ -211,6 +228,52 @@
     .ft-mail-out {
         display: block;
     }
+    .hexagon1, .hexagon2, .hexagon3, .hexagon4, .hexagon5 {
+        width: 17px;
+        height: 20px;
+    }
+    .loc-banglore {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    .loc-kerala {
+        margin-left: -7px;
+        margin-top: -4px;
+    }
+    .loc-uae {
+        margin-left: -8px;
+        margin-top: -3px;
+    }
+    .loc-bahrain {
+        margin-left: -1px;
+    }
+    .loc-saudi {
+        margin-left: -8px;
+        margin-top: -5px;
+    }
+    .loc-bahrain-cont,
+    .loc-banglore-cont,
+    .loc-uae-cont,
+    .loc-saudi-cont,
+    .loc-kerala-cont {
+        width: 120px;
+        height: 80px;
+    }
+    .loc-bahrain-cont h6,
+    .loc-banglore-cont h6,
+    .loc-uae-cont h6,
+    .loc-saudi-cont h6,
+    .loc-kerala-cont h6 {
+        padding: 15px 10px;
+    }
+    .loc-bahrain:hover + .loc-bahrain-cont,
+    .loc-banglore:hover + .loc-banglore-cont,
+    .loc-uae:hover + .loc-uae-cont,
+    .loc-saudi:hover + .loc-saudi-cont,
+    .loc-kerala:hover + .loc-kerala-cont {
+        width: 250px;
+        padding: 15px;
+    }
 
     /* about */
     .circuit-bottom-left {
@@ -222,6 +285,40 @@
     .vision-video {
         height: 100%;
     }
+
+    /* contact page start */
+    .common_banner_veuz {
+        height: 35vh;
+    }
+    .left-contact-get-in::before {
+        width: 150px;
+    }
+
+    .contact-address-left-items h3 {
+        font-size: 30px;
+    }
+    .cont-number h6 {
+        font-size: 16px;
+    }
+    .cont-address h5 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .cont-address p {
+        font-size: 18px;
+    }
+
+    /* career */
+    .timeline {
+        max-width: 100%;
+    }
+    .left-timeline {
+        padding: 10px 30px 10px 0;
+    }
+    .right-timeline {
+        padding: 10px 0 10px 30px;
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -270,6 +367,9 @@
     /* about */
     .common_space {
         padding-top: 60px !important;
+    }
+    .veuz-common-banner-cont h2 {
+        line-height: 75px;
     }
     .about-veuz-content {
         max-width: 100%;
@@ -323,6 +423,31 @@
         font-size: 50px;
         line-height: 60px;
     }
+
+    /* career */
+    .job-card {
+        padding: 40px 25px;
+    }
+    .job-info {
+        margin-left: 20px;
+    }
+    .job-card-icon img {
+        width: 75px;
+        height: 70px;
+        border-radius: 20px;
+        background-color: #000;
+        padding: 15px;
+    }
+    .job-info p {
+        font-size: 15px;
+    }
+    .job-info h3 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    
 }
 
 @media screen and (max-width: 1100px) {
@@ -351,7 +476,6 @@
 
 }
 
-
 @media screen and (max-width: 1000px) {
     .veuz_about_counter .text-info2 {
         left: 26%;
@@ -361,5 +485,223 @@
     }
 
 }
+
+@media screen and (max-width: 992px) {
+    /* common */
+    .logo-svg svg{
+        width: 100px;
+    }
+    .menu-bars .ham {
+        width: 60px;
+    }
+    .btn-header a {
+        font-size: 13px;
+    }
+    .style_button3__wvXhd {
+        padding: 10px 15px !important;
+    }
+    .left-footer-content img {
+        width: 100px;
+    }
+    .ham-menu-container .dropdown .ham-menu-links {
+        padding-left: 20px;
+    }
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 20px !important;
+        line-height: 25px !important;
+        margin-top: 10px;
+    }
+    .veuz-common-banner-cont h2 {
+        line-height: 55px;
+    }
+
+    /* navbar */
+    #nav-main a {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .ham-menu-links {
+        padding-right: 8px;
+    }
+    .ham-menu-container .arrow {
+        font-size: 30px;
+    }
+    .ham-menu-links .cta-button .text {
+        font-size: 18px;
+    }
+
+    .left-contact {
+        padding: 0 60px;
+    }
+    .left-contact-get-in::before {
+        width: 50vw;
+    }
+    .right-contact-chat::after {
+        width: 50vw;
+    }
+
+    .right-contact {
+        margin-top: 30px;
+    }
+
+    .ft-subscribe h5 br{
+        display: none;
+    }
+    .ft-mail-out {
+        margin-top: 20px;
+    }
+
+    .ft-subscribe-out {
+        margin-top: 20px !important;
+    }
+    .social-links-footer ul{
+        margin-top: 20px !important;
+    }
+    .loc-bahrain-cont, .loc-banglore-cont, .loc-uae-cont, .loc-saudi-cont, .loc-kerala-cont {
+        width: 65px;
+        height: 60px;
+    }
+    .hexagon1, .hexagon2, .hexagon3, .hexagon4, .hexagon5 {
+        width: 12px;
+        height: 14px;
+    }
+    .loc-bahrain {
+        margin-left: -1px;
+        margin-top: -4px;
+    }
+    .loc-saudi {
+        margin-left: -6px;
+        margin-top: -7px;
+    }
+    .loc-uae {
+        margin-left: -5px;
+        margin-top: -6px;
+    }
+    .loc-kerala {
+        margin-left: -5px;
+        margin-top: -6px;
+    }
+    .loc-banglore {
+        margin-left: -1px;
+        margin-top: -5px;
+    }
+
+    .loc-bahrain-cont h6, 
+    .loc-banglore-cont h6, 
+    .loc-uae-cont h6, 
+    .loc-saudi-cont h6, 
+    .loc-kerala-cont h6{
+        font-size: 12px;
+        word-break: break-all;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer-link-sec{
+        margin-top: 30px !important;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* common */
+    .cta-button .btn {
+        font-size: 16px;
+    }
+
+    /* contact page */
+    .contact-address {
+        padding-top: 30px !important;
+    }
+
+    .contact-form{
+        margin-top: 20px;
+    }
+
+    .contact-page {
+        padding-top: 0 !important;
+    }
+
+    .right-contact {
+        padding: 30px 20px;
+    }
+
+    .left-contact {
+        padding: 0;
+    }
+
+    .veuz-common-banner-cont h2 {
+        font-size: 50px;
+    }
+    .veuz-common-banner-cont h2 {
+        line-height: 40px;
+    }
+
+    .left-contact-get-in {
+        font-size: 18px;
+        text-align: center;
+        padding: 8px 20px;
+        width: 165px;
+    }
+    .left-contact-get-in::before {
+        left: 161px;
+    }
+    .left-contact-phone h4 {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .left-contact-mail h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .left-contact-connect {
+        font-size: 30px;
+        line-height: 70px;
+    }
+
+    .right-contact-chat {
+        font-size: 18px;
+        text-align: center;
+        padding: 8px 20px;
+        width: 165px;
+    }
+    .right-contact-chat::after {
+        left: 161px;
+    }
+
+    .contact-form h2 {
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .contact-form .form-group label {
+        font-size: 16px;
+    }
+    .contact-form .form-control {
+        font-size: 16px;
+    }
+
+    .contact-address-left-items h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .cont-number h6 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .cont-address h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .cont-address p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .right-footer-content {
+        margin-top: 20px;
+    }
+}
+
 
 

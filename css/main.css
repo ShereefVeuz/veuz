@@ -1,14 +1,343 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+/* @import url('https://fonts.cdnfonts.com/css/sf-pro-display'); */
 
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('/css/fonts/HelveticaNeueLTW0693BlkExtObl.woff') format('woff'),
-        url('/css/fonts/HelveticaNeueLTW0693BlkExtObl.woff') format('woff');
+    src: url('../fonts/HelveticaNeueLTW0693BlkExtObl.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTW0693BlkExtObl.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+/* sf pro */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/HelveticaNeueLTW0693BlkExtObl.woff') format('woff2'),
+        url('../css/fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-LightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-MediumItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Thin.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Black.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/fonts/SFProDisplay-BoldItalic.woff2') format('woff2'),
+        url('../css/fonts/SFProDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+/* END sf pro */
+
+
+
+/* @font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-BlackItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-BoldItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-LightItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-LightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Light.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Thin.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-MediumItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-ThinItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Black.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../css/font2/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('../css/font2/SFProDisplay-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+} */
+
 
 
 
@@ -17,7 +346,8 @@
     --secondary-color: #fff;
     --white-color: #fff;
     --black-color: #000;
-    --main-font: 'Space Grotesk';
+    /* --main-font: 'Space Grotesk'; */
+    /* --main-font: 'SF Pro Display'; */
 }
 
 html {
@@ -29,8 +359,16 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    font-family: 'SF Pro Display', sans-serif !important;
+    /* font-family: 'SF Pro Display', sans-serif !important; */
+    /* font-family: 'SF Pro', sans-serif !important; */
+    /* font-family: 'SF Pro Display', sans-serif !important; */
+    font-family: 'SF Pro Display' !important;
     background-color: var(--primary-color) !important;
+}
+
+.body_custom{
+    position: relative;
+    overflow: hidden;
 }
 
 a {
@@ -223,9 +561,9 @@ a {
     color: #fff;
     position: relative;
     opacity: 0;
-    font-family: "Lobster", serif;
+    /* font-family: "Lobster", serif; */
     line-height: 95px;
-    letter-spacing: -2px;
+    /* letter-spacing: -2px; */
     display: flex;
     justify-content: space-between;
 }
@@ -717,7 +1055,7 @@ body.no-scroll {
 
 .right-abt-f1 .content p{
     font-size: 35px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 45px;
     color: var(--white-color);
 }
@@ -733,7 +1071,7 @@ body.no-scroll {
             gradient line
 -----------------------------------------*/
 .anim-shadow{
-	padding: 100px 0;
+	padding: 200px 0 100px;
 	position: relative;
   	overflow: hidden;
 }
@@ -809,7 +1147,7 @@ body.no-scroll {
 
 .left-hm-software p {
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 30px;
 	color: var(--white-color);
 	text-align: left;
@@ -1166,7 +1504,7 @@ body.no-scroll {
 
 .right-hc-section p{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     color: var(--white-color);
     text-align: left;
@@ -1362,8 +1700,8 @@ body.no-scroll {
 }
 
 .serv-heading p{
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 30px;
 	color: white;
     margin-top: 20px;
@@ -1465,7 +1803,7 @@ body.no-scroll {
 
 .wheel_content p{
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 25px;
     color: #c6c6c6;
     margin-top: 20px;
@@ -1477,7 +1815,7 @@ body.no-scroll {
 
 .wheel__card .link h6{
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     color: #fff;
     display: flex;
@@ -1621,7 +1959,7 @@ body.no-scroll {
 
 .tech-left-cont p{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 33px;
     color: #fff;
 }
@@ -2308,6 +2646,11 @@ video::-webkit-media-controls-enclosure {
     margin: 0 auto;
 }
 
+.common_space{
+    padding-top: 100px !important;
+}
+
+
 /* .cta-button button {
     padding: 16px 50px;
     font-size: 1.2rem;
@@ -2653,7 +2996,7 @@ video::-webkit-media-controls-enclosure {
 
 .banner_text p {
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 33px;
     color: #7b7b7b;
 }
@@ -2814,6 +3157,9 @@ video::-webkit-media-controls-enclosure {
     padding: 10px 15px;
     border-radius: 50px;
 }
+.social-links-footer ul li:hover {
+    background: linear-gradient(to right, #00A4E4, #A3C644);
+}
 
 .social-links-footer ul li a {
     font-size: 18px !important;
@@ -2900,15 +3246,16 @@ video::-webkit-media-controls-enclosure {
 
 .subscribe-form .cta-button .move-btn {
     border: 1px solid #aeaeae;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .subscribe-form .cta-button .move-btn:hover{
+    border: 1px solid #000;
     background: linear-gradient(to right, #00A4E4, #A3C644);
 }
 
 .subscribe-form .cta-button .move-btn svg {
     color: #b9b9b9;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out; 
 }
 .subscribe-form .cta-button .move-btn:hover svg{
     color: white;
@@ -2931,9 +3278,6 @@ video::-webkit-media-controls-enclosure {
               END footer 
 ------------------------------------------ */
 
-.common_space{
-    padding-top: 100px !important;
-}
 
 
 /* ----------------------------------------
@@ -2943,6 +3287,7 @@ video::-webkit-media-controls-enclosure {
     height: 45vh;
     display: flex;
     justify-content: center;
+    position: relative;
     overflow: hidden;
 }
 
@@ -2952,7 +3297,7 @@ video::-webkit-media-controls-enclosure {
     background: radial-gradient(circle at bottom, #00d4ff, #004cff, #7300ff);
     filter: blur(50px);
     position: absolute;
-    top: -40%;
+    top: -85%;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -2966,16 +3311,16 @@ video::-webkit-media-controls-enclosure {
 } */
 
 .veuz-about-banner-cont{
-    width: 50%;
+    top: 50%;
     left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
     position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50%;
     text-align: center;
 }
 
 .veuz-about-banner-cont h2 {
-    font-size: 10rem;
+    font-size: 8vw;
     font-weight: 500;
     background: linear-gradient(90deg, #0040FF, #00FFD0, #00FF2F);
     -webkit-background-clip: text;
@@ -2989,6 +3334,11 @@ video::-webkit-media-controls-enclosure {
     width: 70%;
     margin: 0 0 0 auto;
     text-align: initial;
+}
+
+.veuz-about-tech {
+    position: relative;
+    overflow: hidden;
 }
 
 /* Circuit Lines */
@@ -3016,11 +3366,11 @@ video::-webkit-media-controls-enclosure {
     height: 150px; 
 }
 .circuit-bottom-left { 
-    top: 33%;
+    top: 67%;
     left: 33%;
 }
 .circuit-bottom-right { 
-    top: 25%; 
+    bottom: 0; 
     right: 15%; 
     width: 200px;
     height: 150px; 
@@ -3115,7 +3465,7 @@ video::-webkit-media-controls-enclosure {
 }
 .veuz-about-heading p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     color: white;
     margin-top: 20px;
@@ -3147,7 +3497,7 @@ video::-webkit-media-controls-enclosure {
 
 .veuz-about-tech-content p{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 35px;
     color: #c6c6c6;
 }
@@ -3191,7 +3541,7 @@ video::-webkit-media-controls-enclosure {
 
 .visio-content p{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 35px;
     color: #9d9d9d;
 }
@@ -3203,7 +3553,7 @@ video::-webkit-media-controls-enclosure {
 /* last section about */
 .last-about-veuz p{
     font-size: 70px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 80px;
     padding: 80px 100px;
     text-align: initial;
@@ -3261,7 +3611,7 @@ video::-webkit-media-controls-enclosure {
 
 .about_counter_item h2 {
     font-size: 100px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 80px;
     color: white;
     margin: 0;
@@ -3269,7 +3619,7 @@ video::-webkit-media-controls-enclosure {
 
 .about_counter_item p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 33px;
     color: white;
     text-align: left;
@@ -3291,5 +3641,731 @@ video::-webkit-media-controls-enclosure {
 /* ----------------------------------------
                 END About Us Page
 ------------------------------------------ */
+
+
+/* ----------------------------------------
+            common inner page banner
+------------------------------------------ */
+
+.common_banner_veuz {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.veuz-gradient-bg-common{
+    width: 100%;
+    height: 500px;
+    background: radial-gradient(circle at bottom, #00d4ff, #004cff, #7300ff);
+    filter: blur(70px);
+    position: absolute;
+    top: -80%;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.3;
+    rotate: -10deg;
+}
+
+.veuz-common-banner-cont{
+    width: 90%;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+.veuz-common-banner-cont h2 {
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 110px;
+    background: linear-gradient(90deg, #0040FF, #00FFD0, #00FF2F);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* .veuz-common-banner-cont p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ccc;
+    width: 70%;
+    margin: 0 0 0 auto;
+    text-align: initial;
+} */
+
+/* ----------------------------------------
+        END common inner page banner
+------------------------------------------ */
+
+
+
+/* ----------------------------------------
+            Start Contact Us Page
+------------------------------------------ */
+
+.left-contact-get-in{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    display: inline-block;
+    border: 2px solid #ffffffde;
+    padding: 10px 30px;
+    border-radius: 30px;
+    position: relative;
+    width: 200px;
+}
+.left-contact-get-in::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 198px;
+    width: 250px;
+    height: 2px;
+    background: linear-gradient( to right, #ffffff94 30%, rgba(255, 255, 255, 0.048) 100%);
+    transform: translateY(-50%);
+}
+
+.left-contact-phone {
+    margin-top: 30px;
+}
+
+.left-contact-phone h4{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #b0b0b0;
+}
+
+.left-contact-mail h4{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #b0b0b0;
+}
+
+.left-contact-connect{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 100px;
+    color: white;
+}
+
+.right-contact-chat {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    display: inline-block;
+    border: 2px solid #ffffffde;
+    padding: 10px 30px;
+    border-radius: 30px;
+    position: relative;
+    width: 180px;
+}
+.right-contact-chat::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 178px;
+    width: 250px;
+    height: 2px;
+    background: linear-gradient( to right, #ffffff94 30%, rgba(255, 255, 255, 0.048) 100%);
+    transform: translateY(-50%);
+}
+
+.contact-form h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 100px;
+    color: white;
+    font-family: 'SF Pro', sans-serif !important;
+}
+
+.contact-form .form-control{
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #404040de;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.contact-form .form-control:focus {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    color: white;
+}
+
+.contact-form .form-group label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+}
+
+.contact-form .form-group textarea{
+    color: white;
+}
+
+.contact-form input{
+    font-size: 15px;
+    color: white;
+}
+
+.left-contact {
+    padding-top: 60px;
+}
+
+.right-contact {
+    padding: 60px;
+    border-radius: 30px;
+    border-top: 1px solid #2f2f2f;
+    border-right: 1px solid #2f2f2f;
+    background-color: #090909a3;
+    box-shadow: rgb(19, 18, 18) 0px 4px 12px;
+}
+
+.cont-form-btn{
+    margin-top: 30px !important;
+}
+
+/* Address */
+.contact-address{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-address-left-items-out {
+    margin-top: 25px !important;
+}
+
+.contact-address-left-items{
+    padding: 35px;
+    border-radius: 12px;
+    background: #191919;
+    /* border: 2px solid #191919; */
+    height: 100%;
+    transition: all 1s;
+}
+.move-up:hover{
+    /* border: 2px solid #95c11f; */
+    transition: all .5s;
+    transform : translateY(-15px) !important;
+    background: linear-gradient(to right, #007AAA, #88B902);
+}
+.move-up:hover .cont-address p{
+    color: #d2d2d2;
+}
+
+.contact-address-left-items h3{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    color: white;
+}
+
+.cont-number {
+    margin-top: 10px;
+}
+
+.cont-number h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+}
+
+.cont-address h5{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 35px;
+    color: white;
+}
+
+.cont-address p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+.cont-address {
+    margin-top: 20px;
+}
+
+
+
+/* ----------------------------------------
+               END Contact Us Page
+------------------------------------------ */
+
+
+/* ----------------------------------------
+             career page start
+------------------------------------------ */
+.career_heder_banner01 {
+    position: absolute;
+    left: 0;
+    top: -60%;
+    z-index: 2;
+    width: 35%;
+    opacity: 0.5;
+    animation: fadeEffect 3s infinite ease-in-out;
+}
+.career_heder_banner02 {
+    position: absolute;
+    right: -13%;
+    top: 0;
+    z-index: -2;
+    width: 45%;
+    opacity: 0.5;
+    animation: fadeEffect 3s infinite ease-in-out;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+
+.career-page{
+    position: relative;
+    overflow: hidden;
+}
+.career_shape2{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    width: 40%;
+}
+
+.career_shape1{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -2;
+    width: 20%;
+}
+
+.career_shape3{
+    position: absolute;
+    bottom: 6%;
+    right: 20%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -2;
+    width: 15%;
+}
+
+.jump { 
+	position: relative;
+	transition: top 1s ease-in-out;
+	z-index: -1;
+}
+
+
+
+.career-page-cont {
+    margin-bottom: 30px;
+}
+.career-page-in {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    display: inline-block;
+    border: 2px solid #ffffffde;
+    padding: 10px 30px;
+    border-radius: 30px;
+    position: relative;
+    width: 250px;
+}
+.career-page-in::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: calc(100vw - 600px); 
+    height: 2px;
+    background: linear-gradient(to right, #ffffff94 30%, rgba(255, 255, 255, 0.048) 100%);
+    transform: translateY(-50%);
+    max-width: 50vw;
+}
+
+.left-career-heading h2{
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 110px;
+    color: white;
+}
+
+.left-career-heading p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+/* timeline */
+.timeline {
+    position: relative;
+    max-width: 100%;
+    max-width: 80%;
+    margin: 80px auto;
+}
+.timeline_cont {
+    /* padding: 10px 50px; */
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0% {
+      opacity: 1;
+      transform: translate(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0px);
+    }
+}
+.timeline_cont .text-box {
+    padding: 30px 50px;
+    /* background: #171717eb; */
+    position: relative;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .left-timeline {
+    padding: 10px 100px 10px 0;
+    left: 0;
+  }
+  .right-timeline {
+    padding: 10px 0 10px 100px;
+    left: 50%;
+  }
+  .timeline_cont .timeline_shape {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -10px;
+    top: -2px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.43) 0px 2px 8px 0px;
+  }
+  .right-timeline .timeline_shape {
+    left: -10px;
+  }
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    top: 0;
+    bottom: 0; 
+    background: linear-gradient(#0040FF, #00FFD0, #00FF2F);
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+    border: 1px solid #0000002b;
+  }
+  @keyframes moveline {
+    0% {
+      height: 0;
+    }
+    100% {
+      /* height: 100%; */
+      height: calc(100% - 230px);
+    }
+  }
+
+  .left_timeline_head_out {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .left_timeline_head {
+    padding: 17px 25px;
+    border-radius: 20px;
+    background-color: #000000b8;
+  }
+
+  /* .left_timeline_head .icon01{
+    font-size: 40px;
+    background: linear-gradient(90deg, #0040FF, #00FFD0, #00FF2F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  } */
+
+  .text-box h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .text-box p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #b0b0b0;
+    margin: 0;
+  }
+
+  .left-timeline-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px soild transparent;
+    border-bottom: 15px soild transparent;
+    border-left: 15px soild #fff;
+    right: -15px;
+  }
+  .timeline_cont:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .timeline_cont:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .timeline_cont:nth-child(3) {
+    animation-delay: 2s;
+  }
+  .timeline_cont:nth-child(4) {
+    animation-delay: 2s;
+  }
+  .timeline_cont:nth-child(4) {
+    animation-delay: 3s;
+  }
+  .timeline_cont:nth-child(5) {
+    animation-delay: 4s;
+  }
+  .timeline_cont:nth-child(6) {
+    animation-delay: 5s;
+  }
+  .timeline_cont:nth-child(7) {
+    animation-delay: 6s;
+  }
+  .timeline_cont:nth-child(8) {
+    animation-delay: 7s;
+  }
+@media screen and (max-width: 600px) {
+    .timeline {
+      margin: 50px auto;
+    }
+    .timeline::after {
+      left: 31px;
+    }
+    .timeline_cont {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+    .text-box {
+      font-size: 13px;
+    }
+    .right-timeline {
+      left: 0;
+    }
+    .left-timeline img {
+      left: 0px;
+    }
+    .right-timeline img {
+      left: 3px;
+    }
+}
+
+/* openings */
+.career-page_openings {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.career_openings_all {
+    margin-top: 60px !important;
+}
+
+.career_openings_items {
+    margin: 0 20px;
+    position: relative;
+}
+
+.job-card {
+    display: flex;
+    position: relative;
+    fill: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 70px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.job-curv-butn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 30px 0 0 0;
+}
+.job-main-bg {
+    background: #040404 !important;
+}
+.job-curv-butn .shap-left-top {
+    position: relative;
+    top: -6rem;
+    left: 0px;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(180deg);
+    line-height: 1;
+}
+.job-curv-butn .shap-right-bottom {
+    position: relative;
+    bottom: 100px;
+    right: 6rem;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(180deg);
+    line-height: 1;
+}
+
+.career_openings_items .cta-button {
+    position: absolute;
+    right: 3%;
+    bottom: 6%;
+    z-index: 3;
+}
+
+.career_openings_items .cta-button:hover {
+    border: 1px solid #000;
+    border-radius: 30px;
+    background: linear-gradient(to right, #00A4E4, #A3C644);
+}
+
+.career_openings_items .cta-button:hover .move-btn{
+    border: 0;
+}
+
+.career_openings_items .cta-button .move-btn {
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease-in-out;
+}
+.career_openings_items .cta-button .move-btn:hover svg {
+    color: white;
+    border: transparent;
+    rotate: 47deg;
+}
+.career_openings_items .cta-button .move-btn svg {
+    transition: all 0.5s ease-in-out; 
+}
+
+.job-card-icon img {
+    width: 90px;
+    height: 85px;
+    border-radius: 20px;
+    background-color: #000;
+    padding: 20px;
+}
+
+.job-info {
+    margin-left: 40px;
+    flex-grow: 1;
+}
+
+.job-info h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    color: white;
+    margin: 0;
+}
+
+.job-info p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFFA1;
+}
+
+/* .job-details {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #bbb;
+} */
+
+.job_time{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #bbb;
+    margin-bottom: 12px;
+}
+.job_time img{
+    margin-right: 10px;
+}
+.job_location{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #bbb;
+}
+.job_location img {
+    margin-right: 10px;
+}
+
+.career_opening_shape1{
+    position: absolute;
+    top: 0;
+    left: -30%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -2;
+    width: 70%;
+}
+
+.career_opening_shape2{
+    position: absolute;
+    bottom: -20%;
+    right: -42%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -2;
+    width: 70%;
+}
+
+
+
+/* ----------------------------------------
+            END career page
+------------------------------------------ */
+
+
+
+
+
+
 
 
