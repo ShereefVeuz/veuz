@@ -367,9 +367,37 @@ function positionLines() {
 // END about count circle and line 
 
 
+// // main services active class
+// document.querySelectorAll('.service_icon_item').forEach(item => {
+//   item.addEventListener('click', () => {
+//       document.querySelectorAll('.service_icon_item').forEach(el => el.classList.remove('active'));
+//       item.classList.add('active');
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let items = document.querySelectorAll('.service_icon_item');
+  let lastActiveItem = items[0]; // Set first item as default active
+
+  // Ensure the first item is active on page load
+  lastActiveItem.classList.add('active');
+
+  items.forEach(item => {
+      // Remove active class on hover and set new active item
+      item.addEventListener('mouseenter', () => {
+          document.querySelectorAll('.service_icon_item').forEach(el => el.classList.remove('active'));
+          item.classList.add('active');
+      });
+
+      // Store the last hovered item as the active item
+      item.addEventListener('mouseleave', () => {
+          lastActiveItem = item;
+      });
+  });
+});
 
 
-
+// // END main services active class
 
 
 

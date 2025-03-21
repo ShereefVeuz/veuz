@@ -1268,11 +1268,110 @@ gsap.from(".career_openings_items", {
 //       toggleActions: "play none none reverse",
 //     },
 //   });
+
+// gsap.from(".contact-address-left-items", {
+//     duration: 1,
+//     y: 50,
+//     opacity: 0,
+//     stagger: 0.3, 
+//     ease: "power2.out",
+//     scrollTrigger: {
+//       trigger: ".contact-address-items",
+//       start: "top 60%",
+//       toggleActions: "play reverse play reverse",
+//     }
+// });
+
 //
 // END veuz career openings
 
+
+// services
+//
+gsap.from(".main-service-center", {
+    duration: 1,
+    opacity: 0,
+    scale: 0.8,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".main-services",
+      start: "top 70%",
+      toggleActions: "play reverse play reverse",
+    }
+});
   
+gsap.from(".service_icon_item", {
+    duration: 1,
+    y: 50,
+    opacity: 0,
+    stagger: 0.3, 
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".main-services",
+      start: "top 60%",
+      toggleActions: "play none none reset",
+    }
+});
+
+gsap.from(".service_listing_items", {
+    duration: 300,
+    x: 100,
+    opacity:0,
+    stagger: 50,
+    scrollTrigger: {
+      trigger: ".service_listing_items",
+      start: "top 80%",
+      end:"center 30%",
+      scrub: true, 
+      markers: false,
+      toggleActions: "play reverse play reverse",
+    },
+});
+
+gsap.from(".service_footer_item", {
+    duration: 1,
+    y: -300,
+    opacity: 0,
+    stagger: 3,
+    scrollTrigger: {
+      trigger: ".service_footer_item",
+      start: "top 50%",
+      end: "bottom 20%",
+      scrub: true,
+      markers: false,
+      toggleActions: "play reverse play reverse",
+      onEnter: () => startCounting(),
+    }
+});
+
+    // image
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     gsap.from(".service_banner_image", {
+    //     x: 300,  
+    //     opacity: 0, 
+    //     duration: 1.5, 
+    //     ease: "power3.out" 
+    //     });
+    // });
+
+    gsap.from(".service_banner_image", {
+        x: 300,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".service_banner_image",
+            start: "top 80%",
+            toggleActions: "play none none reset",
+        },
+    });
+
+// 
+// END services
+
   
+
 
 
 
