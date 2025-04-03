@@ -26,8 +26,8 @@ $('.clients .owl-carousel').owlCarousel({
         items: 5
       }
     }
-  })
-  // close
+})
+// close
 
 
 /// Animated line shadow

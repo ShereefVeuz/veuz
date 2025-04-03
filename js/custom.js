@@ -861,35 +861,35 @@ gsap.from(".counter-outr", {
 
 // tech animation
 //
-gsap.from(".tech-owl1 .owl-carousel .item", {
-    duration: 200,
-    x: 100,
-    opacity: 0,
-    stagger: 50,
-    scrollTrigger: {
-        trigger: ".tech-owl1 .owl-carousel .item",
-        start: "top 130%",
-        end: "center 50%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play reverse play reverse",
-    },
-});
+// gsap.from(".tech-owl1 .owl-carousel .item", {
+//     duration: 200,
+//     x: 100,
+//     opacity: 0,
+//     stagger: 50,
+//     scrollTrigger: {
+//         trigger: ".tech-owl1 .owl-carousel .item",
+//         start: "top 130%",
+//         end: "center 50%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play reverse play reverse",
+//     },
+// });
 
-gsap.from(".tech-owl2 .owl-carousel .item", {
-    duration: 200,
-    x: -100,
-    opacity: 0,
-    stagger: 50,
-    scrollTrigger: {
-        trigger: ".tech-owl2 .owl-carousel .item",
-        start: "top 130%",
-        end: "center 50%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play none none reverse",
-    },
-});
+// gsap.from(".tech-owl2 .owl-carousel .item", {
+//     duration: 200,
+//     x: -100,
+//     opacity: 0,
+//     stagger: 50,
+//     scrollTrigger: {
+//         trigger: ".tech-owl2 .owl-carousel .item",
+//         start: "top 130%",
+//         end: "center 50%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play none none reverse",
+//     },
+// });
 //
 // END tech animation
 
