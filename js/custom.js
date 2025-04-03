@@ -1465,7 +1465,7 @@ gsap.from(".service-dtls-first-dtls-out", {
     scrollTrigger: {
         trigger: ".service-dtls-first-dtls-out",
         start: "top 60%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none reverse",
     }
 });
 
