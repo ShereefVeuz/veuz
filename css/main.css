@@ -4818,6 +4818,7 @@ video::-webkit-media-controls-enclosure {
 .service_listing_img {
     height: 450px;
     overflow: hidden;
+    border-radius: 25px;
 }
 .service_listing_img img {
     width: 100%;
@@ -4872,7 +4873,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .service_footer_bg {
-    background-image: url("../images/service-page/service_bottom_bg.png");
+    background-image: url("../images/service-page/service_bottom_bg.webp");
     height: 100vh; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -5042,6 +5043,15 @@ video::-webkit-media-controls-enclosure {
 
 .service-dtls-single-banner {
     margin-top: 50px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.service-dtls-single-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* service-dtls-first-sectn */
@@ -5131,7 +5141,17 @@ video::-webkit-media-controls-enclosure {
 }
 
 .service-dtls-third-img {
-    padding-right: 50px;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 50px;
+    border-radius: 30px;
+}
+
+.service-dtls-third-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service-dtls-third-heading h2 {
@@ -5148,8 +5168,7 @@ video::-webkit-media-controls-enclosure {
 .right-service-dtls-third-cont {
     height: 600px;
     overflow: scroll;
-    padding-top: 20px;
-    padding-right: 40px;
+    padding: 20px 40px 0 30px;
 }
 
 .right-service-dtls-third-cont .accordion {
@@ -5293,7 +5312,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .service_dtls_footer_bg {
-    background-image: url("../images/service-page/service-detail-ft-bg.png");
+    background-image: url("../images/service-page/service-detail-ft-bg.webp");
     height: 100vh; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -5448,7 +5467,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .product_dtls_footer_bg {
-    background-image: url("../images/product-page/product_detail_ft_bg.png");
+    background-image: url("../images/product-page/product_detail_ft_bg.webp");
     height: 100vh; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -5665,6 +5684,12 @@ video::-webkit-media-controls-enclosure {
     z-index: -1;
     width: 35%;
 }
+
+.tech_page_shape1,
+.tech_page_shape2 {
+    filter: brightness(1.2) contrast(1.2);
+}
+
 
 
 /* ----------------------------------------
