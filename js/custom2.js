@@ -111,125 +111,128 @@ document.addEventListener("DOMContentLoaded", startCounting);
 
 /// service start here
 //
-let owlCarousel = $(".serv-carousel .owl-carousel");
-let isScrolling = false;
-let totalImages = 21;
 
-const slider = document.getElementById("customSlider");
-const output = document.getElementById("sliderValue");
-const logo = document.getElementById("logo");
-
-slider.max = totalImages - 1;
-
-// Function to update image and slider
-function updateImageAndSlider(value) {
-    let index = Math.floor(value);
-    let newSrc = `images/services/logo-${index}.png`;
-
-    if (logo.getAttribute("src") !== newSrc) {
-        $(logo).fadeOut(50, function () {
-            $(this).attr("src", newSrc).fadeIn(50);
-        });
-    }
-
-    let percent = (value / slider.max) * 100;
-    slider.style.background = `linear-gradient(to right, #00bcd4 ${percent}%, #9b9b9bad ${percent}%)`;
-}
-
-// Function to move the carousel based on slider value
-function moveCarousel(value, prevValue) {
-    if (isScrolling) return;
-    isScrolling = true;
-
-    if (value > prevValue) {
-        owlCarousel.trigger("next.owl.carousel"); 
-    } else if (value < prevValue) {
-        owlCarousel.trigger("prev.owl.carousel"); 
-    }
-
-    setTimeout(() => {
-        isScrolling = false;
-    }, 300);
-}
-
-let prevSliderValue = 0;
-
-slider.addEventListener("input", function () {
-    let value = this.value;
-    output.innerText = value;
-    updateImageAndSlider(value);
-    moveCarousel(value, prevSliderValue);
-    prevSliderValue = value; 
-});
-
-// Handle window scroll to change images and carousel
-window.addEventListener("wheel", function (event) {
-    let step = 1; 
-    let value = Number(slider.value);
-
-    if (event.deltaY > 0) {
-        slider.value = Math.min(value + step, slider.max);
-    } else {
-        slider.value = Math.max(value - step, 0);
-    }
-
-    output.innerText = slider.value;
-    updateImageAndSlider(slider.value);
-    moveCarousel(slider.value, value);
-    prevSliderValue = slider.value;
-});
-
-// Reset slider on page load
 document.addEventListener("DOMContentLoaded", function () {
-    slider.value = 0;
-    output.innerText = 0;
-    updateImageAndSlider(0);
+    let owlCarouselserve = $(".serv-carousel .owl-carousel");
+    let isScrolling = false;
+    let totalImages = 21;
+
+    const sliderserve = document.getElementById("customSlider");
+    const output = document.getElementById("sliderValue");
+    const logo = document.getElementById("logo");
+
+    sliderserve.max = totalImages - 1;
+
+    // Function to update image and slider
+    function updateImageAndSlider(value) {
+        let index = Math.floor(value);
+        let newSrc = `images/services/logo-${index}.png`;
+
+        if (logo.getAttribute("src") !== newSrc) {
+            $(logo).fadeOut(50, function () {
+                $(this).attr("src", newSrc).fadeIn(50);
+            });
+        }
+
+        let percent = (value / sliderserve.max) * 100;
+        sliderserve.style.background = `linear-gradient(to right, #00bcd4 ${percent}%, #9b9b9bad ${percent}%)`;
+    }
+
+    // Function to move the carousel based on slider value
+    function moveCarousel(value, prevValue) {
+        if (isScrolling) return;
+        isScrolling = true;
+
+        if (value > prevValue) {
+          owlCarouselserve.trigger("next.owl.carousel"); 
+        } else if (value < prevValue) {
+          owlCarouselserve.trigger("prev.owl.carousel"); 
+        }
+
+        setTimeout(() => {
+            isScrolling = false;
+        }, 300);
+    }
+
+    let prevSliderValue = 0;
+
+    sliderserve.addEventListener("input", function () {
+        let value = this.value;
+        output.innerText = value;
+        updateImageAndSlider(value);
+        moveCarousel(value, prevSliderValue);
+        prevSliderValue = value; 
+    });
+
+    // Handle window scroll to change images and carousel
+    window.addEventListener("wheel", function (event) {
+        let step = 1; 
+        let value = Number(sliderserve.value);
+
+        if (event.deltaY > 0) {
+          sliderserve.value = Math.min(value + step, sliderserve.max);
+        } else {
+          sliderserve.value = Math.max(value - step, 0);
+        }
+
+        output.innerText = sliderserve.value;
+        updateImageAndSlider(sliderserve.value);
+        moveCarousel(sliderserve.value, value);
+        prevSliderValue = sliderserve.value;
+    });
+
+    // Reset slider on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      sliderserve.value = 0;
+        output.innerText = 0;
+        updateImageAndSlider(0);
+    });
+
+    $('.serv-carousel .owl-carousel').owlCarousel({
+      stagePadding: 100,
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      items: 1,
+      lazyLoad: true,
+      center: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+          0: { items: 1, stagePadding: 60 },
+          600: { items: 2, stagePadding: 100 },
+          1000: { items: 2, stagePadding: 200 },
+          1200: { items: 3, stagePadding: 200 },
+          1400: { items: 3, stagePadding: 200 },
+          1600: { items: 3, stagePadding: 200 },
+          1800: { items: 3, stagePadding: 200 }
+      },
+      onInitialized: updateClasses,
+      onTranslated: updateClasses
+    });
+
+    function updateClasses(event) {
+      let items = $('.serv-carousel .owl-item');
+      let centerItem = $('.serv-carousel .owl-item.active.center'); // Get the center item
+
+      // Remove all previous active and cloned classes
+      items.removeClass('active cloned');
+
+      if (centerItem.length) {
+          let centerIndex = centerItem.parent().children().index(centerItem);
+
+          // Assign active to center, left of center, and right of center
+          centerItem.addClass('active');
+          centerItem.prev().addClass('active');
+          centerItem.next().addClass('active');
+
+          // Assign cloned to all other items
+          items.not('.active').addClass('cloned');
+      }
+    }
 });
-
-$('.serv-carousel .owl-carousel').owlCarousel({
-  stagePadding: 100,
-  loop: true,
-  margin: 10,
-  nav: false,
-  dots: false,
-  items: 1,
-  lazyLoad: true,
-  center: true,
-  autoplay: true,
-  autoplayTimeout: 2000,
-  autoplayHoverPause: true,
-  responsive: {
-      0: { items: 1, stagePadding: 60 },
-      600: { items: 2, stagePadding: 100 },
-      1000: { items: 2, stagePadding: 200 },
-      1200: { items: 3, stagePadding: 200 },
-      1400: { items: 3, stagePadding: 200 },
-      1600: { items: 3, stagePadding: 200 },
-      1800: { items: 3, stagePadding: 200 }
-  },
-  onInitialized: updateClasses,
-  onTranslated: updateClasses
-});
-
-function updateClasses(event) {
-  let items = $('.serv-carousel .owl-item');
-  let centerItem = $('.serv-carousel .owl-item.active.center'); // Get the center item
-
-  // Remove all previous active and cloned classes
-  items.removeClass('active cloned');
-
-  if (centerItem.length) {
-      let centerIndex = centerItem.parent().children().index(centerItem);
-
-      // Assign active to center, left of center, and right of center
-      centerItem.addClass('active');
-      centerItem.prev().addClass('active');
-      centerItem.next().addClass('active');
-
-      // Assign cloned to all other items
-      items.not('.active').addClass('cloned');
-  }
-}
 
 // 
 /// END service here
@@ -398,6 +401,301 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // // END main services active class
+
+
+// technologies page
+
+
+
+// $(document).ready(function(){
+//   let owl = $(".frontend-slider");
+
+//   owl.owlCarousel({
+//       loop: true,
+//       margin: 20,
+//       nav: false,
+//       autoplay: true,
+//       autoplayTimeout: 3000,
+//       autoplayHoverPause: true,
+//       stagePadding: 150,
+//       center: true, 
+//       responsive: {
+//           0: { items: 1, stagePadding: 50 },  
+//           600: { items: 2, stagePadding: 80 },
+//           1000: { items: 3, stagePadding: 150 },
+//           1200: { items: 3, stagePadding: 250 }
+//       }
+//   });
+
+//   // Detect the change and assign classes
+//   // owl.on('changed.owl.carousel', function(event) {
+//       $(".frontend-slider .owl-item").removeClass("center-item left-item right-item");
+
+//       let centerItem = $(".frontend-slider .owl-item.center"); // Select the current center item
+//       centerItem.addClass("center-item");
+
+//       let leftItem = centerItem.prev(); // Select left item
+//       let rightItem = centerItem.next(); // Select right item
+
+//       leftItem.addClass("left-item");
+//       rightItem.addClass("right-item");
+//   // });
+// });
+
+
+// $(document).ready(function(){
+//   let owl = $(".frontend-slider");
+
+//   owl.owlCarousel({
+//       loop: true,
+//       margin: 20,
+//       nav: false,
+//       autoplay: false,
+//       autoplayTimeout: 3000,
+//       autoplayHoverPause: true,
+//       stagePadding: 150,
+//       center: true, 
+//       responsive: {
+//           0: { items: 1, stagePadding: 50 },  
+//           600: { items: 2, stagePadding: 80 },
+//           1000: { items: 3, stagePadding: 150 },
+//           1200: { items: 3, stagePadding: 250 }
+//       }
+//   });
+
+//   // ✅ Detect the change and assign classes
+//   owl.on('changed.owl.carousel', function(event) {
+//       $(".frontend-slider .owl-item").removeClass("center-item left-item right-item");
+
+//       let centerItem = $(".frontend-slider .owl-item.active.center"); // Select the center item
+//       centerItem.addClass("center-item");
+
+//       let leftItem = centerItem.prev(".owl-item.active"); // Select left item
+//       let rightItem = centerItem.next(".owl-item.active"); // Select right item
+
+//       leftItem.addClass("left-item");
+//       rightItem.addClass("right-item");
+//   });
+// });
+
+
+// $(document).ready(function(){
+//   let owlfrontend = $(".frontend-slider");
+
+//   owlfrontend.owlCarousel({
+//       loop: true,
+//       margin: 20,
+//       nav: false,
+//       autoplay: false,
+//       autoplayTimeout: 3000,
+//       autoplayHoverPause: true,
+//       stagePadding: 150,
+//       center: true, 
+//       responsive: {
+//           0: { items: 1, stagePadding: 50 },  
+//           600: { items: 2, stagePadding: 80 },
+//           1000: { items: 3, stagePadding: 150 },
+//           1200: { items: 3, stagePadding: 250 }
+//       }
+//   });
+
+//   // ✅ Detect the change and assign classes
+//   owlfrontend.on('changed.owl.carousel', function(event) {
+//       // Remove all classes first
+//       $(".frontend-slider .owl-item").removeClass("center-item left-item right-item");
+      
+//       // Get all active items
+//       let activeItems = $(".frontend-slider .owl-item.active");
+      
+//       // Find the center item (middle of the active items)
+//       let centerIndex = Math.floor(activeItems.length / 2);
+//       let centerItem = activeItems.eq(centerIndex);
+      
+//       // Add center class
+//       centerItem.addClass("center-item");
+      
+//       // Add left class to previous active item
+//       if (centerIndex > 0) {
+//           activeItems.eq(centerIndex - 1).addClass("left-item");
+//       }
+      
+//       // Add right class to next active item
+//       if (centerIndex < activeItems.length - 1) {
+//           activeItems.eq(centerIndex + 1).addClass("right-item");
+//       }
+//   });
+  
+//   // Trigger the event once on load to set initial classes
+//   owlfrontend.trigger('changed.owl.carousel');
+// });
+
+
+
+
+// technology page carousel
+//
+$(document).ready(function(){ 
+  let owl1 = $(".frontend-slider");
+
+  owl1.owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      center: true, 
+      stagePadding: 0, 
+      responsive: {
+          0: { items: 1, stagePadding: 50 },
+          600: { items: 1, stagePadding: 150 },
+          700: { items: 3, stagePadding: 50 },
+          // 1200: { items: 2, stagePadding: 50 },
+          1000: { items: 3, stagePadding: 100 }
+      }
+  });
+
+  function updateClasses() {
+      $(".frontend-slider .owl-item").removeClass("center-item left-item right-item");
+
+      let activeItems = $(".frontend-slider .owl-item.active");
+      let centerIndex = Math.floor(activeItems.length / 2);
+
+      if (activeItems.length) {
+          let centerItem = activeItems.eq(centerIndex);
+          centerItem.addClass("center-item");
+
+          let leftItem = activeItems.eq(centerIndex - 1); 
+          let rightItem = activeItems.eq(centerIndex + 1); 
+          
+          if (leftItem.length) leftItem.addClass("left-item");
+          if (rightItem.length) rightItem.addClass("right-item");
+      }
+  }
+
+  owl1.on('initialized.owl.carousel', function() {
+      setTimeout(updateClasses, 50); 
+  });
+
+  owl1.on('changed.owl.carousel', function() {
+      setTimeout(updateClasses, 50);
+  });
+
+  setTimeout(updateClasses, 100);
+});
+
+
+/* 2nd slider */
+$(document).ready(function(){ 
+  let owl2 = $(".frontend-slider2");
+
+  owl2.owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      center: true, 
+      stagePadding: 0, 
+      responsive: {
+          0: { items: 1, stagePadding: 50 },
+          600: { items: 1, stagePadding: 150 },
+          700: { items: 3, stagePadding: 50 },
+          // 1200: { items: 2, stagePadding: 50 },
+          1000: { items: 3, stagePadding: 100 }
+      }
+  });
+
+  function updateClasses() {
+      $(".frontend-slider2 .owl-item").removeClass("center-item left-item right-item");
+
+      let activeItems = $(".frontend-slider2 .owl-item.active");
+      let centerIndex = Math.floor(activeItems.length / 2);
+
+      if (activeItems.length) {
+          let centerItem = activeItems.eq(centerIndex);
+          centerItem.addClass("center-item");
+
+          let leftItem = activeItems.eq(centerIndex - 1); 
+          let rightItem = activeItems.eq(centerIndex + 1); 
+          
+          if (leftItem.length) leftItem.addClass("left-item");
+          if (rightItem.length) rightItem.addClass("right-item");
+      }
+  }
+
+  owl2.on('initialized.owl.carousel', function() {
+      setTimeout(updateClasses, 50); 
+  });
+
+  owl2.on('changed.owl.carousel', function() {
+      setTimeout(updateClasses, 50);
+  });
+
+  setTimeout(updateClasses, 100);
+});
+
+
+/* 2nd slider */
+$(document).ready(function(){ 
+  let owl3 = $(".frontend-slider3");
+
+  owl3.owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      center: true, 
+      stagePadding: 0, 
+      responsive: {
+          0: { items: 1, stagePadding: 50 },
+          600: { items: 1, stagePadding: 150 },
+          700: { items: 3, stagePadding: 50 },
+          // 1200: { items: 2, stagePadding: 50 },
+          1000: { items: 3, stagePadding: 100 }
+      }
+  });
+
+  function updateClasses() {
+      $(".frontend-slider3 .owl-item").removeClass("center-item left-item right-item");
+
+      let activeItems = $(".frontend-slider3 .owl-item.active");
+      let centerIndex = Math.floor(activeItems.length / 2);
+
+      if (activeItems.length) {
+          let centerItem = activeItems.eq(centerIndex);
+          centerItem.addClass("center-item");
+
+          let leftItem = activeItems.eq(centerIndex - 1); 
+          let rightItem = activeItems.eq(centerIndex + 1); 
+          
+          if (leftItem.length) leftItem.addClass("left-item");
+          if (rightItem.length) rightItem.addClass("right-item");
+      }
+  }
+
+  owl3.on('initialized.owl.carousel', function() {
+      setTimeout(updateClasses, 50); 
+  });
+
+  owl3.on('changed.owl.carousel', function() {
+      setTimeout(updateClasses, 50);
+  });
+
+  setTimeout(updateClasses, 100);
+});
+//
+// technology page carousel
+
+
+
+
+
+
+
 
 
 

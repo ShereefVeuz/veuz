@@ -23,6 +23,12 @@
     .loc-uae-cont {
         width: 150px;
     }
+
+    /* service details */
+    .left-srvdtls-shape1,
+    .left-srvdtls-shape2 {
+        top: 30%;
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -63,6 +69,18 @@
 
     .veuz-common-banner-cont h2 {
         line-height: 90px;
+    }
+
+    /* service details */
+    .left-service-dtls-heading h2,
+    .service-dtls-first-heading h2,
+    .service-dtls-second-heading h2,
+    .service-dtls-third-heading h2,
+    .service-dtls-tech-heading h2 {
+        line-height: 60px;
+    }
+    .service-dtls-third-heading h2 br{
+        display: none;
     }
 }
 
@@ -182,6 +200,32 @@
     /* services */
     .service_footer_item_cont h2 br {
         display: none;
+    }
+
+    /* service details */
+    .left-srvdtls-shape1{
+        left: -60%;
+    }
+    .left-srvdtls-shape2 {
+        right: -60%;
+    }
+    .service_dtls_footer_item_cont h2 br{
+        display: none;
+    }
+
+    /* blog */
+    .blog-listing-items-out {
+        padding: 0 20px 20px 20px;
+    }
+    .blog-category {
+        padding-right: 0;
+    }
+    .right-blog-in {
+        padding-left: 0;
+    }
+    .ft-blog-listing-items-cont h3 {
+        font-size: 25px;
+        line-height: 30px;
     }
 
 }
@@ -345,6 +389,28 @@
         flex: 0 0 auto !important;
         width: 100% !important;
     }
+
+    /* service details */
+    .right-service-dtls-third-cont .accordion-item h2 button {
+        font-size: 30px;
+    }
+    .right-service-dtls-third-cont .accordion .accordion-item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .right-service-dtls-third-cont .accordion-item h2 button {
+        margin-bottom: 0;
+    }
+    .right-service-dtls-third-cont {
+        height: 500px;
+    }
+    .service-dtls-four-top h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .blog_details_banner {
+        height: 25vh;
+    }
     
 }
 
@@ -486,6 +552,51 @@
     .left_service_listing_content .cta-button .move-btn {
         width: 80px;
         height: 80px;
+    }
+
+    /* service details */
+    .left-srvdtls-shape1{
+        left: -63%;
+    }
+    .left-srvdtls-shape2 {
+        right: -63%;
+    }
+    .left-service-dtls-heading h2,
+    .service-dtls-first-heading h2,
+    .service-dtls-second-heading h2,
+    .service-dtls-third-heading h2,
+    .service-dtls-tech-heading h2 {
+        line-height: 50px;
+    }
+    .right-service-dtls-second-dtls h4 {
+        line-height: 30px;
+    }
+    .service-dtls-tech-item-cont {
+        height: 130px;
+        padding: 25px;
+    }
+
+    /* blog */
+    .left-blog {
+        width: 30% !important;
+    }
+    .centre-blog {
+        width: 70% !important;
+    }
+    .right-blog {
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+    .right-blog-in {
+        display: block;
+    }
+    .related-blogs {
+        width: 49%;
+        display: inline-block;
+        padding: 10px;
+    }
+    .main-blog-in {
+        padding-bottom: 30px;
     }
  
 }
@@ -658,6 +769,54 @@
         line-height: 40px;
     }
 
+    .left-srvdtls-shape1{
+        top: 32%;
+        left: -65%;
+    }
+    .left-srvdtls-shape2 {
+        top: 32%;
+        right: -65%;
+    }
+    .right-service-dtls-third-cont {
+        padding-right: 0px;
+    }
+    .service-dtls-third-img {
+        padding-right: 0;
+    }
+    .service_dtls_footer_item {
+        padding: 80px 50px;
+    }
+
+    /* tech page */
+    .tech-page-page {
+        margin-bottom: 0px;
+    }
+    .tech_page_frontend {
+        margin-top: 25px;
+    }
+    .tech_page_frontend .item {
+        height: 230px;
+    }
+    .tech_page_frontend .item img{
+        width: 100px;
+        max-width: 100px;
+    }
+    .tech-page-page3 {
+        padding-bottom: 100px;
+    }
+
+    /* blog */
+    .blog-listing-items {
+        margin-top: 50px;
+    }
+    .blog-listing-search h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .blog-listing-items-cont h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
 
 }
 
@@ -688,6 +847,68 @@
     .main-service-center {
         width: 70%;
     }
+
+    /* service details */
+    .service-dtls-single-banner {
+        margin-top: 20px;
+    }
+    .left-service-dtls-heading h2,
+    .service-dtls-first-heading h2,
+    .service-dtls-second-heading h2,
+    .service-dtls-tech-heading h2,
+    .service-dtls-third-heading h2 {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    .right-service-dtls-third-cont {
+        height: auto;
+    }
+    .right-service-dtls-third-cont .accordion-item h2 button {
+        font-size: 25px;
+    }
+    .right-service-dtls-third {
+        margin-top: 25px !important;
+    }
+    .service-dtls-tech-item-out h5 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 25px !important;
+    }
+    .service_dtls_footer_item_cont h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    /* blog */
+    .left-blog {
+        width: 100% !important;
+        order: 1;
+    }
+    .centre-blog {
+        width: 100% !important;
+        order: 0;
+    }
+    .blog-listing-search {
+        text-align: center;
+    }
+    .centre-blog {
+        border: 0;
+    }
+    .blog-listing-items-out {
+        padding: 0;
+    }
+    .ft-blog-listing-items {
+        margin-bottom: 50px;
+    }
+    .single-related-article h6 {
+        margin: 15px 0;
+    }
+
+    /* blog details */
+    .blog-form h2 {
+        font-size: 25px;
+    }
+
 }
 
 
@@ -719,9 +940,7 @@
     }
 
     .veuz-common-banner-cont h2 {
-        font-size: 50px;
-    }
-    .veuz-common-banner-cont h2 {
+        font-size: 35px;
         line-height: 40px;
     }
 
@@ -815,6 +1034,26 @@
         line-height: 25px;
         margin: 15px auto;
     }
+
+    /* service details page */
+    .left-srvdtls-shape-out {
+        display: none;
+    }
+    .service-dtls-page {
+        padding-top: 0 !important;
+        margin-top: 0;
+    }
+    .service_dtls_footer_bg {
+        height: 70vh;
+    }
+    .service_dtls_footer_item {
+        padding: 40px 30px;
+    }
+
+    /* blog */
+    .single-related-article-bg {
+        height: 100px;
+    }
 }
 
 
@@ -831,6 +1070,25 @@
         order: 0;
         text-align: center;
     }
+
+    /* blog */
+    .related-article {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .right-related-article button {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 15px;
+    }
+    .related-blogs {
+        width: 100%;
+        padding: 0;
+    }
+    .single-related-article-bg {
+        height: 150px;
+    }
+
 }
 
 
