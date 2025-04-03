@@ -244,7 +244,8 @@ $('.tech-owl1 .owl-carousel').owlCarousel({
     margin: 30,
     nav: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
+    autoplayTimeout: 1500,
     infinite: true,
     responsive: {
       0: {
@@ -271,8 +272,9 @@ $('.tech-owl1 .owl-carousel').owlCarousel({
     nav: false,
     rtl:true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     infinite: true,
+    autoplayTimeout: 1500,
     responsive: {
       0: {
         items: 1
@@ -696,6 +698,21 @@ $(document).ready(function(){
 
 
 
-
+// return to top
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#top-btn').fadeIn();
+    } else {
+      $('#top-btn').fadeOut();
+    }
+  });
+  $('#top-btn').click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+});
 
 

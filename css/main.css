@@ -2796,7 +2796,20 @@ video::-webkit-media-controls-enclosure {
     background: #666; 
 }
 
-
+#top-btn {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 3;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background-image: url(../images/arrow-top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 
