@@ -909,6 +909,11 @@
         font-size: 25px;
     }
 
+    /* portfolio */
+    .mfp-gallery .mfp-content {
+        max-width: 50% !important;
+    }
+
 }
 
 
@@ -1053,6 +1058,18 @@
     /* blog */
     .single-related-article-bg {
         height: 100px;
+    }
+
+    /* portfolio */
+    .mfp-gallery .mfp-content {
+        max-width: 70% !important;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .gallery-image img {
+        max-height: 300px;
     }
 }
 

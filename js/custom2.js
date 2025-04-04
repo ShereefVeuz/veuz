@@ -694,10 +694,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
 // return to top
 $(document).ready(function() {
   $(window).scroll(function() {
@@ -714,5 +710,41 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+
+
+
+
+// portfolio
+$(document).ready(function() {
+    $('.gallery-link').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: true,
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true,
+            titleSrc: function(item) {
+                let heading = item.el.find('.fig_heading').text();
+                let description = item.el.find('.fig_para').text();
+                return `<strong>${heading}</strong><br>${description}`;
+            }
+        },
+        zoom: {
+            enabled: true
+        },
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true
+        }
+    });
+});
+// END portfolio
+
+
+
+
+
 
 
