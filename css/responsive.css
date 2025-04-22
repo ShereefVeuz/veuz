@@ -1659,6 +1659,7 @@
     }
     .banner_video {
         height: 35vh;
+        width: 100%;
     }
     .banner_circle_content {
         top: 35%;
@@ -1678,6 +1679,7 @@
     .banner_text {
         top: 30%;
         width: 90%;
+        margin-top: 50px;
     }
     .banner_text_in_cont span {
         font-size: 35px;
