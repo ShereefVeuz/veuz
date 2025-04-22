@@ -3219,6 +3219,8 @@ video::-webkit-media-controls-enclosure {
     flex-direction: column;
 }
 
+.ft-subscribe-out-mobile{display: none;}
+
 .copy-right-sec {
     margin-top: auto;
 }
@@ -3386,16 +3388,18 @@ video::-webkit-media-controls-enclosure {
     rotate: 47deg;
 }
 
-.copy-right-sec .policy {
+.copy-right-sec-mobile{display: none;}
+.policy {
     display: flex;
     gap: 20px;
 }
 
-.copy-right-sec .policy h5 a {
+.policy h5 a {
     font-weight: 400;
     font-size: 16px;
     color: #606060;
 }
+
 
 /* ----------------------------------------
               END footer 

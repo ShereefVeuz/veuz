@@ -98,6 +98,7 @@
     }
     .banner_video {
         height: 80vh;
+        padding-left: 50px;
     }
     .banner_text_in_cont span {
         font-size: 60px;
@@ -2103,6 +2104,12 @@
     }
 
     /* service details page */
+    .service-roundicon {
+        display: none;
+    }
+    .vid_service {
+        display: none;
+    }
     .left-srvdtls-shape-out {
         display: none;
     }
@@ -2182,9 +2189,6 @@
         line-height: 25px;
         text-align: center;
     }
-    .ft-mail-out h6 {
-        text-align: center;
-    }
     .footer .page-links ul li a {
         font-size: 14px;
     }
@@ -2207,6 +2211,26 @@
     }
     .social-links-footer ul {
         justify-content: center;
+    }
+
+    .ft-subscribe-out-mobile{display: block;}
+    .ft-subscribe-out{display: none;}
+    .subscribe-form {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .ft-mail-out {
+        display: flex;
+    }
+    .ft-mail-out h6 {
+        text-align: left;
+    }
+
+    .copy-right-sec{display: none;}
+    .copy-right-sec-mobile{display: block;}
+    .policy {
+        justify-content: center;
+        padding-bottom: 20px;
     }
 
     
