@@ -1,3 +1,14 @@
+
+@media screen and (max-width: 1800px) {
+    .abt-f1 h2 {
+        font-size: 400px;
+    }
+    .video-element {
+        max-height: 1000px;
+    }
+
+}
+
 @media screen and (max-width: 1700px) {
     .banner-rotate-text2 {
         bottom: 28%;
@@ -45,6 +56,67 @@
 }
 
 @media screen and (max-width: 1500px) {
+    /* menu */
+    .menu-link-outr-first {
+        min-width: 23%;
+    }
+    .ham-menu-links {
+        padding-right: 5px;
+    }
+
+    #nav-main .menu-link-outr-first a {
+        font-size: 40px;
+        line-height: 75px;
+    }
+
+    .ham-menu-links {
+        padding-right: 15px;
+    }
+
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+
+    .ham-menu-links .cta-button .btn {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+
+    .ham-menu-links .cta-button .text {
+        font-size: 22px;
+    }
+
+    .ham-menu-links .cta-button .btn {
+        font-size: 18px;
+        padding: 12px 22px !important;
+    }
+
+    /* banner */
+    .banner_center_img {
+        top: 50%;
+    }
+    .banner_video {
+        height: 80vh;
+    }
+    .banner_text_in_cont span {
+        font-size: 60px;
+        line-height: 60px;
+        top: -140px;
+    }
+    .banner_text p {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    .veuz-about-banner-cont h2 {
+        font-size: 6vw;
+    }
+    .about-banner-video {
+        top: 58%;
+        width: 45vw;
+        height: 40vw;
+    }
     .icon-6 {
         right: 60px;
     }
@@ -53,7 +125,7 @@
     }
 
     .circuit-bottom-left {
-        top: 34%;
+        top: 58%;
         left: 32%;
     }
     .circuit-top-left {
@@ -102,28 +174,39 @@
         bottom: 23%;
     }
 
-    .banner_text_in_cont span {
-        font-size: 60px;
-        line-height: 60px;
-        top: -140px;
-    }
-    .banner_text p {
-        font-size: 20px;
-        padding: 0 50px;
-    }
+    /* .ham-menu-container .dropdown .ham-menu-links {
+        padding-left: 20px;
+    } */
 
     #nav-main a {
         font-size: 40px;
         line-height: 70px;
     }
 
-    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+    /* .ham-menu-container .dropdown .ham-menu-links .menu_link {
         font-size: 30px !important;
         line-height: 30px !important;
+    } */
+
+    /* .ham-menu-links .cta-button .text {
+        font-size: 25px;
+    } */
+
+    /* #nav-main .menu-link-outr-first a {
+        font-size: 40px;
+        line-height: 65px;
+    } */
+
+    .menu-contact-dtls .right-footer-content .cta-button {
+        width: 100%;
     }
 
-    .ham-menu-links .cta-button .text {
-        font-size: 25px;
+    .menu-contact-dtls .social-links-footer {
+        margin-top: 35px;
+    }
+
+    .menu-contact-dtls .social-links-footer ul li a {
+        line-height: initial !important;
     }
 
     .left-hm-software h2 {
@@ -180,10 +263,10 @@
 
     /* about */
     .veuz-about-banner-cont h2 {
-        font-size: 8rem;
+        font-size: 5rem;
     }
     .circuit-bottom-left {
-        top: 31%;
+        /* top: 31%; */
         left: 32%;
     }
 
@@ -200,6 +283,12 @@
     /* services */
     .service_footer_item_cont h2 br {
         display: none;
+    }
+    .wheel_content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limits the text to 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     /* service details */
@@ -228,9 +317,23 @@
         line-height: 30px;
     }
 
+    /* careers */
+    .modal-main-input {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
+    .banner_video {
+        height: 70vh;
+    }
+    /* nav */
+    #nav-main .menu-link-outr-first a {
+        font-size: 35px;
+    }
+
     .banner-rotate-text-out h4{
         font-size: 20px;
     }
@@ -241,21 +344,28 @@
         font-size: 36px;
         line-height: 75px;
     }
-    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+    /* .ham-menu-container .dropdown .ham-menu-links .menu_link {
         font-size: 30px !important;
         line-height: 35px !important;
         margin-top: 15px;
-    }
+    } */
 
     .clients h2 {
         font-size: 30px;
     }
-    .clients .owl-carousel .item{
+    /* .clients .owl-carousel .item{
         width: 55%;
-    }
+    } */
     .abt-f1 h2 {
-        font-size: 15rem;
+        font-size: 22vw;
     }
+    .video-element {
+        margin-top: 0px;
+    }
+    .about-zoom-sec .abt-f1-cont-out {
+        margin-top: -100px;
+    }
+    
     .left-hm-software h2 {
         font-size: 40px;
         line-height: 45px;
@@ -325,8 +435,24 @@
     }
 
     /* about */
+    .veuz-about-banner-cont p br {
+        display: none;
+    }
+    .about_counter_item h2 {
+        font-size: 80px;
+    }
+    .circuit-top-left{
+        width: 200px;
+    }
     .circuit-bottom-left {
+        top: 57%;
         left: 30%;
+    }
+    .circuit-top-right {
+        height: 120px;
+    }
+    .circuit-bottom-right {
+        height: 120px;
     }
     .veuz_about_counter .text-info2 {
         left: 32%;
@@ -415,12 +541,22 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .banner_video {
+        height: 65vh;
+    }
     .banner-rotate-text3 {
         top: 20%;
     }
     .banner-rotate-text2 {
         right: 120px;
         bottom: 22%;
+    }
+    .banner_center_img {
+        top: 45%;
+    }
+    .banner_text {
+        position: absolute;
+        top: 52%;
     }
     .banner_text_in_cont span {
         font-size: 50px;
@@ -432,9 +568,9 @@
         line-height: 23px;
         margin-top: 10px;
     }
-    .banner_circle_content svg {
+    /* .banner_circle_content svg {
         margin-top: 10%;
-    }
+    } */
     .icon-6 {
         right: -25px;
     }
@@ -456,6 +592,31 @@
     .icon-7 {
         left: 190px;
     }
+    .circuit-bottom-left {
+        top: 57%;
+    }
+
+    /* common */
+    .get-heading {
+        font-size: 35px;
+    }
+    /* common */
+
+    .counter_item h1 {
+        font-size: 50px;
+    }
+    .counter_item span {
+        font-size: 50px;
+    }
+    .counter-cont p {
+        font-size: 18px;
+    }
+    .counter_wrapper {
+        padding: 15px 0px;
+    }
+    .counter_item {
+        padding: 15px 0;
+    }
 
     /* about */
     .common_space {
@@ -471,6 +632,9 @@
         font-size: 60px;
         line-height: 50px;
         margin-bottom: 20px;
+    }
+    .veuz-about-banner-cont h2 {
+        font-size: 5rem;
     }
     .about-veuz-content p {
         font-size: 50px;
@@ -515,6 +679,30 @@
     .last-about-veuz p {
         font-size: 50px;
         line-height: 60px;
+    }
+    .veuz_about_counter {
+        padding: 80px 0 60px;
+    }
+    .veuz_about_counter {
+        height: 125vh;
+    }
+    .veuz_about_counter .text-info1 {
+        top: 16%;
+    }
+    .last-about-veuz p {
+        padding: 80px 20px;
+    }
+    /* .about-veuz {
+        display: block;
+    } */
+    .about-banner-video {
+        top: 50%;
+        right: 7%;
+        transform: translateY(-50%);
+        width: 50vw;
+        height: 50vw;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     /* career */
@@ -573,7 +761,7 @@
     }
     .service-dtls-tech-item-cont {
         height: 130px;
-        padding: 25px;
+        padding: 10px;
     }
 
     /* blog */
@@ -598,21 +786,69 @@
     .main-blog-in {
         padding-bottom: 30px;
     }
+
+    .menu-link-outr-first {
+        min-width: 20%;
+    }
+    .ham-menu-links {
+        padding-right: 15px;
+    }
+    #nav-main .menu-link-outr-first a {
+        font-size: 25px;
+        line-height: 55px;
+    }
+    .ham-menu-container .arrow {
+        font-size: 30px;
+    }
+
+    .ham-menu-container .dropdown .ham-menu-links {
+        padding-left: 20px;
+    }
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 22px !important;
+        line-height: 25px !important;
+        margin-top: 12px;
+    }
+    .ham-menu-links .cta-button .btn {
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+    .ham-menu-links .cta-button .text {
+        font-size: 20px;
+    }
  
 }
 
 @media screen and (max-width: 1100px) {
-    .veuz-about-banner-cont h2 {
-        font-size: 6rem;
+    /* nav top */
+    .nav-dropdown-items-out {
+        height: 70%;
+        overflow-y: scroll;
+        padding: 0 15px;
+    }
+    .nav-dropdown-items-out .nav-dropdown-items {
+        width: 50%;
+    }
+    .nav-dropdown-items-out .nav-dropdown-items {
+        padding: 0;
+    }
+    .menu-link-outr-first {
+        min-width: 26%;
+    }
+    .ham-menu-links {
+        padding-right: 12px;
+    }
+
+    .about-veuz-content p {
+        font-size: 40px;
+        line-height: 55px;
     }
     .circuit-bottom-left {
-        top: 29.5%;
+        top: 59%;
+        left: 20%;
     }
     .veuz-about-banner-cont p {
         width: 85%;
-    }
-    .circuit-bottom-left {
-        left: 22%;
     }
     .veuz-about-tech-content h2 {
         font-size: 50px;
@@ -622,6 +858,7 @@
     .veuz_about_counter .text-info3 {
         right: 27%;
     }
+    
 
     /* services */
     .service_icon_item {
@@ -632,6 +869,24 @@
 }
 
 @media screen and (max-width: 1000px) {
+    /* home banner */
+    .banner_text {
+        width: 80%;
+    }
+
+    .circuit-top-left {
+        width: 100px;
+    }
+    .circuit-bottom-left {
+        width: 60px;
+        left: 24%;
+    }
+    .circuit-top-right {
+        height: 100px;
+    }
+    .circuit-bottom-right {
+        height: 100px;
+    }
     .veuz_about_counter .text-info2 {
         left: 26%;
     }
@@ -639,9 +894,53 @@
         right: 23%;
     }
 
+    /* services */
+    .wheel__card .icons-out {
+        width: 65px;
+    }
+    .wheel__card{
+        padding: 50px 20px;
+    }
+    .wheel__card {
+        max-width: 350px;
+    }
+    
+
 }
 
 @media screen and (max-width: 992px) {
+    /* home banner */
+    .banner_video {
+        height: 60vh;
+    }
+    .banner_circle .banner_content{
+        display: none;
+    }
+    .banner-text-mobile{
+        display: block;
+    }
+    .banner_text {
+        top: 38%;
+        width: 60%;
+    }
+    .banner_circle_content {
+        top: 33%;
+    }
+    .banner_text_in_cont span {
+        font-weight: 600;
+    }
+    .banner-rotate-text-out h4 {
+        font-size: 18px;
+    }
+    .banner_text p {
+        font-size: 20px;
+        padding: 0 0px;
+    }
+    .banner_center_img {
+        top: 70%;
+        /* width: 37%; */
+    }
+
     /* common */
     .logo-svg svg{
         width: 100px;
@@ -658,16 +957,53 @@
     .left-footer-content img {
         width: 100px;
     }
-    .ham-menu-container .dropdown .ham-menu-links {
+
+    /* .ham-menu-container .dropdown .ham-menu-links {
+        padding-left: 0px;
+    } */
+    /* .ham-menu-container .dropdown .ham-menu-links {
         padding-left: 20px;
-    }
-    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+    } */
+    /* .ham-menu-container .dropdown .ham-menu-links .menu_link {
         font-size: 20px !important;
         line-height: 25px !important;
         margin-top: 10px;
-    }
+    } */
     .veuz-common-banner-cont h2 {
+        font-size: 50px;
         line-height: 55px;
+    }
+    .veuz-common-banner-cont p {
+        font-size: 18px;
+        line-height: 25px;
+        width: 100%;
+        margin: 8px auto 0 auto;
+    }
+
+    .hc-icon-circle01 {display: none;}
+    .hc-icon-line01{display: none;}
+    .left-hc-section {
+        text-align: center;
+    }
+    .hc-flip-video {
+        width: 65%;
+    }
+    .hm-software {
+        padding-bottom: 0;
+    }
+
+    /* about */
+    .clients h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .clients .owl-carousel .item {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .right-abt-f1 .content p {
+        font-size: 25px;
+        line-height: 35px;
     }
 
     /* navbar */
@@ -681,9 +1017,9 @@
     .ham-menu-container .arrow {
         font-size: 30px;
     }
-    .ham-menu-links .cta-button .text {
+    /* .ham-menu-links .cta-button .text {
         font-size: 18px;
-    }
+    } */
 
     .left-contact {
         padding: 0 60px;
@@ -712,23 +1048,22 @@
     .social-links-footer ul{
         margin-top: 20px !important;
     }
-    .loc-bahrain-cont, .loc-banglore-cont, .loc-uae-cont, .loc-saudi-cont, .loc-kerala-cont {
+    /* .loc-bahrain-cont, .loc-banglore-cont, .loc-uae-cont, .loc-saudi-cont, .loc-kerala-cont {
         width: 65px;
         height: 60px;
-    }
+    } */
     .hexagon1, .hexagon2, .hexagon3, .hexagon4, .hexagon5 {
-        width: 12px;
+        width: 13px;
         height: 14px;
     }
     .loc-bahrain {
-        margin-left: -1px;
-        margin-top: -4px;
-    }
-    .loc-saudi {
-        margin-left: -6px;
-        margin-top: -7px;
+        top: 38%;
     }
     .loc-uae {
+        margin-left: -5px;
+        margin-top: -5px;
+    }
+    .loc-saudi {
         margin-left: -5px;
         margin-top: -6px;
     }
@@ -746,9 +1081,80 @@
     .loc-uae-cont h6, 
     .loc-saudi-cont h6, 
     .loc-kerala-cont h6{
-        font-size: 12px;
+        font-size: 13px;
         word-break: break-all;
     }
+
+    .loc-bahrain-cont, .loc-banglore-cont, .loc-uae-cont, .loc-saudi-cont, .loc-kerala-cont {
+        width: 120px;
+    }
+    .loc-bahrain-cont h6, .loc-banglore-cont h6, .loc-uae-cont h6, .loc-saudi-cont h6, .loc-kerala-cont h6 {
+        padding: 10px 5px;
+    }
+    .loc-bahrain-cont p, .loc-banglore-cont p, .loc-uae-cont p, .loc-saudi-cont p, .loc-kerala-cont p{
+        display: none;
+    }
+
+    .loc-bahrain:hover + .loc-bahrain-cont,
+    .loc-banglore:hover + .loc-banglore-cont,
+    .loc-uae:hover + .loc-uae-cont,
+    .loc-saudi:hover + .loc-saudi-cont,
+    .loc-kerala:hover + .loc-kerala-cont{
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin-left: 0px;
+        border-radius: 8px;
+        text-align: initial;
+        background: transparent;
+    }
+    .loc-bahrain:hover + .loc-bahrain-cont h6,
+    .loc-banglore:hover + .loc-banglore-cont h6,
+    .loc-uae:hover + .loc-uae-cont h6,
+    .loc-saudi:hover + .loc-saudi-cont h6,
+    .loc-kerala:hover + .loc-kerala-cont h6 {
+        font-size: 16px;
+        padding: 10px 30px;
+        background: linear-gradient(to right, #00A4E4, #A3C644);
+    }
+
+    /* loaction details mobile */
+    .location-mobile-map-out .loc-mobile-out {
+        margin-bottom: 20px;
+    }
+    .location-mobile-map-out .loc-mobile{
+        background: linear-gradient(270deg, #9DCB3B, #6ABC7E, #26B2A6, #00ADBE, #00ABC7);
+        border-radius: 10px;
+        padding: 30px;
+        height: 100%;
+    }
+    .location-mobile-map-out .loc-mobile h6{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 0;
+    }
+    .location-mobile-map-out .loc-mobile p{
+        font-size: 14px;
+        color: white;
+        margin: 0;
+    }
+
+    .loc-uae-cont {
+        left: 43%;
+    }
+    .loc-bahrain-cont {
+        left: 38%;
+        top: 23%;
+    }
+    .loc-saudi-cont {
+        left: 30%;
+    }
+
+    .location-mobile-map-out { 
+        display: block;
+        padding-bottom: 50px;
+    }
+
 
     .offcanvas-body {
         width: 100%;
@@ -768,6 +1174,10 @@
         font-size: 35px;
         line-height: 40px;
     }
+    /* .wheel__card {
+        max-width: 300px;
+    } */
+
 
     .left-srvdtls-shape1{
         top: 32%;
@@ -785,6 +1195,69 @@
     }
     .service_dtls_footer_item {
         padding: 80px 50px;
+    }
+
+    .right-hm-software-out {
+        order: -1;
+        margin-bottom: 15px !important;
+    }
+
+    .right-hm-software-out .items-inner-icons {
+        display: none;
+    }
+
+    
+    .icon-container {
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .icon-container .icon {
+        height: 75px;
+        position: initial;
+        margin: 0 10px 10px;
+        width: 75px;
+        object-fit: contain;
+    }
+    .right-hm-software-bg {
+        display: none;
+    }
+    .left-home-software-out{
+        display: none;
+    }
+
+    .video-background {
+        max-width: 300px;
+    }
+    .scroll-input {
+        width: 60%;
+    }
+    .serv-heading h6 {
+        font-size: 18px;
+    }
+    .serv-heading h3 {
+        font-size: 50px;
+    }
+
+
+    .tech-left-cont h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item {
+        width: 150px;
+        height: 130px;
+        padding: 15px;
+    }
+
+    /* project video */
+    .video-container {
+        height: 50vh;
+    }
+    .proj-video-cont-dtls h2 {
+        font-size: 50px;
+        line-height: 55px;
     }
 
     /* tech page */
@@ -820,9 +1293,165 @@
 
 }
 
+@media screen and (max-width: 800px) {
+    /* home banner */
+    .banner_center_img {
+        top: 72%;
+    }
+    .banner_video {
+        height: 50vh;
+    }
+    .banner_text p {
+        font-size: 16px;
+    }
+    .banner_circle_content {
+        top: 40%;
+    }
+    .banner-rotate-text3 {
+        top: 16%;
+        right: 20%;
+    }
+    .banner-rotate-text2 {
+        right: 55px;
+        bottom: 17%;
+    }
+    .banner-rotate-text1 {
+        bottom: 6%;
+    }
+    
+    .wheel__card {
+        max-width: 300px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    /* .nav-dropdown-items-out { 
+        padding: 0 20px;
+    } */
+    .ham-menu-container {
+        padding-top: 15%;
+    }
+    #nav-main .menu-link-outr-first a {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 18px !important;
+        line-height: 20px !important;
+        margin-top: 5px;
+    }
+    .ham-menu-links .cta-button .text {
+        font-size: 18px;
+    }
+    .cta-button .btn::before {
+        width: 35px;
+        height: 35px;
+        right: 8px;
+    }
+    .ham-menu-links .cta-button .btn {
+        font-size: 18px;
+        line-height: 23px !important;
+        padding: 8px 13px !important;
+    }
+    .cta-button .btn .text {
+        margin-right: 15px;
+    }
+
+    .abt-f1 h2 {
+        font-size: 20vw;
+    }
+    .right-abt-f1 .content p {
+        font-size: 20px;
+        line-height: 25px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .video-element {
+        max-height: 450px;
+    }
+
+    .counter_wrapper{
+        flex-wrap: wrap;
+        border-bottom: 0;
+        padding: 0;
+    }
+    .counter_item {
+        width: 50%;
+        border-bottom: 1px solid #abcd;
+    }
+
+
+    .circuit-line {
+        display: none;
+    }
+    .veuz-about-banner-cont h2 {
+        font-size: 50px;
+    }
+    .veuz-about-banner-cont p {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
     .footer-link-sec{
         margin-top: 30px !important;
+    }
+
+    /* common */
+    
+    /* END common */
+
+    .counter-outr {
+        padding: 60px 0 0;
+    }
+
+    /* about */
+    .about-veuz {
+        height: auto !important;
+    }
+    .about_banner_veuz {
+        height: 35vh;
+    }
+    .about-veuz-content h2 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+    .about-veuz-content p {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .veuz-about-tech-img {
+        width: 65%;
+        margin: 20px auto 0 auto;
+    }
+    .visio-content {
+        padding: 30px 0px;
+    }
+    .veuz_about_counter .text-info1 {
+        top: 20%;
+    }
+    .veuz_about_counter {
+        height: 100vh;
+    }
+    .about_counter_item h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .about_counter_item span {
+        font-size: 50px;
+    }
+    .veuz-about-tech-content {
+        padding-right: initial;
+    }
+    .last-about-veuz p {
+        padding: 50px 0px;
+    }
+
+    /* careers */
+    .left-career-heading h2 {
+        font-size: 35px;
+        line-height: 45px;
     }
 
     /* services */
@@ -878,6 +1507,24 @@
         font-size: 30px;
         line-height: 35px;
     }
+    .service-dtls-third-img {
+        height: 300px;
+    }
+    .right-service-dtls-third-cont {
+        padding: 15px;
+    }
+    .service-dtls-four-top h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .wheel__card {
+        max-width: 300px;
+    }
+
+    .cta-button .btn {
+        padding: 12px 13px !important;
+    }
 
     /* blog */
     .left-blog {
@@ -916,12 +1563,404 @@
 
 }
 
+@media screen and (max-width: 700px) {
+    /* .icon {
+        height: 75px;
+    } */
+    .banner_center_img {
+        top: 66%;
+    }
+    .banner-rotate-text2 {
+        right: 55px;
+    }
+    /* common */
+    #top-btn {
+        width: 30px;
+        height: 30px;
+        right: 25px;
+    }
+    .timeline {
+      margin: 50px auto;
+    }
+    .timeline::after {
+      left: 31px;
+    }
+    .timeline_cont {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+    .text-box {
+      font-size: 13px;
+    }
+    .right-timeline {
+      left: 0;
+    }
+    .left-timeline img {
+      left: 0px;
+    }
+    .right-timeline img {
+      left: 3px;
+    }
+    .timeline_cont .timeline_shape {
+        right: 0;
+        left: -11%;
+    }
+    .timeline::after {
+        left: 10px;
+    }
+    .left-timeline {
+        width: 90%;
+        padding: 10px 0px 10px 0 !important;
+        margin: 0 0 0 auto;
+    }
+    .right-timeline {
+        padding: 10px 0px 10px 0 !important;
+        width: 90%;
+        margin: 0 0 0 auto;
+    }
+    .timeline_cont .text-box {
+        padding: 30px;
+    }
+    .career_openings_items {
+        margin: auto;
+    }
+
+    .wheel__card {
+        max-width: 280px;
+    }
+
+    /* location map */
+    .location-map-img{
+        height: 50vh;
+    }
+    .location-map-img img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .hexagon1, .hexagon2, .hexagon3, .hexagon4, .hexagon5 {
+        width: 16px;
+        height: 18px;
+    }
+    .loc-bahrain,
+    .loc-uae,
+    .loc-saudi,
+    .loc-banglore,
+    .loc-kerala {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
+    /* home banner */
+    .banner_collumn {
+        height: 75vh;
+    }
+    .banner_video {
+        height: 35vh;
+    }
+    .banner_circle_content {
+        top: 35%;
+    }
+    .banner-rotate-text2 {
+        right: 17px; 
+        bottom: 13%;
+    }
+    .banner-rotate-text1 {
+        bottom: 0%;
+        left: 35px;
+    }
+    .banner-rotate-text3 {
+        top: 10%;
+        right: 14%;
+    }
+    .banner_text {
+        top: 30%;
+        width: 90%;
+    }
+    .banner_text_in_cont span {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .banner_text p {
+        font-size: 18px;
+        margin-top: -8px;
+    }
+    .banner_center_img {
+        top: 57%;
+        /* width: 40%; */
+    }
+    .banner-rotate-text-out h4 {
+        font-size: 16px;
+    }
+
+    .menu-link-outr-first {
+        min-width: 35%;
+    }
+    .nav-dropdown-items-out .nav-dropdown-items {
+        width: 100%;
+    }
+    .ham-menu-container {
+        padding-top: 20%;
+    }
+    #nav-main .menu-link-outr-first a {
+        font-size: 18px;
+    }
+    .menu-link-outr-first {
+        min-width: 40%;
+    }
+    .ham-menu-container .dropdown .ham-menu-links .menu_link {
+        font-size: 16px !important;
+    }
     /* common */
+    .common_space {
+        padding-top: 40px !important;
+    }
+    .get-heading {
+        font-size: 25px;
+    }
+    .modal-main-input{
+        padding: 30px;
+    }
+    .modal-main-input .input-group {
+        margin-top: 12px;
+    }
+    .offcanvas-body {
+        height: auto;
+    }
+    .modal-main-input .input-field {
+        padding: 12px;
+    }
+    .logo-svg svg {
+        width: 70px;
+    }
+    .menu-bars .ham {
+        width: 50px;
+    }
     .cta-button .btn {
         font-size: 16px;
     }
+    .btn-header a {
+        font-size: 12px;
+    }
+    .style_button3__wvXhd {
+        padding: 7px 10px !important;
+    }
+    .common_banner_veuz {
+        height: 30vh;
+    }
+
+    .right-abt-f1 .content p {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .icon-container .icon {
+        height: 60px;
+        margin: 0 7px 7px;
+        width: 60px;
+    }
+
+    .left-hm-software {
+        text-align: center;
+    }
+
+    .left-hm-software h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .left-hm-software p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 10px 0 20px;
+        text-align: center;
+    }
+
+
+    .counter_item h1 {
+        font-size: 35px;
+    }
+    .counter_item span {
+        font-size: 35px;
+    }
+    .counter-cont p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* about */
+    .hm-software {
+        padding: 40px 0;
+    }
+    .veuz-about-banner-cont h2 {
+        font-size: 40px;
+    }
+    .veuz-about-banner-cont {
+        width: 95%;
+    }
+    .veuz-gradient-bg {
+        top: -115%;
+    }
+    .about_banner_veuz {
+        height: 30vh;
+    }
+    .about-veuz-content h2 {
+        font-size: 30px;
+    }
+    .about-veuz-content p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .veuz-about-tech-content h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .veuz-about-heading h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .veuz-about-heading p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .last-about-veuz p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .about-banner-video {
+        width: 65vw;
+        height: 60vw;
+    }
+    .about-banner-video {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 77vw;
+        height: 50vw;
+        right: auto;
+        text-align: center;
+    }
+
+    .about-zoom-sec .abt-f1-cont-out {
+        margin-top: -60px;
+    }
+    .right-abt-f1 .content p {
+        width: 100%;
+    }
+    /* END about */
+
+    .anim-shadow {
+        padding: 80px 0 80px;
+    }
+
+    .right-hc-section {
+        text-align: center;
+    }
+
+    .right-hc-section h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .right-hc-section p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 10px 0 20px;
+        text-align: center;
+    }
+
+    .wheel__card {
+        padding: 25px 30px;
+        max-width: 350px;
+    }
+
+    .tech-left-cont {
+        padding: 0px 0 50px;
+        text-align: center;
+    }
+
+    .serv-heading h6 {
+        font-size: 16px;
+    }
+    .serv-heading h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .tech-left-cont h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .tech-left-cont p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .video-background {
+        max-width: 230px;
+    }
+    .scroll-input {
+        width: 80%;
+    }
+    .scroll-input {
+        margin: 5px auto 0;
+    }
+    .serv-carousel .owl-stage-outer {
+        padding: 100px 0 0px;
+    }
+
+    /* chrome rage round */
+    #customSlider::-moz-range-thumb {
+        background: #fff;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 8px solid #dbdbdb;
+        cursor: pointer;
+    }
+    .scroll-input input[type="range"] {
+        height: 5px;
+    }
+    /* END chrome rage round */
+    .service-roundicon {
+        bottom: 175px;
+        height: 300px;
+    }
+    .service-roundicon svg{
+        width: 300px;
+    }
+
+    .tech_page_frontend .item {
+        height: 150px;
+    }
+
+    .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item {
+        width: 100%;
+    }
+    /* technology */
+
+    /* home video */
+    .proj-video-cont-dtls {
+        width: 90%;
+    }
+    .proj-video-cont-dtls h2 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .clients {
+        padding-top: 0px !important;
+    }
+
+    .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item{
+        height: 80px;
+    }
+    
+
 
     /* contact page */
     .contact-address {
@@ -945,8 +1984,13 @@
     }
 
     .veuz-common-banner-cont h2 {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .visio-content h2 {
+        font-size: 30px;
+        line-height: 35px;
     }
 
     .left-contact-get-in {
@@ -1017,6 +2061,9 @@
         font-size: 30px;
         line-height: 40px;
     }
+    .left-service-heading h2 br {
+        display: none;
+    }
     .service_listing_all {
         margin-top: 30px !important;
     }
@@ -1039,6 +2086,19 @@
         line-height: 25px;
         margin: 15px auto;
     }
+    .service_icon_item h3 {
+        font-size: 20px;
+    }
+    .service_icon_item1, .service_icon_item2, .service_icon_item3, .service_icon_item4, .service_icon_item5, .service_icon_item6, .service_icon_item7 {
+        margin-bottom: 10px;
+    }
+    .service_icon_item {
+        padding: 12px 25px;
+    }
+    .service-page-in {
+        font-size: 16px;
+        padding: 6px 30px;
+    }
 
     /* service details page */
     .left-srvdtls-shape-out {
@@ -1054,6 +2114,25 @@
     .service_dtls_footer_item {
         padding: 40px 30px;
     }
+    .service-dtls-page-in {
+        font-size: 18px;
+        padding: 6px 20px;
+        width: 100%;
+        text-align: center;
+    }
+    /* .service-dtls-first-dtls h4 {
+        font-size: 20px;
+    } */
+    .service-dtls-second-dtls-item {
+        display: block;
+    }
+    .right-service-dtls-second-dtls {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .left-service-dtls-second-dtls {
+        width: 70px;
+    }
 
     /* blog */
     .single-related-article-bg {
@@ -1064,6 +2143,153 @@
     .mfp-gallery .mfp-content {
         max-width: 70% !important;
     }
+
+    /* career */
+    .career-page_openings {
+        padding-bottom: 50px;
+    }
+    .modal-main-input .cta-button {
+        margin-top: 20px !important;
+    }
+
+
+    .loc-bahrain-cont {
+        left: 30%;
+        top: 27%;
+    }
+    .loc-saudi-cont {
+        left: 22%;
+    }
+    .loc-uae-cont {
+        left: 38%;
+    }
+
+    .tech-right-cont {
+        padding: 40px 0;
+    }
+    .tech-owl2 {
+        margin-top: 10px;
+    }
+
+    /* contact */
+    .left-footer-content{
+        text-align: center;
+    }
+    .right-footer-content p {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .ft-mail-out h6 {
+        text-align: center;
+    }
+    .footer .page-links ul li a {
+        font-size: 14px;
+    }
+    .footer .page-links ul li {
+        line-height: 25px;
+    }
+    .ft-subscribe h5 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .subscribe-form .custom-form {
+        font-size: 14px !important;
+        padding: 13px 20px;
+    }
+    .subscribe-form .cta-button .move-btn {
+        width: 38px;
+        height: 38px;
+    }
+    .social-links-footer ul {
+        justify-content: center;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .banner-rotate-text-out h4 {
+        font-size: 13px;
+    }
+    .banner_center_img {
+        top: 53%;
+        /* width: 37%; */
+    }
+    .veuz_about_counter {
+        height: 75vh;
+    }
+    .banner_video {
+        height: 28vh;
+    }
+
+    .about_counter_item h2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .about_counter_item span {
+        font-size: 35px;
+    }
+    .veuz_about_counter .text-info1 {
+        left: 45%;
+    }
+    .veuz_about_counter .text-info2 {
+        left: 22%;
+    }
+    .veuz_about_counter .text-info3 {
+        right: 20%;
+    }
+
+    /* common form */
+
+    .left-hm-software .icon {
+        height: 60px;
+    }
+    
+
+    /* career */
+    .left_timeline_head_out {
+        display: block;
+    }
+    .left_timeline_head {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .job-card {
+        display: block;
+    }
+    .job-card-icon{
+        margin-bottom: 10px;
+    }
+    .job-info {
+        margin-left: auto;
+    }
+    .career_openings_all {
+        margin-top: 30px !important;
+    }
+    .job-info h3 {
+        font-size: 20px;
+    }
+    .left-career-heading h2 {
+        font-size: 30px;
+    }
+
+    .wheel__card {
+        max-width: 100%;
+    }
+
+    .loc-saudi-cont {
+        left: 13%;
+    }
+    .loc-uae-cont {
+        left: 35%;
+    }
+    .loc-bahrain-cont {
+        left: 24%;
+    }
 }
 
 
@@ -1073,8 +2299,59 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .banner_video {
+        height: 28vh;
+    }
+}
+
 
 @media screen and (max-width: 400px) {
+    .banner_collumn {
+        height: 80vh;
+    }
+    .banner_circle_content{
+        display: none;
+    }
+    .banner_center_img {
+        top: 55%;
+        /* width: 60%; */
+    }
+    .ham-menu-container {
+        padding-top: 25%;
+    }
+    /* about */
+    .about-zoom-sec .abt-f1-cont-out {
+        margin-top: -25px;
+    }
+    .about_counter_item h2 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .about_counter_item span {
+        font-size: 25px;
+    }
+    .veuz_about_counter .text-info1 {
+        top: 24%;
+    }
+    .veuz_about_counter .text-info3 {
+        top: 57%;
+    }
+    .veuz_about_counter .text-info2 {
+        top: 48%;
+        left: 20%;
+    }
+    .about-veuz-content p {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .last-about-veuz p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    /* END about */
+
     .service_listing_cont {
         display: grid;
     }
@@ -1105,6 +2382,8 @@
     .single-related-article-bg {
         height: 150px;
     }
+
+    
 
 }
 

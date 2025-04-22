@@ -81,7 +81,7 @@
 
                 <div class="menu-hamburger">
                     <div id="nav-main" class="hidden">
-                        <div class="container">
+                        <div class="width-container">
                             <div class="ham-menu-container">
                                 <div class="ham-menu-links menu-link-outr-first">
                                     <a href="index.html">Home</a>
@@ -109,9 +109,9 @@
                                 </div>
 
                                 <!-- services -->
-                                <div class="dropdown" id="services-dropdown">
+                                <div class="dropdown nav-dropdown-items-out no-lenis" id="services-dropdown">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-12 col-lg-4 nav-dropdown-items">
                                             <div class="ham-menu-links">
                                                 <a href="mobile-app-development.html" class="menu_link">Mobile app</a>
                                                 <a href="#" class="menu_link">Website</a>
@@ -123,7 +123,7 @@
                                                 <a href="#" class="menu_link">Microsoft 365</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-12 col-lg-4 nav-dropdown-items">
                                             <div class="ham-menu-links">
                                                 <a href="#" class="menu_link">Google workspace</a>
                                                 <a href="#" class="menu_link">Mange engine</a>
@@ -135,7 +135,7 @@
                                                 <a href="#" class="menu_link">Cyber Security</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-12 col-lg-4 nav-dropdown-items">
                                             <div class="ham-menu-links">
                                                 <a href="#" class="menu_link">Firewall Security</a>
                                                 <a href="#" class="menu_link">Digital Marketing</a>
@@ -159,9 +159,9 @@
                                 </div>
 
                                 <!-- products -->
-                                <div class="dropdown" id="products-dropdown">
+                                <div class="dropdown nav-dropdown-items-out no-lenis" id="products-dropdown">
                                     <div class="row">
-                                        <div class="col-md-6 col-lg-5">
+                                        <div class="col-md-12 col-lg-5 nav-dropdown-items">
                                             <div class="ham-menu-links">
                                                 <a href="manufacturing-ERP.html" class="menu_link">Manufacturing ERP</a>
                                                 <a href="#" class="menu_link">Event Management Software</a>
@@ -173,7 +173,7 @@
                                                 <a href="#" class="menu_link">School Management System</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-5">
+                                        <div class="col-md-12 col-lg-5 nav-dropdown-items">
                                             <div class="ham-menu-links">
                                                 <a href="#" class="menu_link">Library Management Software</a>
                                                 <a href="#" class="menu_link">Help Desk</a>
@@ -338,7 +338,7 @@
                 </div>
 
                 <div class="btn-header">
-                    <a href="#" class="style_button3__wvXhd">
+                    <a href="#" class="style_button3__wvXhd"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarReq" aria-controls="offcanvasNavbarReq">
                         <p class="style_primary__mp_xd">Request a Quote</p>
                         <div class="style_secondary__peFsR">
                             <p>Request a Quote</p>
@@ -349,6 +349,77 @@
 
             </div>
         </div>
+
+        <!-- header contact popup -->
+        <div class="popup-form-outr">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarReq" aria-labelledby="offcanvasNavbarLabel">
+                <div class="container">
+                    <div class="offcanvas-body">
+                        <div class="modal-main-input">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <h3 class="get-heading">Request a Quate</h3>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input placeholder="Enter Your Name" class="input-field" type="name">
+                                        <label for="input-field" class="input-label">Enter Your Name</label>
+                                        <span class="input-highlight"></span>
+                                    </div>                              
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input placeholder="Enter Your Email" class="input-field" type="email">
+                                        <label for="input-field" class="input-label">Enter Your Email</label>
+                                        <span class="input-highlight"></span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="input-group">
+                                        <!-- <label for="phone">Mobile <span>*</span></label> -->
+                                        <input type="hidden" value="+966" name="country_code" id="country_code" />
+                                        <input type="hidden" value="sa" name="country_initial" id="country_initial" />
+                                        <input type="text" name="mobile" placeholder="Mobile Number" id="mobile_code"
+                                          style="padding-left: 85px"
+                                          class="input-field"
+                                          onkeypress="return /[0-9]/i.test(event.key)"
+                                          value="" required />
+                                        <!-- {{user.mobile|default_if_none:''}} -->
+                                        <span class="error mobile_error" style="color: red"></span>
+                                      </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input placeholder="Enquired Service / Product" class="input-field" type="text">
+                                        <label for="input-field" class="input-label">Enquired Service / Product</label>
+                                        <span class="input-highlight"></span>
+                                    </div>                              
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-group">
+                                    <textarea placeholder="Message" class="input-field" rows="4"></textarea>
+                                    <label for="input-field" class="input-label">Message</label>
+                                    <span class="input-highlight"></span>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex mt-md-5 mt-sm-2">
+                                <div class="cta-button">
+                                    <a class="btn" href="#">
+                                        <span class="text">Submit </span>
+                                        <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </div>
+                                <!-- <button type="button" class="get-in-tch"><span class="text">Submit</span><span>Thanks!</span></button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- END header contact popup -->
     </header>
 
     <!-- main banner collum -->
@@ -369,56 +440,56 @@
 
                 <!-- <div class="parallax-wrapper"></div> -->
                 <article class='gallery'>
-                    <a class='gallery-link' href='https://unsplash.it/1400/1200?image=1081'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-01.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1200' src='https://unsplash.it/1400/1200?image=1081' width='1400'>
+                        <img height='1200' src='images/portfolio/portfolio-01.jpg' width='1400'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1000/1200?image=1014'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-02.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1200' src='https://unsplash.it/1000/1200?image=1014' width='1000'>
+                        <img height='1200' src='images/portfolio/portfolio-02.jpg' width='1000'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1600/1000?image=267'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-03.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1000' src='https://unsplash.it/1600/1000?image=267' width='1600'>
+                        <img height='1000' src='images/portfolio/portfolio-03.jpg' width='1600'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1000/1600?image=266'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-04.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1600' src='https://unsplash.it/1000/1600?image=266' width='1000'>
+                        <img height='1600' src='images/portfolio/portfolio-04.jpg' width='1000'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1600/1200?image=634'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-05.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1200' src='https://unsplash.it/1600/1200?image=634' width='1600'>
+                        <img height='1200' src='images/portfolio/portfolio-05.jpg' width='1600'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1000/1600?image=923'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-06.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1600' src='https://unsplash.it/1000/1600?image=923' width='1000'>
+                        <img height='1600' src='images/portfolio/portfolio-06.jpg' width='1000'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1400/1600?image=682'>
+                    <a class='gallery-link' href='images/portfolio/portfolio-07.jpg'>
                       <figure class='gallery-image'>
-                        <img height='1600' src='https://unsplash.it/1400/1600?image=682' width='1400'>
+                        <img height='1600' src='images/portfolio/portfolio-07.jpg' width='1400'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
                     </a>
-                    <a class='gallery-link' href='https://unsplash.it/1600/1600?image=173'>
+                    <!-- <a class='gallery-link' href='https://unsplash.it/1600/1600?image=173'>
                       <figure class='gallery-image'>
                         <img height='1000' src='https://unsplash.it/1600/1600?image=173' width='1000'>
                         <figcaption class="fig_heading">Photo caption</figcaption>
@@ -431,7 +502,7 @@
                         <figcaption class="fig_heading">Photo caption</figcaption>
                         <figcaption class="fig_para">Photo caption</figcaption>
                       </figure>
-                    </a>
+                    </a> -->
                 </article>
 
 

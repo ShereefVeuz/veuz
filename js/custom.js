@@ -287,43 +287,87 @@ $(function () {
 /// about scroll section start
 //
 document.addEventListener('DOMContentLoaded', () => {
-    const splitTypes = document.querySelectorAll('.reveal-type');
-    splitTypes.forEach((char) => {
-        const bg = char.dataset.bgColor;
-        const fg = char.dataset.fgColor;
+    // const splitTypes = document.querySelectorAll('.reveal-type');
+    // splitTypes.forEach((char) => {
+    //     const bg = char.dataset.bgColor;
+    //     const fg = char.dataset.fgColor;
 
-        const text = new SplitType(char, {
-            types: 'chars'
-        });
+    //     const text = new SplitType(char, {
+    //         types: 'chars'
+    //     });
 
-        const tlText = gsap.timeline({
-            scrollTrigger: {
-                trigger: char,
-                start: 'center center',
-                end: '+=500',
-                scrub: 0.5,
-                pin: true,
-                pinSpacing: false,
-                markers: false
-            }
-        });
+    //     const tlText = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: char,
+    //             start: 'center center',
+    //             end: '+=500',
+    //             scrub: 0.5,
+    //             pin: true,
+    //             pinSpacing: false,
+    //             markers: false
+    //         }
+    //     });
 
-        tlText.fromTo(
-                text.chars, {
-                    color: bg
-                }, {
-                    color: fg,
-                    duration: 0.3,
-                    stagger: 0.05,
-                    ease: 'power2.out'
-                }
-            )
-            .to(char, {
-                opacity: 0,
-                duration: 0.5,
-                ease: 'power2.in'
-            });
+    //     tlText.fromTo(
+    //             text.chars, {
+    //                 color: bg
+    //             }, {
+    //                 color: fg,
+    //                 duration: 0.3,
+    //                 stagger: 0.05,
+    //                 ease: 'power2.out'
+    //             }
+    //         )
+    //         .to(char, {
+    //             opacity: 0,
+    //             duration: 0.5,
+    //             ease: 'power2.in'
+    //         });
+    // });
+
+
+    
+    const revealCarousels = document.querySelectorAll('.client-reveal-type');
+    revealCarousels.forEach((section, index) => {
+    const heading = section.querySelector('h2');
+    const clientcarousel = section.querySelector('.clients .owl-carousel');
+    const tl = gsap.timeline({
+        scrollTrigger: {
+        trigger: section,
+        start: 'center center',
+        end: '+=500',
+        scrub: 0.5,
+        pin: true,
+        pinSpacing: false,
+        markers: false
+        }
     });
+
+    tl.fromTo(heading, {
+        opacity: 1,
+        y: 0
+    }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out'
+    })
+    .fromTo(clientcarousel, {
+        opacity: 1,
+        y: 0
+    }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out'
+    }, '-=0.5')
+    .to(section, {
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power2.inOut'
+    });
+    });
+
 
     // About Zoom Section Animation
     const sections = document.querySelectorAll('.abt-f1');
@@ -374,17 +418,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }, {
                 opacity: 1,
                 scale: 1,
-                duration: 1,
+                duration: 4,
                 ease: 'power3.out'
-            }, '-=0.5')
+            }, '-=0.8')
             .fromTo(splitParagraph.words, {
                 opacity: 0,
                 y: 30
             }, {
                 opacity: 1,
                 y: 0,
-                stagger: 0.05,
-                duration: 1,
+                delay: 2,
+                stagger: 0.2,
+                duration: 4,
                 ease: 'power2.out'
             }, '-=0.5');
 
@@ -397,6 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 //
 /// END about scroll section 
 
@@ -906,7 +952,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from(".word", {
-        opacity: 0.05,
+        opacity: 0.4,
         y: 20,
         stagger: 0.1, // Adds delay between each word
         duration: 0.5,
@@ -1265,20 +1311,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // veuz contact us page
 //
-gsap.from(".contact-page", {
-    y: 300,
-    opacity: 0,
+
+// gsap.from(".contact-page", {
+//     y: 300,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power2.out",
+//     stagger: 0.3,
+//     scrollTrigger: {
+//         trigger: ".contact-page",
+//         start: "top 80%",
+//         toggleActions: "play none none reset",
+//     },
+// });
+
+gsap.from(".left-contact", {
     duration: 1,
-    ease: "power2.out",
+    x: -100,
+    opacity: 0,
     stagger: 0.3,
     scrollTrigger: {
-        trigger: ".contact-page",
-        start: "top 80%",
-        toggleActions: "play none none reset",
-    },
+        trigger: ".left-contact",
+        start: "top 90%",
+        end: "bottom 50%",
+        scrub: true,
+        markers: false,
+        toggleActions: "play reverse play reverse",
+    }
 });
+gsap.from(".right-contact", {
+    duration: 1,
+    x: 100,
+    opacity: 0,
+    stagger: 0.3,
+    scrollTrigger: {
+        trigger: ".right-contact",
+        start: "top 90%",
+        end: "bottom 50%",
+        scrub: true,
+        markers: false,
+        toggleActions: "play reverse play reverse",
+    }
+});
+
 //
 // END veuz contact us page
+
+
+
 
 // veuz contact us page address
 //

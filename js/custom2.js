@@ -11,16 +11,16 @@ $('.clients .owl-carousel').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
       0: {
-        items: 1
+        items: 3
       },
-      780: {
-        items: 2
+      500: {
+        items: 4
       },
       900: {
-        items: 2
+        items: 4
       },
       1000: {
-        items: 3
+        items: 4
       },
       1300: {
         items: 5
@@ -112,127 +112,254 @@ document.addEventListener("DOMContentLoaded", startCounting);
 /// service start here
 //
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     let owlCarouselserve = $(".serv-carousel .owl-carousel");
+//     let isScrolling = false;
+//     let totalImages = 21;
+
+//     const sliderserve = document.getElementById("customSlider");
+//     const output = document.getElementById("sliderValue");
+//     const logo = document.getElementById("logo");
+
+//     sliderserve.max = totalImages - 1;
+
+//     // Function to update image and slider
+//     function updateImageAndSlider(value) {
+//         let index = Math.floor(value);
+//         let newSrc = `images/services/logo-${index}.png`;
+
+//         if (logo.getAttribute("src") !== newSrc) {
+//             $(logo).fadeOut(50, function () {
+//                 $(this).attr("src", newSrc).fadeIn(50);
+//             });
+//         }
+
+//         let percent = (value / sliderserve.max) * 100;
+//         sliderserve.style.background = `linear-gradient(to right, #00bcd4 ${percent}%, #9b9b9bad ${percent}%)`;
+//     }
+
+//     // Function to move the carousel based on slider value
+//     function moveCarousel(value, prevValue) {
+//         if (isScrolling) return;
+//         isScrolling = true;
+
+//         if (value > prevValue) {
+//           owlCarouselserve.trigger("next.owl.carousel"); 
+//         } else if (value < prevValue) {
+//           owlCarouselserve.trigger("prev.owl.carousel"); 
+//         }
+
+//         setTimeout(() => {
+//             isScrolling = false;
+//         }, 300);
+//     }
+
+//     let prevSliderValue = 0;
+
+//     sliderserve.addEventListener("input", function () {
+//         let value = this.value;
+//         output.innerText = value;
+//         updateImageAndSlider(value);
+//         moveCarousel(value, prevSliderValue);
+//         prevSliderValue = value; 
+//     });
+
+//     // Handle window scroll to change images and carousel
+//     window.addEventListener("wheel", function (event) {
+//         let step = 1; 
+//         let value = Number(sliderserve.value);
+
+//         if (event.deltaY > 0) {
+//           sliderserve.value = Math.min(value + step, sliderserve.max);
+//         } else {
+//           sliderserve.value = Math.max(value - step, 0);
+//         }
+
+//         output.innerText = sliderserve.value;
+//         updateImageAndSlider(sliderserve.value);
+//         moveCarousel(sliderserve.value, value);
+//         prevSliderValue = sliderserve.value;
+//     });
+
+//     // Reset slider on page load
+//     document.addEventListener("DOMContentLoaded", function () {
+//       sliderserve.value = 0;
+//         output.innerText = 0;
+//         updateImageAndSlider(0);
+//     });
+
+//     $('.serv-carousel .owl-carousel').owlCarousel({
+//       stagePadding: 100,
+//       loop: true,
+//       margin: 10,
+//       nav: false,
+//       dots: false,
+//       items: 1,
+//       lazyLoad: true,
+//       center: true,
+//       autoplay: true,
+//       autoplayTimeout: 2000,
+//       autoplayHoverPause: true,
+//       responsive: {
+//           0: { items: 1, stagePadding: 60 },
+//           600: { items: 2, stagePadding: 100 },
+//           1000: { items: 2, stagePadding: 200 },
+//           1200: { items: 3, stagePadding: 200 },
+//           1400: { items: 3, stagePadding: 200 },
+//           1600: { items: 3, stagePadding: 200 },
+//           1800: { items: 3, stagePadding: 200 }
+//       },
+//       onInitialized: updateClasses,
+//       onTranslated: updateClasses
+//     });
+
+//     function updateClasses(event) {
+//       let items = $('.serv-carousel .owl-item');
+//       let centerItem = $('.serv-carousel .owl-item.active.center'); // Get the center item
+
+//       // Remove all previous active and cloned classes
+//       items.removeClass('active cloned');
+
+//       if (centerItem.length) {
+//           let centerIndex = centerItem.parent().children().index(centerItem);
+
+//           // Assign active to center, left of center, and right of center
+//           centerItem.addClass('active');
+//           centerItem.prev().addClass('active');
+//           centerItem.next().addClass('active');
+
+//           // Assign cloned to all other items
+//           items.not('.active').addClass('cloned');
+//       }
+//     }
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    let owlCarouselserve = $(".serv-carousel .owl-carousel");
-    let isScrolling = false;
-    let totalImages = 21;
+  const video = document.querySelector(".video-background");
+  const slider = document.getElementById("customSlider");
+  const output = document.getElementById("sliderValue");
+  const servowl = $(".serv-carousel .owl-carousel");
 
-    const sliderserve = document.getElementById("customSlider");
-    const output = document.getElementById("sliderValue");
-    const logo = document.getElementById("logo");
+  const maxFrames = 21;
+  let previousValue = 0;
+  let lastSliderUpdate = -1;
 
-    sliderserve.max = totalImages - 1;
+  slider.max = maxFrames - 1;
 
-    // Function to update image and slider
-    function updateImageAndSlider(value) {
-        let index = Math.floor(value);
-        let newSrc = `images/services/logo-${index}.png`;
+  // OwlCarousel setup
+  servowl.owlCarousel({
+    stagePadding: 100,
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    items: 1,
+    center: true,
+    lazyLoad: true,
+    autoplay: false,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1, stagePadding: 30 },
+      500: { items: 1, stagePadding: 100 },
+      600: { items: 2, stagePadding: 0 },
+      800: { items: 2, stagePadding: 30 },
+      1000: { items: 2, stagePadding: 200 },
+      1200: { items: 3, stagePadding: 200 },
+      1400: { items: 3, stagePadding: 200 },
+      1600: { items: 3, stagePadding: 200 },
+      1800: { items: 3, stagePadding: 200 },
+      2000: { items: 5, stagePadding: 200 }
+    },
+    onInitialized: updateClasses,
+    onTranslated: updateClasses
+  });
 
-        if (logo.getAttribute("src") !== newSrc) {
-            $(logo).fadeOut(50, function () {
-                $(this).attr("src", newSrc).fadeIn(50);
-            });
-        }
+  // Update center/side/clone class logic
+  function updateClasses() {
+    const items = $('.serv-carousel .owl-item');
+    const centerItem = $('.serv-carousel .owl-item.active.center');
 
-        let percent = (value / sliderserve.max) * 100;
-        sliderserve.style.background = `linear-gradient(to right, #00bcd4 ${percent}%, #9b9b9bad ${percent}%)`;
+    // Remove all previous custom classes
+    items.removeClass('active cloned');
+
+    if (centerItem.length) {
+      centerItem.addClass('active');
+      centerItem.prev('.owl-item').addClass('active');
+      centerItem.next('.owl-item').addClass('active');
+      items.not('.active').addClass('cloned');
     }
+  }
 
-    // Function to move the carousel based on slider value
-    function moveCarousel(value, prevValue) {
-        if (isScrolling) return;
-        isScrolling = true;
+  // Update slider background style
+  function updateSliderStyle(value) {
+    let percent = (value / slider.max) * 100;
+    slider.style.background = `linear-gradient(to right, #00bcd4 ${percent}%, #9b9b9bad ${percent}%)`;
+  }
 
-        if (value > prevValue) {
-          owlCarouselserve.trigger("next.owl.carousel"); 
-        } else if (value < prevValue) {
-          owlCarouselserve.trigger("prev.owl.carousel"); 
-        }
-
-        setTimeout(() => {
-            isScrolling = false;
-        }, 300);
+  // Move carousel based on slider value
+  function updateCarousel(value, prev) {
+    if (value > prev) {
+      servowl.trigger("next.owl.carousel");
+    } else if (value < prev) {
+      servowl.trigger("prev.owl.carousel");
     }
+  }
 
-    let prevSliderValue = 0;
+  // Manual slider input
+  slider.addEventListener("input", function () {
+    const value = parseInt(this.value);
+    output.innerText = value;
+    updateSliderStyle(value);
+    updateCarousel(value, previousValue);
+    previousValue = value;
 
-    sliderserve.addEventListener("input", function () {
-        let value = this.value;
+    if (video.duration) {
+      video.currentTime = (value / (maxFrames - 1)) * video.duration;
+    }
+  });
+
+  // GSAP ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.create({
+    trigger: ".service-banner",
+    start: "top top",
+    end: "+=3000",
+    pin: true,
+    scrub: true,
+    onUpdate: (self) => {
+      const progress = self.progress;
+      const value = Math.floor(progress * (maxFrames - 1));
+
+      if (value !== lastSliderUpdate) {
+        slider.value = value;
         output.innerText = value;
-        updateImageAndSlider(value);
-        moveCarousel(value, prevSliderValue);
-        prevSliderValue = value; 
-    });
+        updateSliderStyle(value);
+        updateCarousel(value, previousValue);
+        previousValue = value;
+        lastSliderUpdate = value;
 
-    // Handle window scroll to change images and carousel
-    window.addEventListener("wheel", function (event) {
-        let step = 1; 
-        let value = Number(sliderserve.value);
-
-        if (event.deltaY > 0) {
-          sliderserve.value = Math.min(value + step, sliderserve.max);
-        } else {
-          sliderserve.value = Math.max(value - step, 0);
+        if (video.duration) {
+          video.currentTime = progress * video.duration;
         }
-
-        output.innerText = sliderserve.value;
-        updateImageAndSlider(sliderserve.value);
-        moveCarousel(sliderserve.value, value);
-        prevSliderValue = sliderserve.value;
-    });
-
-    // Reset slider on page load
-    document.addEventListener("DOMContentLoaded", function () {
-      sliderserve.value = 0;
-        output.innerText = 0;
-        updateImageAndSlider(0);
-    });
-
-    $('.serv-carousel .owl-carousel').owlCarousel({
-      stagePadding: 100,
-      loop: true,
-      margin: 10,
-      nav: false,
-      dots: false,
-      items: 1,
-      lazyLoad: true,
-      center: true,
-      autoplay: true,
-      autoplayTimeout: 2000,
-      autoplayHoverPause: true,
-      responsive: {
-          0: { items: 1, stagePadding: 60 },
-          600: { items: 2, stagePadding: 100 },
-          1000: { items: 2, stagePadding: 200 },
-          1200: { items: 3, stagePadding: 200 },
-          1400: { items: 3, stagePadding: 200 },
-          1600: { items: 3, stagePadding: 200 },
-          1800: { items: 3, stagePadding: 200 }
-      },
-      onInitialized: updateClasses,
-      onTranslated: updateClasses
-    });
-
-    function updateClasses(event) {
-      let items = $('.serv-carousel .owl-item');
-      let centerItem = $('.serv-carousel .owl-item.active.center'); // Get the center item
-
-      // Remove all previous active and cloned classes
-      items.removeClass('active cloned');
-
-      if (centerItem.length) {
-          let centerIndex = centerItem.parent().children().index(centerItem);
-
-          // Assign active to center, left of center, and right of center
-          centerItem.addClass('active');
-          centerItem.prev().addClass('active');
-          centerItem.next().addClass('active');
-
-          // Assign cloned to all other items
-          items.not('.active').addClass('cloned');
       }
     }
+  });
+
+  // Refresh ScrollTrigger when video metadata is ready
+  video.addEventListener("loadedmetadata", () => {
+    ScrollTrigger.refresh();
+  });
+
+  // Initial setup
+  slider.value = 0;
+  output.innerText = 0;
+  updateSliderStyle(0);
 });
+
+
 
 // 
 /// END service here
@@ -249,13 +376,19 @@ $('.tech-owl1 .owl-carousel').owlCarousel({
     infinite: true,
     responsive: {
       0: {
-        items: 1
+        items: 4
       },
-      780: {
-        items: 2
+      450: {
+        items: 4.5
+      },
+      650: {
+        items: 4
+      },
+      768: {
+        items: 3
       },
       900: {
-        items: 2
+        items: 3
       },
       1000: {
         items: 3
@@ -277,13 +410,19 @@ $('.tech-owl1 .owl-carousel').owlCarousel({
     autoplayTimeout: 1500,
     responsive: {
       0: {
-        items: 1
+        items: 4, 
       },
-      780: {
-        items: 2
+      450: {
+        items: 4.5
+      },
+      650: {
+        items: 4
+      },
+      768: {
+        items: 3
       },
       900: {
-        items: 2
+        items: 3
       },
       1000: {
         items: 3
@@ -344,6 +483,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+// about start
+//
+
+
+
+//
+// END about
 
 // about count circle and line 
 //
@@ -743,7 +891,74 @@ $(document).ready(function() {
 // END portfolio
 
 
+// Lenis disabled
+const disableLenisSections = document.querySelectorAll('.no-lenis');
+ 
+disableLenisSections.forEach((section) => {
+  section.addEventListener('wheel', (e) => {
+    // console.log("scroll");
+    // alert();
+    lenis.stop();
+    
+    section.scrollTop += e.deltaY;
+    e.preventDefault();
+    setTimeout(() => lenis.start(), 100);
+  }, { passive: false });
+});
 
+
+// const disableLenisSections = document.querySelectorAll('.no-lenis');
+
+// disableLenisSections.forEach((section) => {
+//   section.addEventListener('wheel', (e) => {
+//     if (typeof lenis !== "undefined") {
+//       lenis.stop(); // stop smooth scroll
+      
+//       // manually scroll the section
+//       section.scrollTop += e.deltaY;
+      
+//       e.preventDefault();
+
+//       // restart lenis after next frame
+//       requestAnimationFrame(() => {
+//         lenis.start();
+//       });
+//     }
+//   }, { passive: false });
+// });
+
+
+
+
+
+
+
+
+
+
+// start video service
+// console.clear();
+
+// const video = document.querySelector(".video-background");
+// ScrollTrigger.create({
+//   trigger: ".vid_service",
+//   start: "top top",
+//   end: "+=3000",
+//   pin: true,
+//   scrub: true,
+//   onUpdate: self => {
+//     if (video.duration) {
+//       video.currentTime = self.progress * video.duration;
+//     }
+//   }
+// });
+
+// // Optional: handle video load
+// video.addEventListener("loadedmetadata", () => {
+//     ScrollTrigger.refresh();
+// });
+
+// END video service
 
 
 
