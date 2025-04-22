@@ -436,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isLastSection) {
             tlSection.to(section, {
                 opacity: 0,
-                duration: 0.8,
+                duration: 1.8,
                 ease: 'power2.inOut'
             });
         }
@@ -445,6 +445,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //
 /// END about scroll section 
+
 
 
 /// home software

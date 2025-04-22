@@ -98,7 +98,7 @@
     }
     .banner_video {
         height: 80vh;
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
     .banner_text_in_cont span {
         font-size: 60px;
@@ -1633,7 +1633,7 @@
 
     /* location map */
     .location-map-img{
-        height: 50vh;
+        height: 35vh;
     }
     .location-map-img img{
         height: 100%;
@@ -1649,6 +1649,10 @@
     .loc-banglore,
     .loc-kerala {
         display: none;
+    }
+
+    .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item {
+        width: 130px;
     }
 }
 
@@ -1756,7 +1760,7 @@
 
     .right-abt-f1 .content p {
         font-size: 14px;
-        line-height: 25px;
+        line-height: 20px;
         text-align: center;
     }
 
@@ -1960,7 +1964,7 @@
     }
 
     .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item{
-        height: 80px;
+        height: 90px;
     }
     
 
@@ -1987,7 +1991,7 @@
     }
 
     .veuz-common-banner-cont h2 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 35px;
     }
 
@@ -2181,6 +2185,9 @@
     }
 
     /* contact */
+    .footer {
+        padding: 50px 0 0px;
+    }
     .left-footer-content{
         text-align: center;
     }
@@ -2231,7 +2238,13 @@
     .policy {
         justify-content: center;
         padding-bottom: 20px;
+        gap: 6px;
     }
+    .policy h5 a {
+        font-size: 12px;
+    }
+
+    
 
     
 }
@@ -2316,6 +2329,35 @@
     .loc-bahrain-cont {
         left: 24%;
     }
+
+    .video-container {
+        height: 35vh;
+    }
+    .proj-video-cont-dtls h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item {
+        height: auto;
+    }
+
+    .location-mobile-map-out .loc-mobile {
+        padding: 15px;
+    }
+    .location-mobile-map-out .loc-mobile h6 {
+        font-size: 18px;
+    }
+    .location-mobile-map-out {
+        padding-bottom: 0px;
+    }
+    .ft-mail-out {
+        display: block;
+    }
+    .ft-mail-out h6 {
+        text-align: center;
+    }
+    
 }
 
 

@@ -376,7 +376,7 @@ $('.tech-owl1 .owl-carousel').owlCarousel({
     infinite: true,
     responsive: {
       0: {
-        items: 4
+        items: 3.6
       },
       450: {
         items: 4.5
@@ -410,7 +410,7 @@ $('.tech-owl1 .owl-carousel').owlCarousel({
     autoplayTimeout: 1500,
     responsive: {
       0: {
-        items: 4, 
+        items: 3.6
       },
       450: {
         items: 4.5
