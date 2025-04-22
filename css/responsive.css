@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 1800px) {
     .abt-f1 h2 {
-        font-size: 400px;
+        font-size: 300px;
     }
     .video-element {
         max-height: 1000px;
@@ -93,6 +93,9 @@
     }
 
     /* banner */
+    .video-element {
+        max-height: 700px;
+    }
     .banner_center_img {
         top: 50%;
     }
@@ -142,6 +145,10 @@
 
     .veuz-common-banner-cont h2 {
         line-height: 90px;
+    }
+
+    .veuz-about-tech {
+        margin-top: 0px;
     }
 
     /* service details */
@@ -1659,12 +1666,15 @@
 
 @media screen and (max-width: 600px) {
     /* home banner */
+    .banner_video_desk{display: none;}
+    .banner_video_mobile{display: block;}
+
     .banner_collumn {
         height: 75vh;
     }
     .banner_video {
         height: 35vh;
-        width: 100%;
+        /* width: 100%; */
     }
     .banner_circle_content {
         top: 35%;
@@ -1695,7 +1705,7 @@
         margin-top: -8px;
     }
     .banner_center_img {
-        top: 57%;
+        top: 60%;
         /* width: 40%; */
     }
     .banner-rotate-text-out h4 {
@@ -2376,7 +2386,7 @@
 
 @media screen and (max-width: 400px) {
     .banner_collumn {
-        height: 80vh;
+        height: 65vh;
     }
     .banner_circle_content{
         display: none;

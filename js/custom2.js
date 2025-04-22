@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const output = document.getElementById("sliderValue");
   const servowl = $(".serv-carousel .owl-carousel");
 
-  const maxFrames = 21;
+  const maxFrames = 8;
   let previousValue = 0;
   let lastSliderUpdate = -1;
 
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
     items: 1,
     center: true,
     lazyLoad: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsive: {

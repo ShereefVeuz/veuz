@@ -3032,10 +3032,11 @@ video::-webkit-media-controls-enclosure {
     position: relative;
     overflow: hidden;
 }
+.banner_video_mobile{display: none;}
 .banner_center_img {
     position: absolute;
     top: 53%;
-    /* width: 100%; */
+    width: 100%;
     z-index: 10;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -3043,6 +3044,7 @@ video::-webkit-media-controls-enclosure {
 .banner_video {
     rotate: -20deg;
     height: 90vh;
+    width: 100%;
 }
 
 .banner_center_img_in {
@@ -3496,6 +3498,7 @@ video::-webkit-media-controls-enclosure {
 .veuz-about-tech {
     position: relative;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 /* Circuit Lines */
@@ -3543,7 +3546,7 @@ video::-webkit-media-controls-enclosure {
     justify-content: center;
     /* padding: 100px 0 0; */
     background-color: #040404;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .about-veuz-content {
@@ -3554,7 +3557,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .about-veuz-content h2 {
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 500;
     line-height: 65px;
     /* color: white; */
@@ -3569,9 +3572,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 .about-veuz-content p {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
-    line-height: 70px;
+    line-height: 60px;
     color: white;
 }
 .about-veuz-content p span{
@@ -3710,9 +3713,9 @@ video::-webkit-media-controls-enclosure {
 
 /* last section about */
 .last-about-veuz p{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 400;
-    line-height: 80px;
+    line-height: 65px;
     padding: 80px 100px;
     text-align: initial;
     color: white;
