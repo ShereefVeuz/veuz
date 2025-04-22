@@ -3202,6 +3202,11 @@ video::-webkit-media-controls-enclosure {
 }
 /* END banner heading style */
 
+
+.vd-about-desktop-mobile{display: none;}
+.vd-about-laptop-mobile{display: none;}
+.vd-about-mobile-mobile{display: none;}
+
 /* ----------------------------------------
           END Main Banner
 ------------------------------------------ */

@@ -1675,6 +1675,7 @@
     .banner_video {
         height: 35vh;
         /* width: 100%; */
+        margin-top: 50px;
     }
     .banner_circle_content {
         top: 35%;
@@ -2254,6 +2255,15 @@
         font-size: 12px;
     }
 
+    .vd-about-desktop{display: none;}
+    .vd-about-desktop-mobile{display: block;}
+
+    .vd-about-laptop{display: none;}
+    .vd-about-laptop-mobile{display: block;}
+
+    .vd-about-mobile{display: none;}
+    .vd-about-mobile-mobile{display: block;}
+
     
 
     
@@ -2271,9 +2281,9 @@
     .veuz_about_counter {
         height: 75vh;
     }
-    .banner_video {
+    /* .banner_video {
         height: 28vh;
-    }
+    } */
 
     .about_counter_item h2 {
         font-size: 35px;
@@ -2377,16 +2387,16 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
     .banner_video {
         height: 28vh;
     }
-}
+} */
 
 
 @media screen and (max-width: 400px) {
     .banner_collumn {
-        height: 65vh;
+        height: 75vh;
     }
     .banner_circle_content{
         display: none;
