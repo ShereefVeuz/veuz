@@ -3884,6 +3884,7 @@ video::-webkit-media-controls-enclosure {
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .veuz-gradient-bg-common{

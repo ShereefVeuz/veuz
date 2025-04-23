@@ -776,6 +776,14 @@
         padding: 10px;
     }
 
+    .left-service-dtls-heading h2 br,
+    .service-dtls-first-heading h2 br,
+    .service-dtls-second-heading h2 br,
+    .service-dtls-third-heading h2 br,
+    .service-dtls-tech-heading h2 br {
+        display: none;
+    }
+
     /* blog */
     .left-blog {
         width: 30% !important;
@@ -1573,6 +1581,10 @@
         max-width: 50% !important;
     }
 
+    .veuz-gradient-bg {
+        top: -135%;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1682,7 +1694,7 @@
         margin-top: 50px;
     }
     .banner_circle_content {
-        top: 35%;
+        top: 40%;
     }
     .banner-rotate-text2 {
         right: 17px; 
@@ -2190,7 +2202,7 @@
         height: 70vh;
     }
     .service_dtls_footer_item {
-        padding: 40px 30px;
+        padding: 30px 15px;
     }
     .service-dtls-page-in {
         font-size: 18px;
@@ -2318,7 +2330,92 @@
     .vd-about-mobile{display: none;}
     .vd-about-mobile-mobile{display: block;}
 
-    
+    .left-service-dtls-heading h2, .service-dtls-first-heading h2, .service-dtls-second-heading h2, .service-dtls-tech-heading h2, .service-dtls-third-heading h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .right-service-dtls-second-dtls h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .right-service-dtls-second-dtls p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .right-service-dtls-third-cont {
+        padding: 0;
+    }
+
+    .right-service-dtls-third-cont .accordion-item h2 button {
+        font-size: 20px;
+    }
+    .right-service-dtls-third-cont .accordion-item .accordion-body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .right-service-dtls-third-cont .accordion .accordion-item {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .service-dtls-tech-item-out h5 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 15px !important;
+    }
+
+    .service-dtls-tech-item-cont {
+        height: 90px;
+    }
+    .service-dtls-four-top h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .right-service-dtls-four-cont {
+        height: 500px;
+        overflow-y: auto;
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .right-service-dtls-four-cont .accordion-item h2 button {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .right-service-dtls-four-cont .accordion-item .accordion-body {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .service_dtls_footer_item_cont h2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .service_dtls_footer_item_cont p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        width: 100%;
+    }
+    .service-dtls-first-dtls {
+        padding: 20px;
+    }
+    .service-dtls-first-dtls h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .service-dtls-first-dtls p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .left-service-dtls-heading p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
 
     
 }
@@ -2431,6 +2528,11 @@
     .ft-mail-out h6 {
         text-align: center;
     }
+
+    .banner_video {
+        height: 30vh;
+        margin-top: 100px;
+    }
     
 }
 
@@ -2449,6 +2551,9 @@
 
 
 @media screen and (max-width: 400px) {
+    .banner_video {
+        margin-top: 80px;
+    }
     .banner_collumn {
         height: 85vh;
     }
@@ -2525,7 +2630,9 @@
         height: 150px;
     }
 
-    
+    .banner_video {
+        height: 28vh;
+    }
 
 }
 
