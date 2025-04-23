@@ -1,3 +1,128 @@
+// start loader
+// const svg = document.getElementById('svg');
+// const tl = gsap.timeline({
+//   onComplete: () => {
+//     document.body.style.overflow = 'visible';
+//   },
+// });
+
+// const curve = 'M0 502S175 272 500 272s500 230 500 230V0H0Z';
+// const flat = 'M0 2S175 1 500 1s500 1 500 1V0H0Z';
+
+// tl.from('.loader-wrap-heading h1', {
+//   delay: 0.5,
+//   y: 200,
+//   skewY: 20,
+// }).to('.loader-wrap-heading h1', {
+//   delay: 0.5,
+//   y: -200,
+//   skewY: 20,
+// });
+// tl.to(svg, {
+//   duration: 0.8,
+//   attr: { d: curve },
+//   ease: 'power2.easeIn',
+// }).to(svg, {
+//   duration: 0.8,
+//   attr: { d: flat },
+//   ease: 'power2.easeOut',
+// });
+// tl.to('.loader-wrap', {
+//   y: -1500,
+// });
+// tl.to('.loader-wrap', {
+//   zIndex: -1,
+//   display: 'none',
+// });
+// tl.from(
+//   '.container',
+//   {
+//     y: 100,
+//     opacity: 0,
+//   },
+//   '-=1.5'
+// );
+
+// tl.from(
+//   'nav',
+//   {
+//     duration: 1,
+//     opacity: 0,
+//   },
+//   '-=1.2'
+// );
+
+
+
+
+
+
+window.scrollTo(0, 0); // Ensure loader is visible at top
+
+const presvg = document.getElementById('presvg');
+const tl = gsap.timeline({
+  defaults: {
+    ease: 'power2.out',
+    duration: 1.5,
+  },
+  onComplete: () => {
+    document.body.style.overflow = 'visible';
+  },
+});
+
+const curve = 'M0 502S175 272 500 272s500 230 500 230V0H0Z';
+const flat = 'M0 2S175 1 500 1s500 1 500 1V0H0Z';
+
+// Loader title animation - smoother ease & timing
+tl.from('.loader-wrap-heading svg', {
+  y: 300,
+  skewY: 15,
+  opacity: 0,
+  duration: 1.2,
+  ease: 'power3.out',
+})
+.to('.loader-wrap-heading svg', {
+  y: -600,
+  skewY: 0,
+  opacity: 0,
+  duration: 1,
+  ease: 'power2.inOut',
+}, '+=0.3') // small delay between entry and exit
+
+// Morph SVG to curve
+.to(presvg, {
+  attr: { d: curve },
+  duration: 1,
+  ease: 'power3.inOut',
+}, '-=0.6') // overlap with previous for fluid transition
+
+// Morph SVG to flat
+.to(presvg, {
+  attr: { d: flat },
+  duration: 1,
+  ease: 'power3.inOut',
+})
+
+// Slide loader up and out smoothly
+.to('.loader-wrap', {
+  y: '-100vh',
+  duration: 1.2,
+  ease: 'expo.inOut',
+}, '+=0.3')
+
+// Hide loader after animation
+.to('.loader-wrap', {
+  zIndex: -1,
+  display: 'none',
+  duration: 0,
+});
+
+
+
+
+// END loader
+
+
 
 /// client carousel
 //

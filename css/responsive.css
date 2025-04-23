@@ -56,6 +56,10 @@
 }
 
 @media screen and (max-width: 1500px) {
+
+    .abt-f1 h2{
+        font-size: 250px;
+    }
     /* menu */
     .menu-link-outr-first {
         min-width: 23%;
@@ -365,7 +369,7 @@
         width: 55%;
     } */
     .abt-f1 h2 {
-        font-size: 22vw;
+        font-size: 18vw;
     }
     .video-element {
         margin-top: 0px;
@@ -1366,7 +1370,7 @@
     }
 
     .abt-f1 h2 {
-        font-size: 20vw;
+        font-size: 16vw;
     }
     .right-abt-f1 .content p {
         font-size: 20px;
@@ -1670,7 +1674,7 @@
     .banner_video_mobile{display: block;}
 
     .banner_collumn {
-        height: 90vh;
+        height: 85vh;
     }
     .banner_video {
         height: 35vh;
@@ -1915,6 +1919,10 @@
         margin-top: 0 !important;
     }
     /* END anim-shadow remove margin top */
+
+    .clients {
+        margin: 60px 0;
+    }
 
 
     .anim-shadow {
@@ -2442,7 +2450,7 @@
 
 @media screen and (max-width: 400px) {
     .banner_collumn {
-        height: 90vh;
+        height: 85vh;
     }
     .banner_circle_content{
         display: none;
