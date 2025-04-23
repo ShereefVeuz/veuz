@@ -1670,7 +1670,7 @@
     .banner_video_mobile{display: block;}
 
     .banner_collumn {
-        height: 75vh;
+        height: 90vh;
     }
     .banner_video {
         height: 35vh;
@@ -1950,7 +1950,7 @@
         font-size: 16px;
     }
     .serv-heading h3 {
-        font-size: 30px;
+        font-size: 35px;
         line-height: 30px;
     }
 
@@ -2397,7 +2397,7 @@
     }
 
     .video-container {
-        height: 35vh;
+        height: 50vh;
     }
     .proj-video-cont-dtls h2 {
         font-size: 25px;
@@ -2442,7 +2442,7 @@
 
 @media screen and (max-width: 400px) {
     .banner_collumn {
-        height: 75vh;
+        height: 90vh;
     }
     .banner_circle_content{
         display: none;
