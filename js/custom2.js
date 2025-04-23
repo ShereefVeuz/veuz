@@ -32,7 +32,7 @@ $('.clients .owl-carousel').owlCarousel({
 
 /// Animated line shadow
 //
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const zoom3 = document.querySelector('#zoom-3');
     const animShadow = document.querySelector('.anim-shadow');
   

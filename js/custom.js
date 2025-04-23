@@ -337,7 +337,8 @@ document.addEventListener('DOMContentLoaded', () => {
         start: 'center center',
         end: '+=500',
         scrub: 0.5,
-        pin: true,
+        pin: window.innerWidth > 600,
+        // pin: true,
         pinSpacing: false,
         markers: false
         }
@@ -395,7 +396,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // start: 'top top',
                 end: 'bottom top',
                 scrub: 0.3,
-                pin: true,
+                pin: window.innerWidth > 600,
+                // pin: true,
                 pinSpacing: false,
                 markers: false // start end
             }
@@ -443,8 +445,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 //
 /// END about scroll section 
+
+
+// window.addEventListener("resize", () => {
+//     ScrollTrigger.refresh();
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
