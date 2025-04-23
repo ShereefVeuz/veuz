@@ -1898,6 +1898,18 @@
     }
     /* END about show full time in mobile */
 
+    html body .client-reveal-type,
+    html body .client-reveal-type .owl-carousel,
+    html body .abt-f1,
+    html body .abt-f1 * {
+        opacity: 1 !important;
+        transform: none !important;
+        transform-style: flat !important;
+        animation: none !important;
+        transition: none !important;
+        will-change: auto !important;
+    }
+
     /* anim-shadow remove margin top */
     .anim-shadow {
         margin-top: 0 !important;
