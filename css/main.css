@@ -3351,11 +3351,11 @@ video::-webkit-media-controls-enclosure {
 
 .social-links-footer ul li {
     list-style: none;
-    background-color: #222;
-    padding: 10px 15px;
-    border-radius: 50px;
+    /* background-color: #222; */
+    /* padding: 10px 15px;
+    border-radius: 50px; */
 }
-.social-links-footer ul li:hover {
+.social-links-footer ul li a:hover {
     background: linear-gradient(to right, #00A4E4, #A3C644);
 }
 
@@ -3364,7 +3364,10 @@ video::-webkit-media-controls-enclosure {
     color: #fff !important;
     transition: ease-in-out 0.2s;
     transform: none !important;
-
+    padding: 14px 16px;
+    line-height: 50px !important;
+    background-color: #222;
+    border-radius: 50px;
 }
 
 .social-links-footer ul li a:hover {
@@ -3913,7 +3916,7 @@ video::-webkit-media-controls-enclosure {
 .veuz-common-banner-cont h2 {
     font-size: 5vw;
     font-weight: 600;
-    line-height: 110px;
+    line-height: 90px;
     background: linear-gradient(90deg, #0040FF 15%, #00FFD0, #00FF2F);
     -webkit-background-clip: text;
     color: transparent;
@@ -5232,7 +5235,7 @@ video::-webkit-media-controls-enclosure {
 .left-service-dtls-heading h2{
     font-size: 4vw;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 70px;
     color: white;
 }
 
@@ -5261,7 +5264,7 @@ video::-webkit-media-controls-enclosure {
 .service-dtls-first-heading h2 {
     font-size: 4vw;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 70px;
     color: white;
 }
 
@@ -5296,7 +5299,7 @@ video::-webkit-media-controls-enclosure {
 .service-dtls-second-heading h2 {
     font-size: 4vw;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 70px;
     color: white;
 }
 
@@ -5360,7 +5363,7 @@ video::-webkit-media-controls-enclosure {
 .service-dtls-third-heading h2 {
     font-size: 4vw;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 70px;
     color: white;
 }
 

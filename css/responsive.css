@@ -148,7 +148,7 @@
     }
 
     .veuz-common-banner-cont h2 {
-        line-height: 90px;
+        line-height: 80px;
     }
 
     .veuz-about-tech {
@@ -161,7 +161,7 @@
     .service-dtls-second-heading h2,
     .service-dtls-third-heading h2,
     .service-dtls-tech-heading h2 {
-        line-height: 60px;
+        line-height: 50px;
     }
     .service-dtls-third-heading h2 br{
         display: none;
@@ -635,7 +635,7 @@
         padding-top: 60px !important;
     }
     .veuz-common-banner-cont h2 {
-        line-height: 75px;
+        line-height: 60px;
     }
     .about-veuz-content {
         max-width: 100%;
@@ -766,7 +766,7 @@
     .service-dtls-second-heading h2,
     .service-dtls-third-heading h2,
     .service-dtls-tech-heading h2 {
-        line-height: 50px;
+        line-height: 40px;
     }
     .right-service-dtls-second-dtls h4 {
         line-height: 30px;
@@ -2069,7 +2069,7 @@
 
     .veuz-common-banner-cont h2 {
         font-size: 40px;
-        line-height: 35px;
+        line-height: 45px;
     }
 
     .visio-content h2 {
@@ -2215,13 +2215,19 @@
     } */
     .service-dtls-second-dtls-item {
         display: block;
+        text-align: center;
     }
     .right-service-dtls-second-dtls {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .left-service-dtls-second-dtls {
         width: 70px;
+        margin: 0 auto;
+    }
+
+    .service-dtls-third-item {
+        margin-top: 20px;
     }
 
     /* blog */
@@ -2416,6 +2422,20 @@
         font-weight: 400;
         line-height: 22px;
     }
+    .ham-menu-links .ft-mail-out {
+        display: block;
+    }
+    .ham-menu-links .right-footer-content p{
+        text-align: left;
+    }
+
+    .left-service-heading h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .service_footer_bg {
+        height: 60vh;
+    }
 
     
 }
@@ -2533,6 +2553,42 @@
         height: 30vh;
         margin-top: 100px;
     }
+
+    .ham-menu-links .ft-mail-out h6 {
+        text-align: left !important;
+    }
+
+    /* service listing */
+    .service_listing_cont {
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .right_service_listing_content h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .right_service_listing_content p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .left_service_listing_content .cta-button .move-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service_footer_item {
+        padding: 30px 20px;
+    }
+    .service_footer_item_cont h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .service_footer_item_cont p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px auto;
+    }
     
 }
 
@@ -2540,6 +2596,27 @@
 @media screen and (max-width: 480px) {
     .gallery-image img {
         max-height: 300px;
+    }
+
+    .social-links-footer ul {
+        gap: 2px;
+    }
+    .social-links-footer ul li a {
+        font-size: 16px !important;
+        padding: 10px 12px;
+    }
+    .ham-menu-links .right-footer-content p {
+        word-break: break-all;
+    }
+    
+    .menu-contact-dtls .ft-mail p {
+        font-size: 14px;
+    }
+    .menu-contact-dtls .ft-phone p {
+        font-size: 14px;
+    }
+    .ham-menu-links .cta-button .text {
+        font-size: 14px;
     }
 }
 

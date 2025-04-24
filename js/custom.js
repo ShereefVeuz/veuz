@@ -1482,20 +1482,38 @@ gsap.from(".service_icon_item", {
     }
 });
 
-gsap.from(".service_listing_items", {
-    duration: 300,
+// gsap.from(".service_listing_all", {
+//     duration: 300,
+//     x: 100,
+//     opacity: 0,
+//     stagger: 50,
+//     scrollTrigger: {
+//         trigger: ".service_listing",
+//         start: "top 80%",
+//         end: "center 30%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play reverse play reverse",
+//     },
+// });
+
+gsap.from(".service_listing_all", {
     x: 100,
     opacity: 0,
-    stagger: 50,
+    duration: 1, // 1 second is typical for animation
+    stagger: 0.2, // 0.2s between each element
     scrollTrigger: {
-        trigger: ".service_listing_items",
-        start: "top 80%",
-        end: "center 30%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play reverse play reverse",
+      trigger: ".service_listing",
+      start: "top 80%",
+      end: "center 30%",
+      scrub: true,
+      toggleActions: "play reverse play reverse",
+      markers: false,
     },
-});
+  });
+  
+
+
 
 gsap.from(".service_footer_item", {
     duration: 1,
