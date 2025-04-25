@@ -5244,7 +5244,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .left-service-dtls-heading h2{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     line-height: 70px;
     color: white;
@@ -5283,7 +5283,7 @@ video::-webkit-media-controls-enclosure {
 
 /* service-dtls-first-sectn */
 .service-dtls-first-heading h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     line-height: 70px;
     color: white;
@@ -5318,7 +5318,7 @@ video::-webkit-media-controls-enclosure {
 
 /* service-dtls-fourth sectn */
 .service-dtls-fourth-heading h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     line-height: 70px;
     color: white;
@@ -5353,7 +5353,7 @@ video::-webkit-media-controls-enclosure {
 
 /* service-dtls-second-sectn */
 .service-dtls-second-heading h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     line-height: 70px;
     color: white;
@@ -5417,7 +5417,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .service-dtls-third-heading h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     line-height: 70px;
     color: white;
@@ -5447,9 +5447,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 .right-service-dtls-third-cont .accordion-item h2 button{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 45px;
+    line-height: 40px;
     color: white;
     background-color: transparent;
     box-shadow: none;
@@ -5471,7 +5471,7 @@ video::-webkit-media-controls-enclosure {
 
 /* service details technology */
 .service-dtls-tech-heading h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     line-height: 65px;
     color: white;
@@ -5567,7 +5567,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .right-service-dtls-four-cont .accordion-item h2 button{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
     line-height: 30px;
     color: white;
