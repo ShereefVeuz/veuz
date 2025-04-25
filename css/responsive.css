@@ -160,8 +160,9 @@
     .service-dtls-first-heading h2,
     .service-dtls-second-heading h2,
     .service-dtls-third-heading h2,
+    .service-dtls-fourth-heading h2,
     .service-dtls-tech-heading h2 {
-        line-height: 50px;
+        line-height: 60px;
     }
     .service-dtls-third-heading h2 br{
         display: none;
@@ -543,8 +544,8 @@
         height: 500px;
     }
     .service-dtls-four-top h2 {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 55px;
+        line-height: 65px;
     }
     .blog_details_banner {
         height: 25vh;
@@ -765,8 +766,9 @@
     .service-dtls-first-heading h2,
     .service-dtls-second-heading h2,
     .service-dtls-third-heading h2,
-    .service-dtls-tech-heading h2 {
-        line-height: 40px;
+    .service-dtls-tech-heading h2,
+    .service-dtls-fourth-heading h2 {
+        line-height: 50px;
     }
     .right-service-dtls-second-dtls h4 {
         line-height: 30px;
@@ -780,7 +782,8 @@
     .service-dtls-first-heading h2 br,
     .service-dtls-second-heading h2 br,
     .service-dtls-third-heading h2 br,
-    .service-dtls-tech-heading h2 br {
+    .service-dtls-tech-heading h2 br,
+    .service-dtls-fourth-heading h2 br {
         display: none;
     }
 
@@ -1505,7 +1508,8 @@
     .service-dtls-first-heading h2,
     .service-dtls-second-heading h2,
     .service-dtls-tech-heading h2,
-    .service-dtls-third-heading h2 {
+    .service-dtls-third-heading h2,
+    .service-dtls-fourth-heading h2 {
         line-height: 35px;
         font-size: 30px;
     }
@@ -2336,7 +2340,12 @@
     .vd-about-mobile{display: none;}
     .vd-about-mobile-mobile{display: block;}
 
-    .left-service-dtls-heading h2, .service-dtls-first-heading h2, .service-dtls-second-heading h2, .service-dtls-tech-heading h2, .service-dtls-third-heading h2 {
+    .left-service-dtls-heading h2,
+    .service-dtls-first-heading h2,
+    .service-dtls-second-heading h2,
+    .service-dtls-tech-heading h2,
+    .service-dtls-third-heading h2,
+    .service-dtls-fourth-heading h2 {
         font-size: 25px;
         line-height: 30px;
     }
