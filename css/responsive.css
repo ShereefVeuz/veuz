@@ -1,10 +1,10 @@
 
 @media screen and (max-width: 1800px) {
     .abt-f1 h2 {
-        font-size: 300px;
+        font-size: 250px;
     }
     .video-element {
-        max-height: 1000px;
+        max-height: 600px;
     }
 
 }
@@ -98,7 +98,7 @@
 
     /* banner */
     .video-element {
-        max-height: 700px;
+        max-height: 600px;
     }
     .banner_center_img {
         top: 50%;

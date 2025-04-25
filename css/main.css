@@ -999,7 +999,7 @@ body.no-scroll {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
     /* font-size: 18rem; */
-    font-size: 300px;
+    font-size: 250px;
     font-weight: bold;
     text-wrap: nowrap;
 }
