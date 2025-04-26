@@ -129,7 +129,7 @@
         right: 60px;
     }
     .hc-flip-video{
-        width: 95%;
+        width: 85%;
     }
 
     .circuit-bottom-left {
@@ -161,10 +161,17 @@
     .service-dtls-second-heading h2,
     .service-dtls-third-heading h2,
     .service-dtls-fourth-heading h2,
+    .service-dtls-fifth-heading h2,
     .service-dtls-tech-heading h2 {
         line-height: 60px;
     }
-    .service-dtls-third-heading h2 br{
+    .left-service-dtls-heading h2 br,
+    .service-dtls-first-heading h2 br,
+    .service-dtls-second-heading h2 br,
+    .service-dtls-third-heading h2 br,
+    .service-dtls-fourth-heading h2 br,
+    .service-dtls-fifth-heading h2 br,
+    .service-dtls-tech-heading h2 br {
         display: none;
     }
 }
@@ -766,6 +773,7 @@
     .service-dtls-first-heading h2,
     .service-dtls-second-heading h2,
     .service-dtls-third-heading h2,
+    .service-dtls-fifth-heading h2,
     .service-dtls-tech-heading h2,
     .service-dtls-fourth-heading h2 {
         line-height: 50px;
@@ -782,6 +790,7 @@
     .service-dtls-first-heading h2 br,
     .service-dtls-second-heading h2 br,
     .service-dtls-third-heading h2 br,
+    .service-dtls-fifth-heading h2 br,
     .service-dtls-tech-heading h2 br,
     .service-dtls-fourth-heading h2 br {
         display: none;
@@ -1010,6 +1019,7 @@
     }
     .hc-flip-video {
         width: 65%;
+        margin: 0 auto;
     }
     .hm-software {
         padding-bottom: 0;
@@ -1314,6 +1324,13 @@
         line-height: 30px;
     }
 
+    .left-service-dtls-four-img-out {
+        position: initial;
+    }
+    .right-service-dtls-four-cont .accordion {
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1509,6 +1526,7 @@
     .service-dtls-second-heading h2,
     .service-dtls-tech-heading h2,
     .service-dtls-third-heading h2,
+    .service-dtls-fifth-heading h2,
     .service-dtls-fourth-heading h2 {
         line-height: 35px;
         font-size: 30px;
@@ -2345,6 +2363,7 @@
     .service-dtls-second-heading h2,
     .service-dtls-tech-heading h2,
     .service-dtls-third-heading h2,
+    .service-dtls-fifth-heading h2,
     .service-dtls-fourth-heading h2 {
         font-size: 25px;
         line-height: 30px;
@@ -2444,6 +2463,10 @@
     }
     .service_footer_bg {
         height: 60vh;
+    }
+
+    .service-dtls-fifth-dtls-item {
+        padding: 30px;
     }
 
     

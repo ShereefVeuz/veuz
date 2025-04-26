@@ -1510,10 +1510,7 @@ gsap.from(".service_listing_all", {
       toggleActions: "play reverse play reverse",
       markers: false,
     },
-  });
-  
-
-
+});
 
 gsap.from(".service_footer_item", {
     duration: 1,
@@ -1590,19 +1587,47 @@ gsap.from(".service-dtls-first-dtls-out", {
 });
 
 gsap.from(".service-dtls-second-dtls-out", {
-    duration: 1,
-    y: -200,
+    duration: 2,
+    y: -50,
     opacity: 0,
     stagger: 0.3,
     scrollTrigger: {
         trigger: ".service-dtls-second-dtls-out",
-        start: "top 50%",
-        end: "bottom 20%",
+        start: "top 90%",
+        // end: "bottom 20%",
         scrub: true,
         markers: false,
         toggleActions: "play reverse play reverse",
     }
 });
+
+gsap.from(".service-dtls-fifth-dtls-out", {
+    duration: 1,
+    x: 50,
+    opacity: 0,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".service-dtls-fifth-dtls-out",
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+    }
+});
+
+gsap.from(".service-dtls-fourth-dtls-out", {
+    duration: 1,
+    x: -50,
+    opacity: 0,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".service-dtls-fourth-dtls-out",
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+    }
+});
+
+
 
 // accordion first
 gsap.from(".service-dtls-third-img", {
@@ -1891,6 +1916,74 @@ gsap.from(".blog-form-top", {
 // END blog details
 
 
+/// Email hosting page
+//
+// gsap.from(".service-dtls-sixth-left", {
+//     duration: 1,
+//     x: 300,
+//     opacity: 0,
+//     stagger: 0.3,
+//     scrollTrigger: {
+//         trigger: ".service-dtls-sixth-left",
+//         start: "top 80%",
+//         end: "top 20%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play none none reverse",
+//     },
+// });
+
+// gsap.from(".service-dtls-sixth-right", {
+//     duration: 1,
+//     x: -300,
+//     opacity: 0,
+//     stagger: 0.3,
+//     scrollTrigger: {
+//         trigger: ".service-dtls-sixth-right",
+//         start: "top 80%",
+//         end: "top 20%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play none none reverse",
+//     },
+// });
+
+
+// email hosting
+//
+document.querySelectorAll('.service-dtls-sixth-left').forEach((element, index) => {
+    gsap.from(element, {
+      duration: 1,
+      x: 300,
+      opacity: 0,
+      stagger: 0.3 * index, // Sequential delay
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true,
+        markers: false,
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
+  
+  document.querySelectorAll('.service-dtls-sixth-right').forEach((element, index) => {
+    gsap.from(element, {
+      duration: 1,
+      x: -300,
+      opacity: 0,
+      stagger: 0.3 * index, // Sequential delay
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true,
+        markers: false,
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
 
 
 
