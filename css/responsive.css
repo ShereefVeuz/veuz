@@ -162,7 +162,12 @@
     .service-dtls-third-heading h2,
     .service-dtls-fourth-heading h2,
     .service-dtls-fifth-heading h2,
-    .service-dtls-tech-heading h2 {
+    .service-dtls-tech-heading h2,
+    .service-dtls-sixth-heading h2,
+    .service-dtls-seventh-heading h2,
+    .service-dtls-eight-heading h2,
+    .service-dtls-nine-heading h2,
+    .service-dtls-carsl-list-heading h2 {
         line-height: 60px;
     }
     .left-service-dtls-heading h2 br,
@@ -171,7 +176,12 @@
     .service-dtls-third-heading h2 br,
     .service-dtls-fourth-heading h2 br,
     .service-dtls-fifth-heading h2 br,
-    .service-dtls-tech-heading h2 br {
+    .service-dtls-sixth-heading h2 br,
+    .service-dtls-seventh-heading h2 br,
+    .service-dtls-eight-heading h2 br,
+    .service-dtls-nine-heading h2 br,
+    .service-dtls-tech-heading h2 br,
+    .service-dtls-carsl-list-heading h2 br {
         display: none;
     }
 }
@@ -775,7 +785,12 @@
     .service-dtls-third-heading h2,
     .service-dtls-fifth-heading h2,
     .service-dtls-tech-heading h2,
-    .service-dtls-fourth-heading h2 {
+    .service-dtls-fourth-heading h2,
+    .service-dtls-sixth-heading h2,
+    .service-dtls-seventh-heading h2,
+    .service-dtls-eight-heading h2,
+    .service-dtls-nine-heading h2,
+    .service-dtls-carsl-list-heading h2 {
         line-height: 50px;
     }
     .right-service-dtls-second-dtls h4 {
@@ -899,6 +914,17 @@
     
 
 }
+
+/* @media screen and (max-width:1024px) {
+    .hiring-process-section .card-title{
+      font-size: 13px;
+      left: 2rem;
+    }
+    .hiring-process-section::before{
+      display: none;
+    }
+
+} */
 
 @media screen and (max-width: 1000px) {
     /* home banner */
@@ -1331,6 +1357,18 @@
         margin-top: 15px;
     }
 
+    /*added*/
+    /* .desktop-cards{display: none !important;}
+    .hiring-process-section .mobile-card-outer{
+        display: block !important;
+    }
+    .hiring-process-section{
+        padding-top: 0;
+        padding-bottom: 60px;
+        background: linear-gradient(0deg, rgba(230, 244, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    } */
+    /* End Added */
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1527,7 +1565,12 @@
     .service-dtls-tech-heading h2,
     .service-dtls-third-heading h2,
     .service-dtls-fifth-heading h2,
-    .service-dtls-fourth-heading h2 {
+    .service-dtls-fourth-heading h2,
+    .service-dtls-sixth-heading h2,
+    .service-dtls-seventh-heading h2,
+    .service-dtls-eight-heading h2,
+    .service-dtls-nine-heading h2,
+    .service-dtls-carsl-list-heading h2 {
         line-height: 35px;
         font-size: 30px;
     }
@@ -1558,6 +1601,27 @@
     .service-dtls-four-top h2 {
         font-size: 30px;
         line-height: 40px;
+    }
+
+    .service-dtls-sixth-dtls-item {
+        display: block;
+        padding: 30px;
+    }
+    .left-service-dtls-sixth-dtls {
+        height: 200px;
+    }
+    .right-service-dtls-sixth-dtls h4 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .service-dtls-eight-dtls-all {
+        margin-top: 0px;
+    }
+    .service-dtls-nine-dtls-all {
+        margin-top: 0;
+    }
+    .service-dtls-fifth-dtls-item {
+        padding: 30px;
     }
 
     .wheel__card {
@@ -2349,14 +2413,14 @@
         font-size: 12px;
     }
 
-    .vd-about-desktop{display: none;}
+    /* .vd-about-desktop{display: none;}
     .vd-about-desktop-mobile{display: block;}
 
     .vd-about-laptop{display: none;}
     .vd-about-laptop-mobile{display: block;}
 
     .vd-about-mobile{display: none;}
-    .vd-about-mobile-mobile{display: block;}
+    .vd-about-mobile-mobile{display: block;} */
 
     .left-service-dtls-heading h2,
     .service-dtls-first-heading h2,
@@ -2364,7 +2428,12 @@
     .service-dtls-tech-heading h2,
     .service-dtls-third-heading h2,
     .service-dtls-fifth-heading h2,
-    .service-dtls-fourth-heading h2 {
+    .service-dtls-fourth-heading h2,
+    .service-dtls-sixth-heading h2,
+    .service-dtls-seventh-heading h2,
+    .service-dtls-eight-heading h2,
+    .service-dtls-nine-heading h2,
+    .service-dtls-carsl-list-heading h2 {
         font-size: 25px;
         line-height: 30px;
     }
@@ -2467,6 +2536,32 @@
 
     .service-dtls-fifth-dtls-item {
         padding: 30px;
+    }
+
+    .service-dtls-eight-dtls-img {
+        height: 170px;
+    }
+    .left-service-dtls-fifth-dtls {
+        width: 65px;
+    }
+
+    .right-service-dtls-sixth-dtls h4,
+    .right-service-dtls-fifth-dtls h4,
+    .serv-list-dtls-carsl-item h4,
+    .service-dtls-eight-dtls h4,
+    .service-dtls-fourth-dtls h4,
+    .service-dtls-nine-dtls h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .right-service-dtls-sixth-dtls p,
+    .right-service-dtls-fifth-dtls p,
+    .serv-list-dtls-carsl-item p,
+    .service-dtls-eight-dtls p,
+    .service-dtls-fourth-dtls p,
+    .service-dtls-nine-dtls p {
+        font-size: 14px;
+        line-height: 22px;
     }
 
     

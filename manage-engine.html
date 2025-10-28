@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veuz Concepts</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="https://gitcdn.xyz/repo/octoshrimpy/blokkfont/master/blokkfont.css" rel="stylesheet"> -->
+
+
+    <!-- <link rel="preload" href="css/fonts/stylesheet.css" as="font" type="font/woff2" crossorigin> -->
+
+</head>
+
+<body class="body_custom">
+    <!-- loader -->
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="presvg" fill="#242323" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="loader-wrap-heading">
+            <span>
+                <svg width="300px" height="300" viewBox="0 0 120 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g mask="url(#mask0_105_902)" id="maintag_path">
+                        <path d="M77.3601 0.375977H36.2124V24.5025H77.3601V0.375977Z"
+                            fill="url(#paint0_linear_105_902)" />
+                    </g>
+                    <g mask="url(#mask1_105_902)" id="maintag_path2">
+                        <path d="M71.9644 30.1343H41.8017V41.775H71.9644V30.1343Z" fill="url(#paint1_linear_105_902)" />
+                    </g>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <!-- END loader -->
+     
+    <header class="header-home" id="header-home">
+        <div class="header-home-inner">
+            <div class="header-container">
+                <div class="logo-svg">
+                    <a href="index.html">
+                        <svg width="150" height="43" viewBox="0 0 150 43" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 1.4082H9.96112L19.8292 21.6857L29.6971 1.4082H39.6583L20.1084 40.8367H19.5499L0 1.4082Z"
+                                fill="white" />
+                            <path
+                                d="M81.1779 1.4082H91.0458V20.3714C91.0458 24.0327 91.3251 26.6613 91.7906 28.0694C92.2561 29.4776 93.094 30.6041 94.2109 31.449C95.328 32.2 96.7244 32.6694 98.3071 32.6694C99.8897 32.6694 101.286 32.2939 102.496 31.449C103.613 30.698 104.451 29.4776 105.01 27.9756C105.382 26.849 105.661 24.4082 105.661 20.6531V1.4082H115.437V18.1184C115.437 24.9714 114.878 29.6653 113.854 32.2C112.551 35.298 110.595 37.645 108.082 39.3347C105.475 41.0246 102.31 41.7756 98.3071 41.7756C94.0247 41.7756 90.5804 40.8367 87.8807 38.8653C85.274 36.8939 83.4121 34.2653 82.295 30.7919C81.5502 28.445 81.1779 24.0327 81.1779 17.7429V1.4082Z"
+                                fill="white" />
+                            <path
+                                d="M118.698 1.4082H148.674L131.079 32.4817H147.649V40.8367H115.998L133.686 9.76332H118.698V1.4082Z"
+                                fill="white" />
+                            <mask id="mask0_105_902" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="36" y="0"
+                                width="42" height="25">
+                                <path
+                                    d="M43.8465 16.8983C45.1498 13.0493 47.4772 10.3269 51.1078 8.54325C52.8766 7.69835 54.8317 7.32284 56.7867 7.32284C59.3002 7.32284 61.6275 7.97998 63.7687 9.29427C66.3754 10.8902 68.3303 13.0493 69.3544 15.9596C70.0061 17.6493 70.0991 17.6493 68.7028 17.6493C68.5165 17.6493 68.4234 17.6493 68.2373 17.6493C61.5344 17.6493 54.7385 17.6493 48.0358 17.6493C47.5703 17.6493 47.0118 17.6493 46.5462 17.6493C45.8015 17.6493 45.0567 17.6493 44.3119 17.6493H44.2188C43.8465 17.5555 43.7534 17.4616 43.8465 16.8983ZM53.3421 0.751407C49.6184 1.40855 46.3601 2.91059 43.5673 5.35141C40.3089 8.07385 38.1677 11.6412 36.9575 15.7718C36.2127 18.3065 36.1196 20.8412 36.3058 23.3759C36.3989 24.5025 36.5851 24.5963 37.7023 24.5963H56.7867C63.1171 24.5963 69.5406 24.5963 75.871 24.5963C77.0812 24.5963 77.1743 24.4086 77.3606 23.1882C77.4537 21.8739 77.4537 20.4657 77.3606 19.1515C77.0812 15.7718 75.9641 12.6739 74.1022 9.76365C72.2404 6.85345 69.8199 4.69427 66.8408 3.00447C64.5135 1.69018 61.9069 0.845285 59.2071 0.563652C58.4624 0.469775 57.7176 0.469774 56.9728 0.469774C55.7626 0.375897 54.5523 0.469775 53.3421 0.751407Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_105_902)">
+                                <path d="M77.3601 0.375977H36.2124V24.5025H77.3601V0.375977Z"
+                                    fill="url(#paint0_linear_105_902)" />
+                            </g>
+                            <mask id="mask1_105_902" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="41"
+                                y="30" width="31" height="12">
+                                <path
+                                    d="M45.8041 30.7913C44.687 31.9179 43.4768 33.1383 42.2665 34.2647C41.7079 34.828 41.8011 35.1097 42.2665 35.6729C43.5699 37.0812 45.1524 38.3015 46.8281 39.1464C49.9003 40.8362 53.1586 41.775 56.6962 41.6812C59.3959 41.6812 62.0026 41.2117 64.423 40.179C67.0297 39.0526 69.357 37.5505 71.312 35.4852C71.7775 35.0158 71.7775 34.7342 71.312 34.2647C70.1017 33.1383 68.9846 31.9179 67.7745 30.7913C67.0297 30.0403 67.0297 30.0403 66.1918 30.7913C65.4471 31.5423 64.7023 32.1995 63.8644 32.6689C60.6992 34.6403 57.2547 35.1097 53.7171 34.3586C51.2035 33.7954 48.9693 32.4812 47.1074 30.6974C46.735 30.3219 46.6419 30.228 46.4558 30.228C46.3627 30.3219 46.1765 30.5097 45.8041 30.7913Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask1_105_902)">
+                                <path d="M71.9644 30.1343H41.8017V41.775H71.9644V30.1343Z"
+                                    fill="url(#paint1_linear_105_902)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_105_902" x1="36.3133" y1="12.4953" x2="77.3662"
+                                    y2="12.4953" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00ABC7" />
+                                    <stop offset="0.1151" stop-color="#00ADBE" />
+                                    <stop offset="0.338" stop-color="#26B2A6" />
+                                    <stop offset="0.6462" stop-color="#6ABC7E" />
+                                    <stop offset="1" stop-color="#9DCB3B" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_105_902" x1="41.9461" y1="36.0005" x2="71.7806"
+                                    y2="36.0005" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00ABC7" />
+                                    <stop offset="0.1151" stop-color="#00ADBE" />
+                                    <stop offset="0.338" stop-color="#26B2A6" />
+                                    <stop offset="0.6462" stop-color="#6ABC7E" />
+                                    <stop offset="1" stop-color="#9DCB3B" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="menu-hamburger">
+                    <div id="nav-main" class="hidden">
+                        <div class="width-container">
+                            <div class="ham-menu-container">
+                                <div class="ham-menu-links menu-link-outr-first">
+                                    <a href="index.html">Home</a>
+                                    <a href="#" data-dropdown="veuz-dropdown">Veuz <span
+                                            class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="services-dropdown">Services <span
+                                            class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="products-dropdown">Products <span
+                                            class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="portfolio-dropdown">Portfolio <span
+                                            class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="insights-dropdown">Insights <span
+                                            class="arrow">&#9662;</span></a>
+                                    <a href="#" data-dropdown="contact-dropdown">Contact Us <span
+                                            class="arrow">&#9662;</span></a>
+                                </div>
+
+                                <!-- veuz -->
+                                <div class="dropdown" id="veuz-dropdown">
+                                    <div class="ham-menu-links">
+                                        <a href="about.html" class="menu_link">About Us</a>
+                                        <a href="careers.html" class="menu_link">Careers</a>
+                                        <a href="technologies.html" class="menu_link">Technologies</a>
+                                    </div>
+                                </div>
+
+                                <!-- services -->
+                                <!-- services -->
+                                <div class="dropdown nav-dropdown-items-out no-lenis" id="services-dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-4 nav-dropdown-items">
+                                            <div class="ham-menu-links">
+                                                <a href="mobile-app-development.html" class="menu_link">Mobile app</a>
+                                                <a href="website-development.html" class="menu_link">Website Development</a>
+                                                <a href="custom-software-development.html" class="menu_link">Custom Software Development </a>
+                                                <a href="aramco-cyber-security.html" class="menu_link">Aramco Cyber Security CCC/CCC+</a>
+                                                <a href="odoo-erp.html" class="menu_link">Odoo ERP</a>
+                                                <a href="endpoint-security.html" class="menu_link">Endpoint Security</a>
+                                                <a href="e-invoicing.html" class="menu_link">E-Invoicing</a>
+                                                <a href="microsoft-365-business.html" class="menu_link">Microsoft 365 for Business</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4 nav-dropdown-items">
+                                            <div class="ham-menu-links">
+                                                <a href="google-workspace-managed-services.html" class="menu_link">Google Workspace Managed Services </a>
+                                                <a href="manage-engine.html" class="menu_link">Mange Engine</a>
+                                                <a href="zoho-email-hosting.html" class="menu_link">Zoho Email Hosting</a>
+                                                <a href="salesforce.html" class="menu_link">Salesforce Implementation</a>
+                                                <a href="oracle-ebs.html" class="menu_link">Oracle EBS</a>
+                                                <a href="email-hosting.html" class="menu_link">Email Hosting</a>
+                                                <a href="webhostimg-services.html" class="menu_link">Web Hosting</a>
+                                                <a href="cyber-security.html" class="menu_link">Cyber Security</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4 nav-dropdown-items">
+                                            <div class="ham-menu-links">
+                                                <a href="firewall-security-services.html" class="menu_link">Firewall Security</a>
+                                                <a href="digital-marketing.html" class="menu_link">Digital Marketing</a>
+                                                <a href="industrial-training.html" class="menu_link">Industrial Training</a>
+                                                <div class="cta-button mt-4">
+                                                    <a class="btn" href="services.html">
+                                                        <span class="text">See More </span>
+                                                        <svg width="25" height="25" viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.66669 11.3334L11.3334 4.66669" stroke="white"
+                                                                stroke-width="1.33333" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M4.66669 4.66669H11.3334V11.3334" stroke="white"
+                                                                stroke-width="1.33333" stroke-linecap="round"
+                                                                stroke-linejoin="round" /></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- products -->
+                                <div class="dropdown nav-dropdown-items-out no-lenis" id="products-dropdown">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-5 nav-dropdown-items">
+                                            <div class="ham-menu-links">
+                                                <a href="manufacturing-ERP.html" class="menu_link">Manufacturing ERP</a>
+                                                <a href="#" class="menu_link">Event Management Software</a>
+                                                <a href="#" class="menu_link">CRM Software</a>
+                                                <a href="#" class="menu_link">Touch2Scan</a>
+                                                <a href="#" class="menu_link">Study abroad Software</a>
+                                                <a href="#" class="menu_link">Rental Mangement</a>
+                                                <a href="#" class="menu_link">Tracking App</a>
+                                                <a href="#" class="menu_link">School Management System</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-5 nav-dropdown-items">
+                                            <div class="ham-menu-links">
+                                                <a href="#" class="menu_link">Library Management Software</a>
+                                                <a href="#" class="menu_link">Help Desk</a>
+                                                <a href="#" class="menu_link">Delivery Management</a>
+                                                <a href="#" class="menu_link">ERP for SMEs</a>
+                                                <a href="#" class="menu_link">Document Management</a>
+                                                <div class="cta-button mt-4">
+                                                    <a class="btn" href="products.html">
+                                                        <span class="text">See More </span>
+                                                        <svg width="25" height="25" viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.66669 11.3334L11.3334 4.66669" stroke="white"
+                                                                stroke-width="1.33333" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M4.66669 4.66669H11.3334V11.3334" stroke="white"
+                                                                stroke-width="1.33333" stroke-linecap="round"
+                                                                stroke-linejoin="round" /></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- portfolio -->
+                                <div class="dropdown" id="insights-dropdown">
+                                    <div class="ham-menu-links">
+                                        <a href="blog.html" class="menu_link">Blog </a>
+                                        <!-- <a href="#" class="menu_link">Learn</a> -->
+                                    </div>
+                                </div>
+
+                                <!-- portfolio -->
+                                <div class="dropdown" id="portfolio-dropdown">
+                                    <div class="ham-menu-links">
+                                        <div class="ham-menu-portfolio">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="menu-portfolio-item">
+                                                        <img src="images/banner/h2_2.png" class="img-fluid"
+                                                            alt="veuzconcepts">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="menu-portfolio-item">
+                                                        <img src="images/banner/h2_2.png" class="img-fluid"
+                                                            alt="veuzconcepts">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cta-button mt-4">
+                                                <a class="btn" href="portfolio.html">
+                                                    <span class="text">See All </span>
+                                                    <svg width="25" height="25" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.66669 11.3334L11.3334 4.66669" stroke="white"
+                                                            stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M4.66669 4.66669H11.3334V11.3334" stroke="white"
+                                                            stroke-width="1.33333" stroke-linecap="round"
+                                                            stroke-linejoin="round" /></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- contact -->
+                                <div class="dropdown" id="contact-dropdown">
+                                    <div class="ham-menu-links">
+
+                                        <div class="col-md-12 menu-contact-dtls">
+                                            <div class="row justify-content-between">
+                                                <div class="col-lg-7 col-md-12 footer-content-out">
+                                                    <div class="footer-content">
+                                                        <div class="left-footer-content">
+                                                            <img src="images/logo/logo-svg.svg" class="img-fluid"
+                                                                alt="lifeline">
+                                                        </div>
+                                                        <div class="right-footer-content">
+                                                            <p>
+                                                                Veuz Concepts is a specialized designing and developing
+                                                                firm based in
+                                                                Riyadh, Jeddah, Al Khobar, Bahrain, Qatar with
+                                                                development centers in Kerala and
+                                                                Saudi Arabia.
+                                                            </p>
+
+                                                            <div class="ft-mail-out">
+                                                                <div class="ft-mail">
+                                                                    <h6>Email</h6>
+                                                                    <a href="mailto:support@veuzconcepts.com">
+                                                                        <p> support@veuzconcepts.com </p>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="ft-phone">
+                                                                    <h6>Phone Number</h6>
+                                                                    <a href="tel:+15551234567">
+                                                                        <p> +1 (555) 123-4567 </p>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cta-button">
+                                                                <a class="btn" href="contact.html">
+                                                                    <span class="text">Contact Us </span>
+                                                                    <svg width="25" height="25" viewBox="0 0 16 16"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.66669 11.3334L11.3334 4.66669"
+                                                                            stroke="white" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path d="M4.66669 4.66669H11.3334V11.3334"
+                                                                            stroke="white" stroke-width="1.33333"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" /></svg>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="social-links-footer">
+                                                                <ul>
+                                                                    <li><a href="#" target="_blank"><i
+                                                                                class="fa-brands fa-facebook"></i></a>
+                                                                    </li>
+                                                                    <li><a href="#" target="_blank"><i
+                                                                                class="fa-brands fa-x-twitter"></i></a>
+                                                                    </li>
+                                                                    <li><a href="#" target="_blank"><i
+                                                                                class="fa-brands fa-instagram"></i></a>
+                                                                    </li>
+                                                                    <li><a href="#" target="_blank"><i
+                                                                                class="fa-brands fa-linkedin"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="menu-button" class="menu-button">
+                        <div class="menu-bars" id="menuBox">
+                            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                                onclick="this.classList.toggle('active')">
+                                <path class="line top"
+                                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path class="line middle" d="m 30,50 h 40" />
+                                <path class="line bottom"
+                                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="btn-header">
+                    <a href="#" class="style_button3__wvXhd"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarReq" aria-controls="offcanvasNavbarReq">
+                        <p class="style_primary__mp_xd">Request a Quote</p>
+                        <div class="style_secondary__peFsR">
+                            <p>Request a Quote</p>
+                            <div class="style_background__I_IHo"></div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- header contact popup -->
+        <div class="popup-form-outr">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarReq" aria-labelledby="offcanvasNavbarLabel">
+                <div class="container">
+                    <div class="offcanvas-body">
+                        <div class="modal-main-input">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <h3 class="get-heading">Request a Quate</h3>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input placeholder="Enter Your Name" class="input-field" type="name">
+                                        <label for="input-field" class="input-label">Enter Your Name</label>
+                                        <span class="input-highlight"></span>
+                                    </div>                              
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input placeholder="Enter Your Email" class="input-field" type="email">
+                                        <label for="input-field" class="input-label">Enter Your Email</label>
+                                        <span class="input-highlight"></span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="input-group">
+                                        <!-- <label for="phone">Mobile <span>*</span></label> -->
+                                        <input type="hidden" value="+966" name="country_code" id="country_code" />
+                                        <input type="hidden" value="sa" name="country_initial" id="country_initial" />
+                                        <input type="text" name="mobile" placeholder="Mobile Number" id="mobile_code"
+                                          style="padding-left: 85px"
+                                          class="input-field"
+                                          onkeypress="return /[0-9]/i.test(event.key)"
+                                          value="" required />
+                                        <!-- {{user.mobile|default_if_none:''}} -->
+                                        <span class="error mobile_error" style="color: red"></span>
+                                      </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input placeholder="Enquired Service / Product" class="input-field" type="text">
+                                        <label for="input-field" class="input-label">Enquired Service / Product</label>
+                                        <span class="input-highlight"></span>
+                                    </div>                              
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-group">
+                                    <textarea placeholder="Message" class="input-field" rows="4"></textarea>
+                                    <label for="input-field" class="input-label">Message</label>
+                                    <span class="input-highlight"></span>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex mt-md-5 mt-sm-2">
+                                <div class="cta-button">
+                                    <a class="btn" href="#">
+                                        <span class="text">Submit </span>
+                                        <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </div>
+                                <!-- <button type="button" class="get-in-tch"><span class="text">Submit</span><span>Thanks!</span></button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- END header contact popup -->
+    </header>
+
+    <!-- main banner collum -->
+    <div class="common_banner_veuz">
+        <!-- <div class="service-gradient-bg"></div> -->
+
+        <div class="veuz-common-section">
+            <div class="veuz-common-banner-cont">
+                <h2>Manage Engine </h2>
+                <div class="serv-dtls-banner-items">
+                    <!-- <div class="cta-button mt-4">
+                        <a class="btn" href="services.html">
+                            <span class="text">See More </span>
+                            <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                    <div class="left-srvdtls-shape-out">
+                        <div class="left-srvdtls-shape1">
+                            <img src="images/service-page/service-detail-bg01.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="left-srvdtls-shape2">
+                            <img src="images/service-page/service-detail-bg01.png" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                    </div> -->
+                    
+                    <div class="left-srvdtls-shape-out">
+                        <div class="left-srvdtls-shape1">
+                            <img src="images/service-page/service-detail-bg01.webp" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                        <div class="cta-button mt-4">
+                            <a class="btn" href="services.html">
+                                <span class="text">See More </span>
+                                <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                        <div class="left-srvdtls-shape2">
+                            <img src="images/service-page/service-detail-bg01.webp" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END main banner collum -->
+
+    <!-- <div class="service_banner_image">
+        <img src="images/service-page/bg-shadow.png" class="img-fluid" alt="veuzconcepts">
+    </div> -->
+
+    <section class="common_space service-dtls-page">
+        <div class="width-container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-dtls-page-cont">
+                        <div class="service-dtls-page-in">
+                            Our Services
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="left-service-dtls-heading">
+                                <h2>What Is ManageEngine? </h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="left-service-dtls-heading">
+                                <p>
+                                    Zoho Corporation develops the ManageEngine series of enterprise IT management software products, which are designed to simplify the management of IT infrastructure. Among its diverse range of tools, ManageEngine offers a Unified Endpoint Management Solution that plays a crucial role in helping businesses manage and monitor all their IT endpoints from a single, integrated platform. Its aim is to deliver integrated solutions that simplify IT management tasks, enabling organizations to efficiently monitor, troubleshoot, and optimize their IT infrastructure. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-dtls-single-banner">
+                <img src="images/service-page/service-detail-banner.webp" class="img-fluid" alt="veuzconcepts">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-first">
+        <div class="width-container">
+            <div class="service-dtls-first-heading">
+                <h2>Learn how ManageEngine can <br> enhance your IT environment. </h2>
+                
+                <!-- <h5>Identity and Access Management (IAM)</h5>
+                <p>
+                    ManageEngine offers a comprehensive suite of Identity and Access Management (IAM) solutions that address various aspects of IAM and security. Below is an overview of their IAM product line:
+                </p> -->
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>AD Manager Plus </h4>
+                            <p>
+                                Active Directory, Microsoft 365, and Exchange management and reporting     
+                            </p>
+                            <p>
+                                Aids with management, reporting, and streamlining of Exchange, Microsoft 365, and Active Directory-related tasks. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4> AD Audit Plus </h4>
+                            <p>
+                                Real-time Active Directory, file, and Windows server change auditing 
+                            </p>
+                            <p>
+                                Tracks and evaluates changes in real-time for Windows file servers, Active
+                                        Directory, and other Windows servers 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>AD Self-Service Plus </h4>
+                            <p>
+                                Identity security with adaptive Multi-Factor Authentication (MFA),
+                                        Self-Service Password Reset (SSPR), and Single Sign-On (SSO)   
+                            </p>
+                            <p>
+                                Enhances identity security through adaptive MFA, self-service password reset, and
+                                        SSO capabilities 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>Exchange Reporter Plus </h4>
+                            <p>
+                                Monitoring, auditing, and reporting for Skype and hybrid Exchange  
+                            </p>
+                            <p>
+                                Provides insights into your Exchange and Skype for Business environments with
+                                        reporting and auditing capabilities. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4> Recovery Manager Plus </h4>
+                            <p>
+                                Active Directory, Microsoft 365, and Exchange backup and recovery     
+                            </p>
+                            <p>
+                                Provides Active Directory, Microsoft 365, and Exchange backup and recovery
+                                        options 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>AD360 </h4>
+                            <p>
+                                Workforce identity and access management for hybrid ecosystems     
+                            </p>
+                            <p>
+                                Offers identity and access management (IAM) solutions for hybrid environments
+                                        with a focus on workforce identity 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>Identity360 </h4>
+                            <p>
+                                A cloud-native identity platform for workforce IAM     
+                            </p>
+                            <p>
+                                A cloud-native identity platform intended to control workforce access and
+                                        identity 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4> M365 Manager Plus </h4>
+                            <p>
+                                Microsoft 365 management, reporting, and auditing    
+                            </p>
+                            <p>
+                                Helps manage, report, and audit activities related to Microsoft 365 services 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>PAM360 </h4>
+                            <p>
+                                Total privileged access security for businesses   
+                            </p>
+                            <p>
+                                Provides businesses with all-inclusive privileged access management and security solutions 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>Password Manager Pro </h4>
+                            <p>
+                                Privileged password management  
+                            </p>
+                            <p>
+                                Manages and secures privileged passwords and provides password access control  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>Access Manager Plus </h4>
+                            <p>
+                                Secure remote access and privileged session management 
+                            </p>
+                            <p>
+                                Focuses on privileged session management and secure remote access 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-first-dtls-out">
+                        <div class="service-dtls-first-dtls">
+                            <h4>Key Manager Plus </h4>
+                            <p>
+                                SSH key and SSL/TLS certificate management Monitoring, auditing, and reporting for Skype and hybrid Exchange 
+                            </p>
+                            <p>
+                                Manages SSH keys and SSL/TLS certificates to enhance security 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-second">
+        <div class="width-container">
+            <div class="service-dtls-second-heading">
+                <h2>Enterprise Service Management (ESM) </h2>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 service-dtls-second-dtls-out">
+                        <div class="service-dtls-second-dtls-item">
+                            <div class="left-service-dtls-second-dtls">
+                                <img src="images/service-page/s-01.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-second-dtls">
+                                <h4>ServiceDesk Plus </h4>
+                                <p>
+                                   <span><b> Purpose: </b></span> Enterprise full-stack service management <br>
+                                   <span><b>Description: </b></span>
+                                    An ITSM (IT service management) system called ServiceDesk Plus was created to help businesses in effectively providing IT services. It has features for asset management, change management, incident management, and problem management, among other things. The goal is to offer a complete solution for the delivery and maintenance of IT services. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 service-dtls-second-dtls-out">
+                        <div class="service-dtls-second-dtls-item">
+                            <div class="left-service-dtls-second-dtls">
+                                <img src="images/service-page/s-02.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-second-dtls">
+                                <h4>SupportCenter Plus </h4>
+                                <p>
+                                    <span><b>Purpose: </b></span> Customer support with built-in billing for businesses. <br>
+                                    <span><b>Description: </b></span> SupportCenter Plus is a Customer Service Management solution that focuses on delivering efficient customer support. For businesses offering customer support services, it offers integrated billing functions along with features for managing customer interactions, ticketing, and case management.   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 service-dtls-second-dtls-out">
+                        <div class="service-dtls-second-dtls-item">
+                            <div class="left-service-dtls-second-dtls">
+                                <img src="images/service-page/s-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-second-dtls">
+                                <h4>AssetExplorers </h4>
+                                <p>
+                                    <span><b>Purpose: </b></span> IT asset management with an integrated Configuration Management Database (CMDB). <br>
+                                    <span><b>Description: </b></span> AssetExplorer is an IT Asset Management (ITAM) solution designed to help businesses in automating and centralizing the whole lifespan of their IT assets. It has    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-sixth">
+        <div class="width-container">
+            <div class="service-dtls-sixth-heading">
+                <h2>Endpoint Management </h2>
+                <!-- <p><span><b>Purpose:</b></span> Automate various asset management tasks such as patching, mobile device management (MDM), and OS deployment.</p> -->
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 service-dtls-sixth-dtls-out">
+                        <div class="service-dtls-sixth-dtls-item service-dtls-sixth-left">
+                            <div class="left-service-dtls-sixth-dtls">
+                                <img src="images/service-page/email-01.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-sixth-dtls">
+                                <h4>Endpoint Management </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span> Automate various asset management tasks such as patching, mobile device management (MDM), and OS deployment. <br>
+                                    <span><b>Description:</b></span> In order to ensure that endpoints are properly maintained and configured, this component focuses on automating critical endpoint management operations, such as operating system deployment, software patching, mobile device management, and asset management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 service-dtls-sixth-dtls-out">
+                        <div class="service-dtls-sixth-dtls-item service-dtls-sixth-right">
+                            <div class="right-service-dtls-sixth-dtls">
+                                <h4>Endpoint Security </h4>
+                                <p>
+                                    <span><b>Purpose: </b></span> Prevent cyberattacks on all your endpoints and browsers by taking proactive measures
+                                    <span><b>Description: </b></span> The goal of endpoint security is to defend browsers and endpoints (computers, mobile devices) against various online attacks. It has tools for mitigating, preventing, and detecting threats.
+                                </p>
+                            </div>
+                            <div class="left-service-dtls-sixth-dtls">
+                                <img src="images/service-page/email-02.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 service-dtls-sixth-dtls-out">
+                        <div class="service-dtls-sixth-dtls-item service-dtls-sixth-left">
+                            <div class="left-service-dtls-sixth-dtls">
+                                <img src="images/service-page/email-03.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-sixth-dtls">
+                                <h4>Endpoint Central </h4>
+                                <p>
+                                    <span><b>Purpose: </b></span> Unified endpoint management and security. <br>
+                                    <span><b>Description:</b></span> The goal of Endpoint Central is to offer a single platform for endpoint security and management. In order to provide effective management and protection of endpoints, it integrates a number of tools and solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-third">
+        <div class="width-container">
+            <div class="service-dtls-third-heading">
+                <h2>The specific products within this suite provide <br> further details on these functionalities:</h2>
+                <!-- <p>Sophos Intercept X is designed to provide advanced protection against a wide range of cyber threats. Let's explore</p> -->
+            </div>
+            <div class="col-md-12 service-dtls-third-item">
+                <div class="row">
+
+                    <div class="col-md-5 col-lg-6 left-service-dtls-third-img-out">
+                        <div class="service-dtls-third-img">
+                            <img src="images/service-page/mob-banner.webp" class="img-fluid" alt="veuzconcepts">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-6 right-service-dtls-third">
+                        <div class="right-service-dtls-third-cont">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Mobile Device Manager Plus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Active Directory, Microsoft 365, and Exchange management and reporting     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Patch Manager Plus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Focuses on automated multi-OS patch management to keep operating
+                                        systems and software applications up to date and secure.      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Patch Connect Plus 
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Reduces vulnerabilities in commonly used software by automatically
+                                        patching third-party software programs.      
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            OS Deployer
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This software streamlines the process of installing and maintaining
+                                            standardized operating system environments by offering tools for OS imaging and
+                                            deployment.       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Remote Access Plus 
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Provides safe corporate remote access solutions that let employees
+                                            access their work systems from a distance while upholding security and
+                                            compliance     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            Vulnerability Manager Plus 
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Prioritizes and manages business vulnerabilities, ensuring that the
+                                            most important security threats are dealt with as soon as possible.    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                            aria-expanded="false" aria-controls="collapseSeven">
+                                            Device Control Plus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Focuses on preventing data loss by controlling and managing data
+                                        access via peripheral devices like USB drives.      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                            aria-expanded="false" aria-controls="collapseEight">
+                                            Application Control Plus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                        aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Manages software applications and controls privileges on endpoints,
+                                            enhancing security and compliance.     
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNine">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                            aria-expanded="false" aria-controls="collapseNine">
+                                            Browser Security Plus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse"
+                                        aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Focuses on controlling and safeguarding web browsers on endpoints
+                                            to defend against browser-based cyberattacks.   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTen">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                            aria-expanded="false" aria-controls="collapseTen">
+                                            Endpoint DLP Plus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTen" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Provides advanced data loss prevention capabilities for endpoints,
+                                            safeguarding sensitive data and preventing data breaches.     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-fifth">
+        <div class="width-container">
+            <div class="service-dtls-fifth-heading">
+                <h2>IT Operations Management </h2>
+                <!-- <p>IT operations management incorporates network and server performance monitoring, application performance monitoring, IT incident management, and various other features. Below is an overview of the products within this suite and their respective purposes:</p> -->
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-01.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>ManageEngine OpManager Plus </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span>  Unified network, server, and application management. <br>
+                                   <span><b>Description:</b></span>  OpManager Plus provides a complete solution for controlling and enhancing the performance of servers, networks, and applications. It provides a centralized platform for tracking and resolving different IT operations issues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-02.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>ManageEngine OpManager </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Network performance monitoring. <br>
+                                   <span><b>Description:</b></span>  OpManager is a network performance monitoring tool that assists IT teams in locating and resolving network infrastructure and performance-related problems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>NetFlow Analyzer </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Bandwidth monitoring and traffic analysis. <br>
+                                   <span><b>Description:</b></span> With the assistance of NetFlow Analyzer, businesses may optimize their use of networks by tracking and evaluating traffic patterns and network bandwidth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-01.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>Network Configuration Manager </h4>
+                                <p>
+                                   <span><b>Purpose: </b></span> Network change and configuration management.<br>
+                                   <span><b>Description: </b></span> Network Configuration Manager helps maintain network configurations and keeps track of modifications, making sure that configurations are compliant and safe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-02.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>Firewall Analyzer </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> IP address and switch port management.<br>
+                                   <span><b>Description:</b></span> OpUtils is used to manage switch ports and IP addresses efficiently, helping IT teams in properly maintaining network resources.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>Applications Manager </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Server and application performance monitoring. <br>
+                                   <span><b>Description:</b></span> Applications Manager is intended to keep an eye on and troubleshoot server and application performance to guarantee optimal operation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-01.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>Site24x7 </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Full-stack monitoring for IT admins, DevOps, and SREs.<br>
+                                   <span><b>Description:</b></span> Site Reliability Engineers (SREs), DevOps teams, and IT managers can count on Site24x7's full-stack monitoring to guarantee the functionality and accessibility of websites and applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-02.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>DNS Management </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Manage DNS records securely.<br>
+                                   <span><b>Description:</b></span> DNS Management tools are used to securely manage DNS records, ensuring that domain names are correctly resolved.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>CloudDNS </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> An all-in-one DNS management service to keep your business online.<br>
+                                   <span><b>Description:</b></span> CloudDNS is an all-in-one DNS management service that helps businesses maintain their online presence reliably.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>AlarmsOne </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Centralized IT alert management. <br>
+                                   <span><b>Description:</b></span> With the help of AlarmsOne's centralized IT alert management, IT teams can effectively handle and address notifications and alerts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fifth-dtls-out">
+                        <div class="service-dtls-fifth-dtls-item">
+                            <div class="service-gradient-bg-fifth"></div>
+                            <div class="left-service-dtls-fifth-dtls">
+                                <img src="images/service-page/s-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="right-service-dtls-fifth-dtls">
+                                <h4>Site24x7 StatusIQ </h4>
+                                <p>
+                                   <span><b>Purpose:</b></span> Real-time status and incident communication using status pages. <br>
+                                   <span><b>Description:</b></span> Site24x7 StatusIQ provides status pages for real-time communication of service and incident statuses to users and customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-carsl-list">
+        <div class="width-container">
+            <div class="service-dtls-carsl-list-heading">
+                <h2>Security Information and <br> Event Management (SIEM) </h2>
+                <!-- <p>SIEMs, also known as Security Information and Event Management, aim to aid businesses in effectively overseeing and protecting their IT infrastructure by detecting and addressing security threats and ensuring compliance. Here's an overview of the products in this suite and their respective functions:</p> -->
+            </div>
+            <div class="serv-list-dtls-carsl">
+                <div class="carousel-wrap">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>
+                                    <!-- <span>01</span>  -->
+                                    Log360 </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span> Cloud Access Security Broker (CASB) and Data Loss
+                                    Prevention (DLP) features combined into a single SIEM solution <br>
+                                    <span><b>Description:</b></span> Log360 provides a comprehensive SIEM solution with
+                                    additional
+                                    features like DLP and CASB to spot, investigate, and neutralize security threats
+                                    while
+                                    also ensuring compliance.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>EventLog Analyzer ManageEngine </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span>  Comprehensive log and IT compliance management. 
+                                    Prevention (DLP) features combined into a single SIEM solution <br>
+                                    <span><b>Description:</b></span>  With an emphasis on log management and IT compliance, EventLog
+                                    Analyzer offers tools for gathering, examining, and managing logs in order to guarantee
+                                    compliance to security and legal standards. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>Firewall Analyzer </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span>  Firewall rule, configuration, and log management. <br>
+                                    <span><b>Description:</b></span>  By monitoring the network security, Firewall Analyzer is designed to
+                                    manage firewall rules, configurations, and log data in order to improve security and
+                                    compliance. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>ADAudit Plusr </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span>  Real-time Active Directory, file, and Windows server change auditing. <br>
+                                    <span><b>Description:</b></span>  To improve security and maintain compliance, ADAudit Plus provides
+                                    real-time auditing of file systems, Windows server changes, and Active Directory.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>SharePoint Manager Plus </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span> SharePoint reporting and auditing. <br>
+                                    <span><b>Description:</b></span>  SharePoint Manager Plus is used for reporting and auditing
+                                    SharePoint environments, ensuring secure and compliant management of SharePoint
+                                    resources.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>M365 Security Plus </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span> Microsoft 365 security. <br>
+                                    <span><b>Description:</b></span>  M365 Security Plus helps businesses safeguard their cloud-based
+                                    data and services by improving security within Microsoft 365 environments. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>Cloud Security Plus </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span>Cloud security monitoring and analytics. <br>
+                                    <span><b>Description:</b></span>  To make sure that cloud-based resources are safe and compliant,
+                                    Cloud Security Plus provides tools for monitoring and analyzing cloud security. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>DataSecurity Plus </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span>File auditing, data leak prevention, and data risk assessment. <br>
+                                    <span><b>Description:</b></span>  With a focus on file auditing, preventing data leaks, and evaluating
+                                    data-related risks, DataSecurity Plus helps businesses in safeguarding their sensitive
+                                    data.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="serv-list-dtls-carsl-item">
+                                <h4>FileAnalysis </h4>
+                                <p>
+                                    <span><b>Purpose:</b></span>File security and storage analysis. <br>
+                                    <span><b>Description:</b></span>  FileAnalysis provides tools for analyzing file security and storage,
+                                    ensuring that files are stored securely and efficiently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-eight">
+        <div class="width-container">
+            <div class="service-dtls-eight-heading">
+                <h2>Why Choose ManageEngine Solutions?</h2>
+                <!-- <p>Complete and user-friendly IT management solutions!</p> -->
+            </div>
+            <div class="col-md-12 service-dtls-eight-dtls-all">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-eight-dtls-out">
+                        <div class="service-dtls-eight-dtls-in">
+                            <div class="service-dtls-eight-dtls-img">
+                                <img src="images/service-page/item-03.png" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-eight-dtls">
+                                <h4>Efficiency and Automation </h4>
+                                <p>
+                                    ManageEngine solutions save time and resources by automating repetitive tasks and streamlining IT operations. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-eight-dtls-out">
+                        <div class="service-dtls-eight-dtls-in">
+                            <div class="service-dtls-eight-dtls-img">
+                                <img src="images/service-page/item-04.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-eight-dtls">
+                                <h4>Strong Security </h4>
+                                <p>
+                                    Protect your organization from cyber threats and vulnerabilities with comprehensive security features, including ManageEngine patch management, log analysis, and endpoint security. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-eight-dtls-out">
+                        <div class="service-dtls-eight-dtls-in">
+                            <div class="service-dtls-eight-dtls-img">
+                                <img src="images/service-page/item-05.jpg" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-eight-dtls">
+                                <h4>Enhanced Productivity </h4>
+                                <p>
+                                    Ensure system availability, deploy apps with ease, and optimize your IT infrastructure to boost productivity and maintain business continuity. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-eight-dtls-out">
+                        <div class="service-dtls-eight-dtls-in">
+                            <div class="service-dtls-eight-dtls-img">
+                                <img src="images/service-page/item-06.jpg" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-eight-dtls">
+                                <h4>Compliance and Reporting </h4>
+                                <p>
+                                    With ManageEngine's auditing and reporting features, you can effortlessly comply with industry standards and regulatory obligations. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-eight-dtls-out">
+                        <div class="service-dtls-eight-dtls-in">
+                            <div class="service-dtls-eight-dtls-img">
+                                <img src="images/service-page/item-07.jpeg" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-eight-dtls">
+                                <h4>Cost Savings </h4>
+                                <p>
+                                    Reduce operational costs by efficiently managing your IT resources, optimizing asset utilization, and automating routine processes. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="common_space service-dtls-fourth">
+        <div class="width-container">
+            <div class="service-dtls-fourth-heading">
+                <h2>Our ManageEngine Services</h2>
+                <!-- <p>Your trusted partner!</p> -->
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 service-dtls-fourth-dtls-out">
+                        <div class="service-dtls-fourth-dtls">
+                            <h4>Implementation and Deployment </h4>
+                            <p>
+                                To minimize disruptions to everyday operations, our experts will collaborate closely with your organization to develop, implement, and deploy ManageEngine solutions with ease.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fourth-dtls-out">
+                        <div class="service-dtls-fourth-dtls">
+                            <h4>Customization and Configuration </h4>
+                            <p>
+                                ManageEngine apps can be customized to match your particular business needs by optimizing settings and configurations for your use cases. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fourth-dtls-out">
+                        <div class="service-dtls-fourth-dtls">
+                            <h4>Training and Support </h4>
+                            <p>
+                                With our training programs, you can provide your IT team with the knowledge and abilities needed to optimize the value of ManageEngine solutions. We offer continuous support to quickly resolve any questions or problems.  
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 service-dtls-fourth-dtls-out">
+                        <div class="service-dtls-fourth-dtls">
+                            <h4>Maintenance and Updates </h4>
+                            <p>
+                                By entrusting us with routine maintenance, upgrades, and performance enhancements, you can ensure the ongoing performance and security of your IT system.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 service-dtls-fourth-dtls-out">
+                        <div class="service-dtls-fourth-dtls">
+                            <h4>Consulting and Advisory Services </h4>
+                            <p>
+                                Receive strategic guidance and recommendations from our expert consultants to help your organization to up-to-date on the ever-changing IT landscape.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common_space service-dtls-nine">
+        <div class="width-container">
+            <div class="service-dtls-nine-heading">
+                <h2>The Veuz Advantage </h2>
+                <!-- <p>Explore the distinction of selecting us as your trusted ManageEngine service provider.</p> -->
+            </div>
+            <div class="col-md-12 service-dtls-nine-dtls-all">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-nine-dtls-out">
+                        <div class="service-dtls-nine-dtls-in">
+                            <div class="service-dtls-nine-dtls-img">
+                                <img src="images/service-page/service-detail-ft-bg.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-nine-dtls">
+                                <h4>Global Reach </h4>
+                                <p>
+                                    With a presence in Saudi Arabia and beyond, we have the expertise to serve businesses worldwide, ensuring your global IT needs are met. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-nine-dtls-out">
+                        <div class="service-dtls-nine-dtls-in">
+                            <div class="service-dtls-nine-dtls-img">
+                                <img src="images/service-page/service_bottom_bg.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-nine-dtls">
+                                <h4>Expertise </h4>
+                                <p>
+                                    Our team is made up of certified experts with a wealth of ManageEngine solution implementation and management experience. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-nine-dtls-out">
+                        <div class="service-dtls-nine-dtls-in">
+                            <div class="service-dtls-nine-dtls-img">
+                                <img src="images/service-page/service-detail-ft-bg.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-nine-dtls">
+                                <h4>Customer-Centric Approach </h4>
+                                <p>
+                                    We give priority to your unique business requirements and offer customized solutions to help you achieve your objectives. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-nine-dtls-out">
+                        <div class="service-dtls-nine-dtls-in">
+                            <div class="service-dtls-nine-dtls-img">
+                                <img src="images/service-page/service_bottom_bg.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-nine-dtls">
+                                <h4>Reliability </h4>
+                                <p>
+                                    Our services streamline your IT processes, saving you time and valuable resources. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-dtls-nine-dtls-out">
+                        <div class="service-dtls-nine-dtls-in">
+                            <div class="service-dtls-nine-dtls-img">
+                                <img src="images/service-page/service-detail-ft-bg.webp" class="img-fluid" alt="veuzconcepts">
+                            </div>
+                            <div class="service-dtls-nine-dtls">
+                                <h4>Efficiency </h4>
+                                <p>
+                                    With a presence in Saudi Arabia and beyond, we have the expertise to serve businesses worldwide, ensuring your global IT needs are met. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_dtls_footer">
+        <div class="service_dtls_footer_bg">
+            <div class="container">
+                <div class="service_dtls_footer_item">
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-12 col-lg-10 service_dtls_footer_item_cont_out">
+                            <div class="service_dtls_footer_item_cont">
+                                <h2>Experience the Difference Start Your Journey with Us</h2>
+                                <p>
+                                    We deliver end-to-end IT solutions, encompassing software development to technical support, to drive your business's success in the digital landscape. Let’s collaborate to elevate your online success
+                                </p>
+                                <div class="cta-button">
+                                    <a class="btn" href="contact.html">
+                                        <span class="text">Contact Now </span>
+                                        <svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66669 11.3334L11.3334 4.66669" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.66669 4.66669H11.3334V11.3334" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-dtls-list-roundicon">
+                <svg width="800" height="800" viewBox="0 0 605 555" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="paint41_linear_105_732" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#4FACFE"/>
+                            <stop offset="100%" stop-color="#00F2FE"/>
+                        </linearGradient>
+                        <linearGradient id="paint51_linear_105_732" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#4FACFE"/>
+                            <stop offset="100%" stop-color="#00F2FE"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Outer Circle -->
+                    <path d="M9.49463 277.555C9.49463 124.568 140.768 0.500183 302.762 0.500183C464.755 0.500183 596.028 124.568 596.028 277.555C596.028 430.542 464.755 554.61 302.762 554.61C140.768 554.61 9.49463 430.542 9.49463 277.555Z"
+                        fill="none" stroke="url(#paint51_linear_105_732)" stroke-width="2" id="s-circle4"></path>
+            
+                    <!-- Inner Circle -->
+                    <path d="M100 277.555C100 180 180 100 302.762 100C425.524 100 505 180 505 277.555C505 375 425.524 455 302.762 455C180 455 100 375 100 277.555Z"
+                        fill="none" stroke="url(#paint51_linear_105_732)" stroke-width="2" id="s-circle4-inner"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <a id="top-btn"></a>
+    <section>
+        <div class="footer">
+            <div class="width-container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5 col-lg-4 footer-content-out">
+                        <div class="footer-content">
+                            <div class="left-footer-content">
+                                <img src="images/logo/logo-svg.svg" class="img-fluid" alt="lifeline">
+                            </div>
+                            <div class="right-footer-content">
+                                <p>
+                                    Veuz Concepts is a specialized designing and developing firm based in
+                                    Riyadh, Jeddah, Al Khobar, Bahrain, Qatar with development centers in Kerala and
+                                    Saudi Arabia.
+                                </p>
+
+                                <div class="ft-mail-out">
+                                    <div class="ft-mail">
+                                        <h6>Email</h6>
+                                        <p><a href="mailto:support@veuzconcepts.com"> support@veuzconcepts.com</a></p>
+                                    </div>
+                                    <div class="ft-phone">
+                                        <h6>Phone Number</h6>
+                                        <p><a href="tel:+15551234567"> +1 (555) 123-4567 </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy-right-sec">
+                            <div class="policy">
+                                <h5><a href="#">Terms of use</a></h5> <span> | </span>
+                                <h5><a href="#">Privacy Statement</a></h5> <span> | </span>
+                                <h5><a href="#">Site map</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-4 footer-link-sec">
+                        <div class="row">
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="page-links">
+                                    <h5>Company</h5>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#"> About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">News & Events</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="page-links">
+                                    <h5>What’s New</h5>
+                                    <ul>
+                                        <li><a href="#">Aramco cyber security certificate</a></li>
+                                        <li><a href="#"> Odoo ERP</a></li>
+                                        <li><a href="#">Salesforce Cloud</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3 ft-subscribe-out">
+                        <div class="ft-subscribe">
+                            <h5>Subscribe <br>
+                                & Contact us now</h5>
+                            <div class="subscribe-form">
+                                <input type="email" class="form-control custom-form" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Type email here">
+                                <div class="cta-button">
+                                    <a href="#" class="move-btn">
+                                        <svg width="11" height="13" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links-footer">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Core Libraries -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome (Make sure this is correct) -->
+    <script src="js/font-awsome.js"></script>
+
+    <!-- GSAP and Animations -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Custom Scripts (must be last) -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
+    <!-- <script src="js/split-text3.min.js"></script> -->
+    <script src="js/split-type.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/custom2.js"></script>
+
+    <script>
+        // scroller-smooth
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        lenis.on('scroll', ScrollTrigger.update)
+
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 300)
+        })
+        gsap.ticker.lagSmoothing(0)
+        // close
+    </script>
+
+<script>
+    // Initialize intl-tel-input
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Utility script for formatting/validation
+    preferredCountries: ['us', 'gb', 'ca'], // Optional: Set preferred countries
+    separateDialCode: true, // Optional: Show dial code separately
+    initialCountry: "auto", // Optional: Auto-detect user's country
+    geoIpLookup: function(callback) {
+        fetch("https://ipapi.co/json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            callback(data.country_code);
+        })
+        .catch(function() {
+            callback("us"); // Fallback country
+        });
+    },
+    });
+</script>
+
+</body>
+
+</html>

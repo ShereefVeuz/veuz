@@ -1087,7 +1087,134 @@ disableLenisSections.forEach((section) => {
 
 
 
+// service page carousel
+$('.serv-list-dtls-carsl .owl-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    900: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    },
+    1300: {
+      items: 3
+    }
+  }
+})
+// close
+
+//// pr rental carousel
+$('.rental-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  dots: false,
+  autoplay: false,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    375: {
+      items: 2
+    },
+    600: {
+      items: 3
+    },
+    800: {
+      items: 6
+    }
+  }
+});
+
+// Lenis disabled for FAQ section scroll
+const scrollContainers = document.querySelectorAll('.right-service-dtls-four-cont');
+scrollContainers.forEach((container) => {
+  container.addEventListener('wheel', (e) => {
+    lenis.stop();
+    container.scrollTop += e.deltaY;
+    e.preventDefault();
+    clearTimeout(container._lenisTimeout);
+    container._lenisTimeout = setTimeout(() => lenis.start(), 200);
+  }, { passive: false });
+});
+
+// Lenis disabled for service session
+const scrollContainerss = document.querySelectorAll('.right-service-dtls-third-cont');
+scrollContainerss.forEach((container) => {
+  container.addEventListener('wheel', (e) => {
+    lenis.stop();
+    container.scrollTop += e.deltaY;
+    e.preventDefault();
+    clearTimeout(container._lenisTimeout);
+    container._lenisTimeout = setTimeout(() => lenis.start(), 200);
+  }, { passive: false });
+});
 
 
 
+//// event planning products 
+// $(window).on("load", function() {
+//   var dateWidth = $(".date").width(),
+//     activeDate = 0,
+//     noDates = $(".date").length;
+  
+//   function changeDate(a) {
+//     if (a < 0) {
+//       activeDate = 0;
+//       return;
+//     }
 
+//     if (a > noDates - 1) {
+//       activeDate = noDates - 1;
+//       return;
+//     }
+
+//     $(".date")
+//       .removeClass("active sibling");
+    
+//     $(".date:nth-child(" + (a + 1) + ")")
+//       .addClass("active");
+
+//     $(".date.active")
+//       .prev("div")
+//       .addClass("sibling");
+
+//     $(".dates-wrap").css(
+//       "transform",
+//       "translateX(" + -dateWidth * a + "px)"
+//     );
+//   }
+  
+//   $(".date").on('click', function(){
+//      var chosen = $(this).index();
+    
+//     if (chosen === activeDate) {
+//       return;
+//     }
+    
+//     activeDate = chosen;
+//     changeDate(activeDate);
+//   });
+
+//   $(".controls").on("click", function() {
+//     var direction = parseInt($(this).attr("data-direction"), 10);
+
+//     activeDate += direction;  
+//     changeDate(activeDate);
+
+//   });
+// });

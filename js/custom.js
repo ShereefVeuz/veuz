@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const heading = section.querySelector('.reveal-heading');
         const paragraph = section.querySelector('.reveal');
         const image = section.querySelector('.image img');
-        const videos = section.querySelector('.video-wrapper video');
+        const videos = section.querySelector('.video-wrapper img');
 
         const splitHeading = new SplitType(heading, {
             type: 'chars'
@@ -1717,35 +1717,35 @@ gsap.from(".service-dtls-tech4 .service-dtls-tech-item", {
     },
 });
 
-// accordion second
-gsap.from(".service-dtls-four-top", {
-    duration: 1,
-    x: -100,
-    opacity: 0,
-    stagger: 0.3,
-    scrollTrigger: {
-        trigger: ".service-dtls-four-top",
-        start: "top 90%",
-        end: "bottom 50%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play reverse play reverse",
-    }
-});
-gsap.from(".right-service-dtls-four-cont", {
-    duration: 1,
-    x: 100,
-    opacity: 0,
-    stagger: 0.3,
-    scrollTrigger: {
-        trigger: ".right-service-dtls-four-cont",
-        start: "top 90%",
-        end: "bottom 50%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play reverse play reverse",
-    }
-});
+// // accordion second
+// gsap.from(".service-dtls-four-top", {
+//     duration: 1,
+//     x: -100,
+//     opacity: 0,
+//     stagger: 0.3,
+//     scrollTrigger: {
+//         trigger: ".service-dtls-four-top",
+//         start: "top 90%",
+//         end: "bottom 50%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play reverse play reverse",
+//     }
+// });
+// gsap.from(".right-service-dtls-four-cont", {
+//     duration: 1,
+//     x: 100,
+//     opacity: 0,
+//     stagger: 0.3,
+//     scrollTrigger: {
+//         trigger: ".right-service-dtls-four-cont",
+//         start: "top 90%",
+//         end: "bottom 50%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play reverse play reverse",
+//     }
+// });
 
 gsap.from(".service_dtls_footer_item", {
     duration: 1,
