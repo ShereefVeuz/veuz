@@ -456,6 +456,14 @@ a {
     padding: 10px 0;
 }
 
+.inner-page-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
 .header-container {
     position: absolute;
     z-index: 99;
@@ -466,9 +474,20 @@ a {
     align-items: center;
 }
 
+.inner-header-container {
+    /* position: absolute;
+    z-index: 99; */
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-home-inner{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .btn-header a {
@@ -2837,6 +2856,7 @@ video::-webkit-media-controls-enclosure {
     padding: 15px 25px !important;
     border-radius: 50px;
     border: 1px solid #95c11f;
+    -webkit-text-fill-color: white !important;
 }
 
 .btn {
@@ -2898,10 +2918,6 @@ video::-webkit-media-controls-enclosure {
     width: 100%;
     height: 100%;
     right: 0;
-}
-
-.cta-button .btn{
-    -webkit-text-fill-color: white !important;
 }
 
 /* service btn */
@@ -3922,9 +3938,12 @@ video::-webkit-media-controls-enclosure {
 /* ----------------------------------------
             common inner page banner
 ------------------------------------------ */
-
+.common_banner_veuz_outr{
+    position: relative;
+    overflow: hidden;
+}
 .common_banner_veuz {
-    height: 45vh;
+    /* height: 45vh; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -3946,25 +3965,17 @@ video::-webkit-media-controls-enclosure {
 }
 
 .veuz-common-banner-cont{
-    width: 90%;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    position: absolute;
     text-align: center;
 }
 
 .veuz-common-banner-cont h2 {
     font-size: 5vw;
     font-weight: 600;
-    line-height: 107px;
+    line-height: 100px;
     background: linear-gradient(90deg, #0040FF 15%, #00FFD0, #00FF2F);
     -webkit-background-clip: text;
     color: transparent;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: -50px;
 }
 
 .veuz-common-banner-cont p {
@@ -3975,7 +3986,6 @@ video::-webkit-media-controls-enclosure {
     width: 45%;
     margin: 20px auto 0 auto;
     text-align: center;
-
 }
 
 /* ----------------------------------------
@@ -5256,26 +5266,33 @@ video::-webkit-media-controls-enclosure {
 /* ----------------------------------------
             service details page
 ------------------------------------------ */
-.left-srvdtls-shape1 {
-    position: absolute;
-    top: 20%;
-    left: -58%;
-    z-index: 3;
-    width: 100%;
+.left-srvdtls-shape-out{
+    display: flex;
 }
-
+.left-srvdtls-shape1 {
+    width: 40%;
+}
+.serv-dtls-banner-items .cta-button{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.serv-dtls-banner-items .cta-button .btn{
+    margin-top: -35px;
+}
 .left-srvdtls-shape2 {
-    position: absolute;
-    top: 20%;
-    right: -58%;
-    z-index: 3;
-    width: 100%;
+    width: 40%;
+}
+.left-srvdtls-shape2 img{
+    transform: scaleX(-1);
 }
 
 .service-dtls-page {
     position: relative;
     overflow: hidden;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .service-dtls-page-cont {

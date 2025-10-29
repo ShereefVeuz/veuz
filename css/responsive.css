@@ -36,10 +36,10 @@
     }
 
     /* service details */
-    .left-srvdtls-shape1,
+    /* .left-srvdtls-shape1,
     .left-srvdtls-shape2 {
         top: 30%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1600px) {
@@ -322,12 +322,12 @@
     }
 
     /* service details */
-    .left-srvdtls-shape1{
+    /* .left-srvdtls-shape1{
         left: -60%;
     }
     .left-srvdtls-shape2 {
         right: -60%;
-    }
+    } */
     .service_dtls_footer_item_cont h2 br{
         display: none;
     }
@@ -492,9 +492,9 @@
     }
 
     /* contact page start */
-    .common_banner_veuz {
+    /* .common_banner_veuz {
         height: 35vh;
-    }
+    } */
     .left-contact-get-in::before {
         width: 150px;
     }
@@ -654,6 +654,7 @@
     }
     .veuz-common-banner-cont h2 {
         line-height: 60px;
+        margin-bottom: 0;
     }
     .about-veuz-content {
         max-width: 100%;
@@ -773,12 +774,12 @@
     }
 
     /* service details */
-    .left-srvdtls-shape1{
+    /* .left-srvdtls-shape1{
         left: -63%;
     }
     .left-srvdtls-shape2 {
         right: -63%;
-    }
+    } */
     .left-service-dtls-heading h2,
     .service-dtls-first-heading h2,
     .service-dtls-second-heading h2,
@@ -1016,6 +1017,14 @@
         width: 100px;
     }
 
+    .left-srvdtls-shape1,
+    .left-srvdtls-shape2 {
+        width: 30%;
+    }
+    .serv-dtls-banner-items .cta-button {
+        width: 40%;
+    }
+
     /* .ham-menu-container .dropdown .ham-menu-links {
         padding-left: 0px;
     } */
@@ -1238,14 +1247,14 @@
     } */
 
 
-    .left-srvdtls-shape1{
+    /* .left-srvdtls-shape1{
         top: 32%;
         left: -65%;
     }
     .left-srvdtls-shape2 {
         top: 32%;
         right: -65%;
-    }
+    } */
     .right-service-dtls-third-cont {
         padding-right: 0px;
     }
@@ -1867,9 +1876,9 @@
     .style_button3__wvXhd {
         padding: 7px 10px !important;
     }
-    .common_banner_veuz {
+    /* .common_banner_veuz {
         height: 30vh;
-    }
+    } */
 
     .right-abt-f1 .content p {
         font-size: 14px;
@@ -2128,6 +2137,10 @@
 
     .tech-owl1 .owl-carousel .item, .tech-owl2 .owl-carousel .item{
         height: 90px;
+    }
+
+    .common_banner_veuz {
+        margin-bottom: 30px;
     }
     
 
