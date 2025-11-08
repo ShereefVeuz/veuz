@@ -3971,11 +3971,11 @@ video::-webkit-media-controls-enclosure {
 .veuz-common-banner-cont h2 {
     font-size: 5vw;
     font-weight: 600;
-    line-height: 100px;
+    line-height: 85px;
     background: linear-gradient(90deg, #0040FF 15%, #00FFD0, #00FF2F);
     -webkit-background-clip: text;
     color: transparent;
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
 }
 
 .veuz-common-banner-cont p {
@@ -3983,8 +3983,8 @@ video::-webkit-media-controls-enclosure {
     font-weight: 400;
     line-height: 35px;
     color: #ccc;
-    width: 45%;
-    margin: 20px auto 0 auto;
+    /* width: 45%; */
+    margin: 10px auto 0 auto;
     text-align: center;
 }
 
@@ -4881,7 +4881,7 @@ video::-webkit-media-controls-enclosure {
     background: radial-gradient(circle at left, #1D09D5, #BCA42E);
     filter: blur(100px);
     position: absolute;
-    top: -85%;
+    top: -250%;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -5080,10 +5080,12 @@ video::-webkit-media-controls-enclosure {
     height: 450px;
     overflow: hidden;
     border-radius: 25px;
+    background-color: white;
 }
 .service_listing_img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .service_listing_cont {
@@ -5326,7 +5328,7 @@ video::-webkit-media-controls-enclosure {
 .left-service-dtls-heading h2{
     font-size: 3.5vw;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 60px;
     color: white;
 }
 
@@ -5340,7 +5342,7 @@ video::-webkit-media-controls-enclosure {
 
 .service-dtls-single-banner {
     margin-top: 50px;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     border-radius: 25px;
 }
@@ -5475,7 +5477,7 @@ video::-webkit-media-controls-enclosure {
 .right-service-dtls-second-dtls h4{
     font-size: 25px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 30px;
     color: #FFFFFF;
 }
 
@@ -5741,7 +5743,7 @@ video::-webkit-media-controls-enclosure {
 .right-service-dtls-fifth-dtls h4{
     font-size: 25px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 30px;
     color: #FFFFFF;
 }
 
