@@ -2864,8 +2864,8 @@ video::-webkit-media-controls-enclosure {
     font-weight: 600;
     background-color: #154633;
     padding: 24px 24px 24px 32px;
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
     border-radius: 99px;
     position: relative;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
