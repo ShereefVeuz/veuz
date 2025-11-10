@@ -402,7 +402,7 @@ a {
 }
 .loader-wrap svg {
     position: absolute;
-    height: 100vh;
+    height: 101vh;
     width: 100%;
 }
 .loader-wrap-heading {
