@@ -364,6 +364,7 @@ body {
     /* font-family: 'SF Pro Display', sans-serif !important; */
     font-family: 'SF Pro Display' !important;
     background-color: var(--primary-color) !important;
+    overflow-x: hidden !important;
 }
 
 .body_custom{
@@ -388,7 +389,7 @@ a {
     display: block;
 }
 .loader-wrap {
-    position: absolute;
+    position: fixed;
     z-index: 99999999;
     height: 100vh;
     width: 100%;
@@ -397,6 +398,7 @@ a {
     align-items: center;
     justify-content: center;
     background: transparent;
+    /* background-color: #0d0d0d; */
 }
 .loader-wrap svg {
     position: absolute;
